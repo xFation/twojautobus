@@ -1,0 +1,20 @@
+{
+    "stop_id": 1534,
+    "linie": [
+        {
+            "linia": "T",
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "10:43",
+                        "13:03",
+                        "15:23",
+                        "17:48"
+                    ]
+                }
+            ]
+        }
+    ]
+}

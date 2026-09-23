@@ -1,0 +1,20 @@
+{
+    "stop_id": 488,
+    "linie": [
+        {
+            "linia": 28,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Łosień",
+                    "odjazdy": [
+                        "05:44",
+                        "07:46",
+                        "13:25",
+                        "16:32"
+                    ]
+                }
+            ]
+        }
+    ]
+}

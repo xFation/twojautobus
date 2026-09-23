@@ -1,0 +1,19 @@
+{
+    "stop_id": 1312,
+    "linie": [
+        {
+            "linia": 45,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Obice",
+                    "odjazdy": [
+                        "08:23",
+                        "14:44",
+                        "19:09"
+                    ]
+                }
+            ]
+        }
+    ]
+}

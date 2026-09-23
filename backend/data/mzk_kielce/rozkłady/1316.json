@@ -1,0 +1,21 @@
+{
+    "stop_id": 1316,
+    "linie": [
+        {
+            "linia": 18,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "05:25",
+                        "06:46",
+                        "14:26",
+                        "15:55",
+                        "17:33"
+                    ]
+                }
+            ]
+        }
+    ]
+}

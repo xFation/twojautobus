@@ -1,0 +1,21 @@
+{
+    "stop_id": 1328,
+    "linie": [
+        {
+            "linia": 45,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Radomice Ii",
+                    "odjazdy": [
+                        "04:51",
+                        "06:57",
+                        "13:58",
+                        "15:53",
+                        "20:00"
+                    ]
+                }
+            ]
+        }
+    ]
+}

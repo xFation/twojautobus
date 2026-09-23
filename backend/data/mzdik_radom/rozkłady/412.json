@@ -1,0 +1,30 @@
+{
+    "stop_id": 412,
+    "linie": [
+        {
+            "linia": 5,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Lotnisko Warszawa-Radom",
+                    "odjazdy": [
+                        "05:56",
+                        "06:35",
+                        "07:58",
+                        "11:41",
+                        "13:21",
+                        "15:04",
+                        "16:21",
+                        "18:08"
+                    ]
+                },
+                {
+                    "kierunek": "Zajezdnia Borki",
+                    "odjazdy": [
+                        "17:01"
+                    ]
+                }
+            ]
+        }
+    ]
+}

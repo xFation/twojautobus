@@ -1,0 +1,40 @@
+{
+    "stop_id": 1359,
+    "linie": [
+        {
+            "linia": "CK1",
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Urząd Miasta",
+                    "odjazdy": [
+                        "10:36",
+                        "12:01",
+                        "13:16",
+                        "14:40",
+                        "16:06",
+                        "17:21",
+                        "18:36"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": "CK2",
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Urząd Miasta",
+                    "odjazdy": [
+                        "11:10",
+                        "12:33",
+                        "13:43",
+                        "15:05",
+                        "16:30",
+                        "17:45"
+                    ]
+                }
+            ]
+        }
+    ]
+}

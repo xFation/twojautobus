@@ -1,0 +1,20 @@
+{
+    "stop_id": 1409,
+    "linie": [
+        {
+            "linia": 41,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Krajno",
+                    "odjazdy": [
+                        "07:22",
+                        "14:36",
+                        "16:38",
+                        "20:13"
+                    ]
+                }
+            ]
+        }
+    ]
+}

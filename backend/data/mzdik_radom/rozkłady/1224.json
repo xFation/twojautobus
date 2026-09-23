@@ -1,0 +1,43 @@
+{
+    "stop_id": 1224,
+    "linie": [
+        {
+            "linia": 5,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Borki",
+                    "odjazdy": [
+                        "17:18"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 6,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Borki",
+                    "odjazdy": [
+                        "09:27",
+                        "16:56"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 26,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Borki",
+                    "odjazdy": [
+                        "09:59",
+                        "23:56"
+                    ]
+                }
+            ]
+        }
+    ]
+}

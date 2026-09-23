@@ -1,0 +1,508 @@
+{
+    "stop_id": 1692,
+    "linie": [
+        {
+            "linia": "Gaj",
+            "kolor": "4B7E47",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "09:00",
+                        "10:48",
+                        "16:57",
+                        "19:00"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 2,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:02",
+                        "05:05",
+                        "05:30",
+                        "05:52",
+                        "06:01",
+                        "06:36",
+                        "09:29",
+                        "09:44",
+                        "10:24",
+                        "12:29",
+                        "13:01",
+                        "13:24",
+                        "16:22",
+                        "17:07",
+                        "17:21",
+                        "17:59",
+                        "21:46",
+                        "23:06"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 4,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:17",
+                        "05:10",
+                        "06:07",
+                        "06:28",
+                        "08:16",
+                        "13:41",
+                        "17:49",
+                        "23:13"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 12,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "06:19",
+                        "23:35"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 8,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:48",
+                        "04:52",
+                        "06:46",
+                        "09:06",
+                        "09:35",
+                        "12:36",
+                        "13:54",
+                        "17:08",
+                        "17:34",
+                        "23:02",
+                        "23:07"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 34,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:13",
+                        "05:17",
+                        "05:36",
+                        "22:59"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 44,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:38",
+                        "05:11",
+                        "05:21",
+                        "09:55",
+                        "20:59",
+                        "22:51",
+                        "22:59",
+                        "23:38"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 32,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:19",
+                        "04:47"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 7,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:23",
+                        "05:17"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 18,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:11",
+                        "04:22",
+                        "04:30",
+                        "04:39",
+                        "04:45",
+                        "05:07",
+                        "05:08",
+                        "05:09",
+                        "05:15",
+                        "05:38",
+                        "06:22",
+                        "06:37",
+                        "06:57",
+                        "07:04",
+                        "09:07",
+                        "09:14",
+                        "12:35",
+                        "13:37",
+                        "16:48",
+                        "17:31",
+                        "18:09",
+                        "20:37",
+                        "20:41",
+                        "22:01",
+                        "22:40",
+                        "22:56",
+                        "23:01",
+                        "23:06",
+                        "23:09"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 47,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:55",
+                        "23:26"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 23,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:45",
+                        "23:01",
+                        "23:04"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 15,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:29",
+                        "14:26",
+                        "17:53",
+                        "22:33",
+                        "22:42"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 17,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:14",
+                        "05:40",
+                        "06:29",
+                        "07:28",
+                        "09:43",
+                        "11:59",
+                        "16:35",
+                        "16:49",
+                        "17:34",
+                        "20:17",
+                        "22:22",
+                        "23:19"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 29,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:29",
+                        "05:00",
+                        "05:08",
+                        "20:06",
+                        "21:39",
+                        "23:00"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": "Biała",
+            "kolor": "DDDDDD",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "09:27",
+                        "17:13"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 26,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:33",
+                        "04:53",
+                        "05:09",
+                        "14:17",
+                        "17:04",
+                        "20:37",
+                        "23:09"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 74,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:56",
+                        "06:03",
+                        "06:43",
+                        "06:45",
+                        "21:27",
+                        "22:52",
+                        "24:38"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 36,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "22:52"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 40,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:02",
+                        "22:45"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 42,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:50",
+                        "20:44"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 54,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:54",
+                        "10:23",
+                        "18:01"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 52,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "14:08"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 55,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:50",
+                        "04:53",
+                        "05:18",
+                        "05:49",
+                        "06:08",
+                        "10:17",
+                        "14:18",
+                        "17:02",
+                        "22:17",
+                        "23:19",
+                        "24:04"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 302,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:55",
+                        "09:09",
+                        "13:49",
+                        "17:15"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": "0GAJ",
+            "kolor": "4B7E47",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "09:00",
+                        "09:28",
+                        "10:48",
+                        "12:16",
+                        "15:57",
+                        "16:57",
+                        "18:40",
+                        "19:00"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": "0Bia",
+            "kolor": "4B7E47",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "09:27",
+                        "17:13",
+                        "22:42",
+                        "22:47",
+                        "23:18",
+                        "23:21"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 6,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "22:52"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 37,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:17"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 160,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:53"
+                    ]
+                }
+            ]
+        }
+    ]
+}

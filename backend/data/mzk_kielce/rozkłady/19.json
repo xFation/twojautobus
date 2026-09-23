@@ -1,0 +1,38 @@
+{
+    "stop_id": 19,
+    "linie": [
+        {
+            "linia": 27,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Os. Ślichowice",
+                    "odjazdy": [
+                        "05:12",
+                        "07:38",
+                        "13:14",
+                        "13:17",
+                        "16:00",
+                        "21:52",
+                        "22:54"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 29,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Os. Ślichowice",
+                    "odjazdy": [
+                        "05:32",
+                        "07:47",
+                        "14:40",
+                        "16:25"
+                    ]
+                }
+            ]
+        }
+    ]
+}

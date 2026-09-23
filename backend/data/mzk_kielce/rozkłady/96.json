@@ -1,0 +1,58 @@
+{
+    "stop_id": 96,
+    "linie": [
+        {
+            "linia": 33,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Suków Babie",
+                    "odjazdy": [
+                        "04:37",
+                        "05:41",
+                        "06:19",
+                        "07:16",
+                        "08:51",
+                        "11:13",
+                        "13:53",
+                        "16:02",
+                        "17:02",
+                        "18:28",
+                        "19:17",
+                        "20:22",
+                        "22:30"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 11,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "05:46",
+                        "05:51",
+                        "11:46"
+                    ]
+                },
+                {
+                    "kierunek": "Suków Babie",
+                    "odjazdy": [
+                        "11:18",
+                        "15:16",
+                        "15:57",
+                        "18:51"
+                    ]
+                },
+                {
+                    "kierunek": "Borków",
+                    "odjazdy": [
+                        "19:40"
+                    ]
+                }
+            ]
+        }
+    ]
+}

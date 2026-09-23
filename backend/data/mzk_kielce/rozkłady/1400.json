@@ -1,0 +1,21 @@
+{
+    "stop_id": 1400,
+    "linie": [
+        {
+            "linia": 41,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "05:54",
+                        "07:49",
+                        "15:11",
+                        "17:06",
+                        "20:39"
+                    ]
+                }
+            ]
+        }
+    ]
+}

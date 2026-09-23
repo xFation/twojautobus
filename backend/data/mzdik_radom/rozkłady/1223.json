@@ -1,0 +1,84 @@
+{
+    "stop_id": 1223,
+    "linie": [
+        {
+            "linia": 10,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "17:28"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 13,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "21:56"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 14,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "12:56",
+                        "13:11",
+                        "16:35",
+                        "21:17",
+                        "21:19",
+                        "22:33",
+                        "22:34",
+                        "22:52",
+                        "23:05",
+                        "23:07",
+                        "23:59",
+                        "24:01"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 18,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "07:54",
+                        "23:37",
+                        "23:47",
+                        "24:12"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 24,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "08:28",
+                        "09:11",
+                        "17:15",
+                        "17:43",
+                        "20:57",
+                        "23:06"
+                    ]
+                }
+            ]
+        }
+    ]
+}

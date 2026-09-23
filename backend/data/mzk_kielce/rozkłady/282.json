@@ -1,0 +1,20 @@
+{
+    "stop_id": 282,
+    "linie": [
+        {
+            "linia": 19,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Bolechowice",
+                    "odjazdy": [
+                        "13:36",
+                        "15:12",
+                        "16:36",
+                        "16:37"
+                    ]
+                }
+            ]
+        }
+    ]
+}

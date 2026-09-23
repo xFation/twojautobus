@@ -1,0 +1,46 @@
+{
+    "stop_id": 501,
+    "linie": [
+        {
+            "linia": 24,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Os. Michałów",
+                    "odjazdy": [
+                        "05:31",
+                        "11:35",
+                        "13:31",
+                        "15:14",
+                        "20:17"
+                    ]
+                },
+                {
+                    "kierunek": "Grzmucin",
+                    "odjazdy": [
+                        "06:18",
+                        "11:30",
+                        "13:27",
+                        "14:55",
+                        "16:35",
+                        "17:54",
+                        "20:02"
+                    ]
+                },
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "16:41"
+                    ]
+                },
+                {
+                    "kierunek": "Józefów \/ Szpital",
+                    "odjazdy": [
+                        "06:24",
+                        "17:58"
+                    ]
+                }
+            ]
+        }
+    ]
+}

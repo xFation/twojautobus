@@ -1,0 +1,29 @@
+{
+    "stop_id": 1199,
+    "linie": [
+        {
+            "linia": "T",
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Tokarnia",
+                    "odjazdy": [
+                        "10:28",
+                        "12:48",
+                        "15:08",
+                        "17:28"
+                    ]
+                },
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "10:35",
+                        "12:55",
+                        "15:15",
+                        "17:40"
+                    ]
+                }
+            ]
+        }
+    ]
+}

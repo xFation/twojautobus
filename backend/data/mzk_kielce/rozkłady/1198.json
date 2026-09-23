@@ -1,0 +1,21 @@
+{
+    "stop_id": 1198,
+    "linie": [
+        {
+            "linia": 12,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "06:33",
+                        "09:17",
+                        "15:10",
+                        "17:25",
+                        "19:33"
+                    ]
+                }
+            ]
+        }
+    ]
+}

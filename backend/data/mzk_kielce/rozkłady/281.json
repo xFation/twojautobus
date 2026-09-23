@@ -1,0 +1,20 @@
+{
+    "stop_id": 281,
+    "linie": [
+        {
+            "linia": 19,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Morcinka Działki",
+                    "odjazdy": [
+                        "06:41",
+                        "08:03",
+                        "08:52",
+                        "10:25"
+                    ]
+                }
+            ]
+        }
+    ]
+}

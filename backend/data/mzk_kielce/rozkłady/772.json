@@ -1,0 +1,27 @@
+{
+    "stop_id": 772,
+    "linie": [
+        {
+            "linia": 45,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "07:33",
+                        "08:47",
+                        "15:12",
+                        "19:35"
+                    ]
+                },
+                {
+                    "kierunek": "Radomice Ii",
+                    "odjazdy": [
+                        "13:48",
+                        "15:45"
+                    ]
+                }
+            ]
+        }
+    ]
+}

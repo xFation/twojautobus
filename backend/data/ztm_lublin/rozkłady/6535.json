@@ -1,0 +1,22 @@
+{
+    "stop_id": 6535,
+    "linie": [
+        {
+            "linia": "N3",
+            "kolor": "000000",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "23:50",
+                        "24:50",
+                        "25:50",
+                        "26:50",
+                        "27:50",
+                        "28:50"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "stop_id": 1304,
+    "linie": [
+        {
+            "linia": 12,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "05:30",
+                        "08:35"
+                    ]
+                },
+                {
+                    "kierunek": "Klonów",
+                    "odjazdy": [
+                        "16:46",
+                        "18:57"
+                    ]
+                }
+            ]
+        }
+    ]
+}

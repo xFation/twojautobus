@@ -1,0 +1,33 @@
+{
+    "stop_id": 1333,
+    "linie": [
+        {
+            "linia": 31,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "05:43",
+                        "06:47",
+                        "07:49",
+                        "09:47",
+                        "11:55",
+                        "17:20"
+                    ]
+                },
+                {
+                    "kierunek": "Chęciny Cmentarz",
+                    "odjazdy": [
+                        "06:18",
+                        "09:20",
+                        "11:28",
+                        "12:57",
+                        "15:45",
+                        "17:34"
+                    ]
+                }
+            ]
+        }
+    ]
+}

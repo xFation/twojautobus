@@ -1,0 +1,17 @@
+{
+    "stop_id": 914,
+    "linie": [
+        {
+            "linia": 38,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Ciekoty Żeromszczyzna",
+                    "odjazdy": [
+                        "23:32"
+                    ]
+                }
+            ]
+        }
+    ]
+}

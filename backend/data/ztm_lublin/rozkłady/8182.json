@@ -1,0 +1,39 @@
+{
+    "stop_id": 8182,
+    "linie": [
+        {
+            "linia": 17,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "04:49",
+                        "05:51",
+                        "06:23",
+                        "06:50",
+                        "08:38",
+                        "12:38",
+                        "15:24",
+                        "16:30",
+                        "17:40",
+                        "20:11",
+                        "22:25"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": 917,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "23:21"
+                    ]
+                }
+            ]
+        }
+    ]
+}

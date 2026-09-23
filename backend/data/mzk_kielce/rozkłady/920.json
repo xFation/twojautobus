@@ -1,0 +1,17 @@
+{
+    "stop_id": 920,
+    "linie": [
+        {
+            "linia": 38,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "23:44"
+                    ]
+                }
+            ]
+        }
+    ]
+}

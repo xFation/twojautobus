@@ -1,0 +1,21 @@
+{
+    "stop_id": 963,
+    "linie": [
+        {
+            "linia": 18,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Brynica Szkoła",
+                    "odjazdy": [
+                        "05:09",
+                        "06:30",
+                        "14:05",
+                        "15:40",
+                        "17:17"
+                    ]
+                }
+            ]
+        }
+    ]
+}

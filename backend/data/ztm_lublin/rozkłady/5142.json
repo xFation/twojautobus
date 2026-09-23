@@ -1,0 +1,43 @@
+{
+    "stop_id": 5142,
+    "linie": [
+        {
+            "linia": "Gaj",
+            "kolor": "4B7E47",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "09:43",
+                        "10:02",
+                        "17:30",
+                        "17:55",
+                        "18:20"
+                    ]
+                }
+            ]
+        },
+        {
+            "linia": "0GAJ",
+            "kolor": "4B7E47",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "09:43",
+                        "10:02",
+                        "10:10",
+                        "10:40",
+                        "11:10",
+                        "16:30",
+                        "17:00",
+                        "17:30",
+                        "17:55",
+                        "18:00",
+                        "18:20"
+                    ]
+                }
+            ]
+        }
+    ]
+}

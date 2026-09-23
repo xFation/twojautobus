@@ -1,0 +1,22 @@
+{
+    "stop_id": 5586,
+    "linie": [
+        {
+            "linia": "N2",
+            "kolor": "000000",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "23:58",
+                        "24:58",
+                        "25:58",
+                        "26:58",
+                        "27:58",
+                        "28:58"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "stop_id": 369,
+    "linie": [
+        {
+            "linia": 28,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Zagórska",
+                    "odjazdy": [
+                        "05:57",
+                        "08:14"
+                    ]
+                },
+                {
+                    "kierunek": "Mójcza",
+                    "odjazdy": [
+                        "13:37",
+                        "16:47"
+                    ]
+                }
+            ]
+        }
+    ]
+}

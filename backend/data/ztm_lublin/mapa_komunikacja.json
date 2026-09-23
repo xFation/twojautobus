@@ -1,0 +1,7925 @@
+{
+    "przystanki": [
+        {
+            "id": "0099",
+            "nazwa": "Zajezdnia Hutnicza",
+            "lat": 51.241831,
+            "lon": 22.595669
+        },
+        {
+            "id": "1001",
+            "nazwa": "Ogród Saski",
+            "lat": 51.247361,
+            "lon": 22.551403
+        },
+        {
+            "id": "1003",
+            "nazwa": "Ogród Saski",
+            "lat": 51.247697,
+            "lon": 22.550553
+        },
+        {
+            "id": "1012",
+            "nazwa": "Krakowskie Przedmieście",
+            "lat": 51.247642,
+            "lon": 22.552806
+        },
+        {
+            "id": "1014",
+            "nazwa": "Krakowskie Przedmieście",
+            "lat": 51.247642,
+            "lon": 22.553647
+        },
+        {
+            "id": "1021",
+            "nazwa": "Plac Litewski",
+            "lat": 51.249351,
+            "lon": 22.557959
+        },
+        {
+            "id": "1022",
+            "nazwa": "Plac Litewski",
+            "lat": 51.249044,
+            "lon": 22.558136
+        },
+        {
+            "id": "1031",
+            "nazwa": "Brama Krakowska",
+            "lat": 51.248384,
+            "lon": 22.566163
+        },
+        {
+            "id": "1032",
+            "nazwa": "Brama Krakowska",
+            "lat": 51.2468,
+            "lon": 22.566553
+        },
+        {
+            "id": "1034",
+            "nazwa": "Brama Krakowska",
+            "lat": 51.246553,
+            "lon": 22.567022
+        },
+        {
+            "id": "1041",
+            "nazwa": "Plac Wolności",
+            "lat": 51.2468,
+            "lon": 22.562906
+        },
+        {
+            "id": "1042",
+            "nazwa": "Plac Wolności",
+            "lat": 51.246813,
+            "lon": 22.563109
+        },
+        {
+            "id": "1052",
+            "nazwa": "Mościckiego",
+            "lat": 51.245244,
+            "lon": 22.559453
+        },
+        {
+            "id": "1061",
+            "nazwa": "Konopnicka",
+            "lat": 51.243433,
+            "lon": 22.556733
+        },
+        {
+            "id": "1071",
+            "nazwa": "Lipowa - cmentarz",
+            "lat": 51.244176,
+            "lon": 22.55248
+        },
+        {
+            "id": "1072",
+            "nazwa": "Lipowa - cmentarz",
+            "lat": 51.243994,
+            "lon": 22.552806
+        },
+        {
+            "id": "1081",
+            "nazwa": "Okopowa",
+            "lat": 51.245397,
+            "lon": 22.55505
+        },
+        {
+            "id": "1082",
+            "nazwa": "Okopowa",
+            "lat": 51.24537,
+            "lon": 22.555525
+        },
+        {
+            "id": "1101",
+            "nazwa": "Kosmowskiej",
+            "lat": 51.259258,
+            "lon": 22.538383
+        },
+        {
+            "id": "1102",
+            "nazwa": "Kosmowskiej",
+            "lat": 51.25821,
+            "lon": 22.537908
+        },
+        {
+            "id": "1111",
+            "nazwa": "Braci Wieniawskich",
+            "lat": 51.262638,
+            "lon": 22.541664
+        },
+        {
+            "id": "1112",
+            "nazwa": "Braci Wieniawskich",
+            "lat": 51.260942,
+            "lon": 22.540628
+        },
+        {
+            "id": "1121",
+            "nazwa": "Kaprysowa",
+            "lat": 51.26541,
+            "lon": 22.542095
+        },
+        {
+            "id": "1122",
+            "nazwa": "Kaprysowa",
+            "lat": 51.264034,
+            "lon": 22.541534
+        },
+        {
+            "id": "1131",
+            "nazwa": "Harnasie",
+            "lat": 51.272278,
+            "lon": 22.542872
+        },
+        {
+            "id": "1132",
+            "nazwa": "Harnasie",
+            "lat": 51.271837,
+            "lon": 22.543314
+        },
+        {
+            "id": "1141",
+            "nazwa": "Os. Szymanowskiego",
+            "lat": 51.275925,
+            "lon": 22.543433
+        },
+        {
+            "id": "1142",
+            "nazwa": "Os. Szymanowskiego",
+            "lat": 51.274803,
+            "lon": 22.542872
+        },
+        {
+            "id": "1151",
+            "nazwa": "Karkonoska",
+            "lat": 51.280962,
+            "lon": 22.544911
+        },
+        {
+            "id": "1152",
+            "nazwa": "Karkonoska",
+            "lat": 51.28014,
+            "lon": 22.54462
+        },
+        {
+            "id": "1161",
+            "nazwa": "Koncertowa",
+            "lat": 51.28253,
+            "lon": 22.545362
+        },
+        {
+            "id": "1162",
+            "nazwa": "Koncertowa",
+            "lat": 51.282478,
+            "lon": 22.545224
+        },
+        {
+            "id": "1171",
+            "nazwa": "Dolna 3 Maja",
+            "lat": 51.25256,
+            "lon": 22.560602
+        },
+        {
+            "id": "1181",
+            "nazwa": "Zelwerowicza",
+            "lat": 51.27773,
+            "lon": 22.544106
+        },
+        {
+            "id": "1182",
+            "nazwa": "Zelwerowicza",
+            "lat": 51.277045,
+            "lon": 22.543581
+        },
+        {
+            "id": "1183",
+            "nazwa": "Zelwerowicza",
+            "lat": 51.277529,
+            "lon": 22.542885
+        },
+        {
+            "id": "1184",
+            "nazwa": "Zelwerowicza",
+            "lat": 51.27726,
+            "lon": 22.544653
+        },
+        {
+            "id": "1201",
+            "nazwa": "Puławska",
+            "lat": 51.254255,
+            "lon": 22.532553
+        },
+        {
+            "id": "1202",
+            "nazwa": "Puławska",
+            "lat": 51.254336,
+            "lon": 22.531786
+        },
+        {
+            "id": "1211",
+            "nazwa": "Głowackiego",
+            "lat": 51.252972,
+            "lon": 22.537215
+        },
+        {
+            "id": "1212",
+            "nazwa": "Głowackiego",
+            "lat": 51.2531,
+            "lon": 22.53657
+        },
+        {
+            "id": "1221",
+            "nazwa": "Galeria Labirynt",
+            "lat": 51.252031,
+            "lon": 22.541125
+        },
+        {
+            "id": "1222",
+            "nazwa": "Galeria Labirynt",
+            "lat": 51.251398,
+            "lon": 22.541232
+        },
+        {
+            "id": "1224",
+            "nazwa": "Galeria Labirynt",
+            "lat": 51.25129,
+            "lon": 22.54006
+        },
+        {
+            "id": "1232",
+            "nazwa": "Wieniawa - stadion",
+            "lat": 51.251122,
+            "lon": 22.544275
+        },
+        {
+            "id": "1242",
+            "nazwa": "Lubomelska",
+            "lat": 51.252806,
+            "lon": 22.554489
+        },
+        {
+            "id": "1251",
+            "nazwa": "Czechowska",
+            "lat": 51.25095,
+            "lon": 22.548108
+        },
+        {
+            "id": "1252",
+            "nazwa": "Czechowska",
+            "lat": 51.251978,
+            "lon": 22.550876
+        },
+        {
+            "id": "1262",
+            "nazwa": "Szewska",
+            "lat": 51.251083,
+            "lon": 22.566478
+        },
+        {
+            "id": "1301",
+            "nazwa": "Paganiniego",
+            "lat": 51.254208,
+            "lon": 22.552525
+        },
+        {
+            "id": "1302",
+            "nazwa": "Paganiniego",
+            "lat": 51.253748,
+            "lon": 22.550036
+        },
+        {
+            "id": "1303",
+            "nazwa": "Paganiniego",
+            "lat": 51.253822,
+            "lon": 22.550615
+        },
+        {
+            "id": "1304",
+            "nazwa": "Paganiniego",
+            "lat": 51.254605,
+            "lon": 22.55207
+        },
+        {
+            "id": "1311",
+            "nazwa": "Oratoryjna",
+            "lat": 51.258897,
+            "lon": 22.553689
+        },
+        {
+            "id": "1312",
+            "nazwa": "Oratoryjna",
+            "lat": 51.258998,
+            "lon": 22.553258
+        },
+        {
+            "id": "1321",
+            "nazwa": "Orfeusz",
+            "lat": 51.263186,
+            "lon": 22.551964
+        },
+        {
+            "id": "1322",
+            "nazwa": "Orfeusz",
+            "lat": 51.26183,
+            "lon": 22.551791
+        },
+        {
+            "id": "1323",
+            "nazwa": "Orfeusz",
+            "lat": 51.262412,
+            "lon": 22.553292
+        },
+        {
+            "id": "1324",
+            "nazwa": "Orfeusz",
+            "lat": 51.262558,
+            "lon": 22.55042
+        },
+        {
+            "id": "1332",
+            "nazwa": "Skrzypcowa",
+            "lat": 51.265204,
+            "lon": 22.550431
+        },
+        {
+            "id": "1341",
+            "nazwa": "Żelazowej Woli",
+            "lat": 51.267102,
+            "lon": 22.546326
+        },
+        {
+            "id": "1351",
+            "nazwa": "Rondo Kilara",
+            "lat": 51.2678,
+            "lon": 22.54298
+        },
+        {
+            "id": "1352",
+            "nazwa": "Rondo Kilara",
+            "lat": 51.267111,
+            "lon": 22.542421
+        },
+        {
+            "id": "1354",
+            "nazwa": "Rondo Kilara",
+            "lat": 51.267239,
+            "lon": 22.543913
+        },
+        {
+            "id": "1401",
+            "nazwa": "Rogowskiego",
+            "lat": 51.256733,
+            "lon": 22.540347
+        },
+        {
+            "id": "1402",
+            "nazwa": "Rogowskiego",
+            "lat": 51.256861,
+            "lon": 22.539441
+        },
+        {
+            "id": "1411",
+            "nazwa": "Kiepury",
+            "lat": 51.258417,
+            "lon": 22.545787
+        },
+        {
+            "id": "1412",
+            "nazwa": "Kiepury",
+            "lat": 51.258677,
+            "lon": 22.545528
+        },
+        {
+            "id": "1421",
+            "nazwa": "Os. Lipińskiego",
+            "lat": 51.257842,
+            "lon": 22.546099
+        },
+        {
+            "id": "1422",
+            "nazwa": "Os. Lipińskiego",
+            "lat": 51.257355,
+            "lon": 22.545646
+        },
+        {
+            "id": "1492",
+            "nazwa": "Szpital Dziecięcy",
+            "lat": 51.260814,
+            "lon": 22.559116
+        },
+        {
+            "id": "1501",
+            "nazwa": "Organowa",
+            "lat": 51.257701,
+            "lon": 22.558567
+        },
+        {
+            "id": "1502",
+            "nazwa": "Organowa",
+            "lat": 51.258487,
+            "lon": 22.558329
+        },
+        {
+            "id": "1511",
+            "nazwa": "Rondo Kamińskiego",
+            "lat": 51.263467,
+            "lon": 22.560381
+        },
+        {
+            "id": "1512",
+            "nazwa": "Rondo Kamińskiego",
+            "lat": 51.263047,
+            "lon": 22.55954
+        },
+        {
+            "id": "1514",
+            "nazwa": "Rondo Kamińskiego",
+            "lat": 51.262344,
+            "lon": 22.558136
+        },
+        {
+            "id": "1521",
+            "nazwa": "Młodej Polski",
+            "lat": 51.266005,
+            "lon": 22.558299
+        },
+        {
+            "id": "1522",
+            "nazwa": "Młodej Polski",
+            "lat": 51.266947,
+            "lon": 22.557856
+        },
+        {
+            "id": "1531",
+            "nazwa": "Śliwińskiego",
+            "lat": 51.273726,
+            "lon": 22.556355
+        },
+        {
+            "id": "1532",
+            "nazwa": "Śliwińskiego",
+            "lat": 51.272987,
+            "lon": 22.556603
+        },
+        {
+            "id": "1541",
+            "nazwa": "Paderewskiego",
+            "lat": 51.276649,
+            "lon": 22.553866
+        },
+        {
+            "id": "1542",
+            "nazwa": "Paderewskiego",
+            "lat": 51.276212,
+            "lon": 22.553873
+        },
+        {
+            "id": "1544",
+            "nazwa": "Paderewskiego",
+            "lat": 51.276367,
+            "lon": 22.554449
+        },
+        {
+            "id": "1545",
+            "nazwa": "Paderewskiego",
+            "lat": 51.277736,
+            "lon": 22.554009
+        },
+        {
+            "id": "1546",
+            "nazwa": "Paderewskiego",
+            "lat": 51.27683,
+            "lon": 22.55574
+        },
+        {
+            "id": "1551",
+            "nazwa": "Pienińska NŻ",
+            "lat": 51.280709,
+            "lon": 22.553129
+        },
+        {
+            "id": "1552",
+            "nazwa": "Pienińska NŻ",
+            "lat": 51.279152,
+            "lon": 22.553194
+        },
+        {
+            "id": "1561",
+            "nazwa": "Choiny",
+            "lat": 51.284259,
+            "lon": 22.550769
+        },
+        {
+            "id": "1562",
+            "nazwa": "Choiny",
+            "lat": 51.284387,
+            "lon": 22.550393
+        },
+        {
+            "id": "1572",
+            "nazwa": "Kosynierów",
+            "lat": 51.276353,
+            "lon": 22.577076
+        },
+        {
+            "id": "1582",
+            "nazwa": "Laurowa",
+            "lat": 51.27803,
+            "lon": 22.58377
+        },
+        {
+            "id": "1591",
+            "nazwa": "Narcyzowa",
+            "lat": 51.278849,
+            "lon": 22.595762
+        },
+        {
+            "id": "1592",
+            "nazwa": "Narcyzowa",
+            "lat": 51.278915,
+            "lon": 22.594598
+        },
+        {
+            "id": "1601",
+            "nazwa": "Żywnego",
+            "lat": 51.268417,
+            "lon": 22.553465
+        },
+        {
+            "id": "1602",
+            "nazwa": "Żywnego",
+            "lat": 51.26797,
+            "lon": 22.551467
+        },
+        {
+            "id": "1611",
+            "nazwa": "Akademia W. Pola",
+            "lat": 51.270047,
+            "lon": 22.558545
+        },
+        {
+            "id": "1612",
+            "nazwa": "Akademia W. Pola",
+            "lat": 51.269339,
+            "lon": 22.559356
+        },
+        {
+            "id": "1621",
+            "nazwa": "Ceramiczna NŻ",
+            "lat": 51.270033,
+            "lon": 22.562625
+        },
+        {
+            "id": "1622",
+            "nazwa": "Ceramiczna NŻ",
+            "lat": 51.269994,
+            "lon": 22.564932
+        },
+        {
+            "id": "1631",
+            "nazwa": "WSPA",
+            "lat": 51.269914,
+            "lon": 22.568456
+        },
+        {
+            "id": "1632",
+            "nazwa": "WSPA",
+            "lat": 51.269808,
+            "lon": 22.568943
+        },
+        {
+            "id": "1641",
+            "nazwa": "Rapackiego",
+            "lat": 51.2734,
+            "lon": 22.566667
+        },
+        {
+            "id": "1642",
+            "nazwa": "Rapackiego",
+            "lat": 51.273357,
+            "lon": 22.567285
+        },
+        {
+            "id": "1651",
+            "nazwa": "Bursaki",
+            "lat": 51.271441,
+            "lon": 22.570162
+        },
+        {
+            "id": "1652",
+            "nazwa": "Bursaki",
+            "lat": 51.272819,
+            "lon": 22.570158
+        },
+        {
+            "id": "1661",
+            "nazwa": "Bluszczowa",
+            "lat": 51.278455,
+            "lon": 22.587528
+        },
+        {
+            "id": "1662",
+            "nazwa": "Bluszczowa",
+            "lat": 51.278648,
+            "lon": 22.58906
+        },
+        {
+            "id": "1671",
+            "nazwa": "Strzeszewskiego",
+            "lat": 51.275961,
+            "lon": 22.580375
+        },
+        {
+            "id": "1672",
+            "nazwa": "Strzeszewskiego",
+            "lat": 51.274904,
+            "lon": 22.579865
+        },
+        {
+            "id": "1681",
+            "nazwa": "Goździkowa",
+            "lat": 51.277777,
+            "lon": 22.581947
+        },
+        {
+            "id": "1682",
+            "nazwa": "Goździkowa",
+            "lat": 51.277052,
+            "lon": 22.580788
+        },
+        {
+            "id": "1691",
+            "nazwa": "Szeligowskiego NŻ",
+            "lat": 51.254315,
+            "lon": 22.556626
+        },
+        {
+            "id": "1692",
+            "nazwa": "Zajezdnia Stefczyka",
+            "lat": 51.274403,
+            "lon": 22.563383
+        },
+        {
+            "id": "1693",
+            "nazwa": "Zajezdnia Stefczyka",
+            "lat": 51.274722,
+            "lon": 22.563287
+        },
+        {
+            "id": "1701",
+            "nazwa": "Prusa",
+            "lat": 51.257335,
+            "lon": 22.56555
+        },
+        {
+            "id": "1702",
+            "nazwa": "Prusa",
+            "lat": 51.25529,
+            "lon": 22.563563
+        },
+        {
+            "id": "1703",
+            "nazwa": "Prusa",
+            "lat": 51.255552,
+            "lon": 22.563013
+        },
+        {
+            "id": "1711",
+            "nazwa": "Jaczewskiego",
+            "lat": 51.259325,
+            "lon": 22.567583
+        },
+        {
+            "id": "1712",
+            "nazwa": "Jaczewskiego",
+            "lat": 51.258832,
+            "lon": 22.568781
+        },
+        {
+            "id": "1721",
+            "nazwa": "Chodźki - szpital",
+            "lat": 51.260982,
+            "lon": 22.564825
+        },
+        {
+            "id": "1722",
+            "nazwa": "Chodźki - szpital",
+            "lat": 51.260375,
+            "lon": 22.565561
+        },
+        {
+            "id": "1723",
+            "nazwa": "Chodźki - szpital",
+            "lat": 51.260941,
+            "lon": 22.564251
+        },
+        {
+            "id": "1725",
+            "nazwa": "Chodźki - szpital",
+            "lat": 51.260762,
+            "lon": 22.56426
+        },
+        {
+            "id": "1732",
+            "nazwa": "Wydział Farmaceutyczny",
+            "lat": 51.262344,
+            "lon": 22.563467
+        },
+        {
+            "id": "1761",
+            "nazwa": "Węglarza",
+            "lat": 51.269527,
+            "lon": 22.582938
+        },
+        {
+            "id": "1762",
+            "nazwa": "Węglarza",
+            "lat": 51.269967,
+            "lon": 22.581589
+        },
+        {
+            "id": "1763",
+            "nazwa": "Węglarza",
+            "lat": 51.270279,
+            "lon": 22.58258
+        },
+        {
+            "id": "1764",
+            "nazwa": "Węglarza",
+            "lat": 51.269262,
+            "lon": 22.582167
+        },
+        {
+            "id": "1771",
+            "nazwa": "Poziomkowa",
+            "lat": 51.2695,
+            "lon": 22.58985
+        },
+        {
+            "id": "1772",
+            "nazwa": "Poziomkowa",
+            "lat": 51.27008,
+            "lon": 22.58851
+        },
+        {
+            "id": "1782",
+            "nazwa": "Nasturcjowa",
+            "lat": 51.26869,
+            "lon": 22.59246
+        },
+        {
+            "id": "1783",
+            "nazwa": "Nasturcjowa",
+            "lat": 51.26911,
+            "lon": 22.59347
+        },
+        {
+            "id": "1801",
+            "nazwa": "Probostwo",
+            "lat": 51.252204,
+            "lon": 22.568414
+        },
+        {
+            "id": "1802",
+            "nazwa": "Probostwo",
+            "lat": 51.252806,
+            "lon": 22.568631
+        },
+        {
+            "id": "1811",
+            "nazwa": "Czwartek",
+            "lat": 51.255331,
+            "lon": 22.570314
+        },
+        {
+            "id": "1812",
+            "nazwa": "Czwartek",
+            "lat": 51.254462,
+            "lon": 22.569687
+        },
+        {
+            "id": "1821",
+            "nazwa": "Unicka",
+            "lat": 51.258887,
+            "lon": 22.572446
+        },
+        {
+            "id": "1822",
+            "nazwa": "Unicka",
+            "lat": 51.258203,
+            "lon": 22.571963
+        },
+        {
+            "id": "1823",
+            "nazwa": "Unicka",
+            "lat": 51.258845,
+            "lon": 22.571465
+        },
+        {
+            "id": "1824",
+            "nazwa": "Unicka",
+            "lat": 51.258236,
+            "lon": 22.572677
+        },
+        {
+            "id": "1825",
+            "nazwa": "Unicka",
+            "lat": 51.258148,
+            "lon": 22.573149
+        },
+        {
+            "id": "1832",
+            "nazwa": "Sapiehy",
+            "lat": 51.260381,
+            "lon": 22.572278
+        },
+        {
+            "id": "1841",
+            "nazwa": "Morzyckiej",
+            "lat": 51.262965,
+            "lon": 22.572751
+        },
+        {
+            "id": "1851",
+            "nazwa": "Olimp",
+            "lat": 51.265711,
+            "lon": 22.572839
+        },
+        {
+            "id": "1852",
+            "nazwa": "Olimp",
+            "lat": 51.266947,
+            "lon": 22.572741
+        },
+        {
+            "id": "1861",
+            "nazwa": "Związkowa",
+            "lat": 51.270033,
+            "lon": 22.5734
+        },
+        {
+            "id": "1862",
+            "nazwa": "Związkowa",
+            "lat": 51.269232,
+            "lon": 22.572989
+        },
+        {
+            "id": "1863",
+            "nazwa": "Związkowa",
+            "lat": 51.269753,
+            "lon": 22.572558
+        },
+        {
+            "id": "1865",
+            "nazwa": "Związkowa",
+            "lat": 51.269689,
+            "lon": 22.574754
+        },
+        {
+            "id": "1871",
+            "nazwa": "Dożynkowa",
+            "lat": 51.275946,
+            "lon": 22.574004
+        },
+        {
+            "id": "1872",
+            "nazwa": "Dożynkowa",
+            "lat": 51.27501,
+            "lon": 22.573572
+        },
+        {
+            "id": "1873",
+            "nazwa": "Dożynkowa",
+            "lat": 51.275626,
+            "lon": 22.575037
+        },
+        {
+            "id": "1875",
+            "nazwa": "Dożynkowa",
+            "lat": 51.275677,
+            "lon": 22.57276
+        },
+        {
+            "id": "1881",
+            "nazwa": "IKEA",
+            "lat": 51.281099,
+            "lon": 22.575169
+        },
+        {
+            "id": "1882",
+            "nazwa": "IKEA",
+            "lat": 51.28017,
+            "lon": 22.574536
+        },
+        {
+            "id": "1883",
+            "nazwa": "IKEA",
+            "lat": 51.28058,
+            "lon": 22.57407
+        },
+        {
+            "id": "1891",
+            "nazwa": "Elizówka - giełda",
+            "lat": 51.287956,
+            "lon": 22.57968
+        },
+        {
+            "id": "1892",
+            "nazwa": "Elizówka - giełda",
+            "lat": 51.288097,
+            "lon": 22.579401
+        },
+        {
+            "id": "1893",
+            "nazwa": "Elizówka - giełda",
+            "lat": 51.287608,
+            "lon": 22.579865
+        },
+        {
+            "id": "1894",
+            "nazwa": "Elizówka - giełda",
+            "lat": 51.289218,
+            "lon": 22.577875
+        },
+        {
+            "id": "1895",
+            "nazwa": "Elizówka - giełda",
+            "lat": 51.288259,
+            "lon": 22.578213
+        },
+        {
+            "id": "1901",
+            "nazwa": "Muzeum Narodowe - Zamek",
+            "lat": 51.251497,
+            "lon": 22.569494
+        },
+        {
+            "id": "1902",
+            "nazwa": "Muzeum Narodowe - Zamek",
+            "lat": 51.251557,
+            "lon": 22.571047
+        },
+        {
+            "id": "1911",
+            "nazwa": "Ruska",
+            "lat": 51.252879,
+            "lon": 22.571986
+        },
+        {
+            "id": "1912",
+            "nazwa": "Ruska",
+            "lat": 51.25296,
+            "lon": 22.57191
+        },
+        {
+            "id": "1921",
+            "nazwa": "Plac Singera",
+            "lat": 51.25296,
+            "lon": 22.576692
+        },
+        {
+            "id": "1922",
+            "nazwa": "Plac Singera",
+            "lat": 51.253234,
+            "lon": 22.576497
+        },
+        {
+            "id": "1923",
+            "nazwa": "Plac Singera",
+            "lat": 51.253468,
+            "lon": 22.575445
+        },
+        {
+            "id": "1931",
+            "nazwa": "Walecznych",
+            "lat": 51.255621,
+            "lon": 22.575278
+        },
+        {
+            "id": "1932",
+            "nazwa": "Walecznych",
+            "lat": 51.255472,
+            "lon": 22.575083
+        },
+        {
+            "id": "1941",
+            "nazwa": "Szwedzka NŻ",
+            "lat": 51.262412,
+            "lon": 22.571479
+        },
+        {
+            "id": "1942",
+            "nazwa": "Szwedzka NŻ",
+            "lat": 51.262064,
+            "lon": 22.571436
+        },
+        {
+            "id": "1951",
+            "nazwa": "Rondo Dmowskiego",
+            "lat": 51.249886,
+            "lon": 22.574442
+        },
+        {
+            "id": "1953",
+            "nazwa": "Rondo Dmowskiego",
+            "lat": 51.250742,
+            "lon": 22.576228
+        },
+        {
+            "id": "1961",
+            "nazwa": "Stefczyka NŻ",
+            "lat": 51.275983,
+            "lon": 22.563194
+        },
+        {
+            "id": "1962",
+            "nazwa": "Stefczyka NŻ",
+            "lat": 51.275704,
+            "lon": 22.564616
+        },
+        {
+            "id": "1971",
+            "nazwa": "Bursaki II NŻ",
+            "lat": 51.27577,
+            "lon": 22.56977
+        },
+        {
+            "id": "1972",
+            "nazwa": "Bursaki II NŻ",
+            "lat": 51.275517,
+            "lon": 22.571014
+        },
+        {
+            "id": "1982",
+            "nazwa": "IKEA wiadukt NŻ",
+            "lat": 51.283015,
+            "lon": 22.575483
+        },
+        {
+            "id": "1991",
+            "nazwa": "Nasutowska IKEA NŻ",
+            "lat": 51.28137,
+            "lon": 22.56844
+        },
+        {
+            "id": "1992",
+            "nazwa": "Nasutowska IKEA NŻ",
+            "lat": 51.28084,
+            "lon": 22.570209
+        },
+        {
+            "id": "2001",
+            "nazwa": "Kupiecka IKEA",
+            "lat": 51.28527,
+            "lon": 22.56879
+        },
+        {
+            "id": "2002",
+            "nazwa": "Kupiecka IKEA",
+            "lat": 51.28527,
+            "lon": 22.56878
+        },
+        {
+            "id": "2003",
+            "nazwa": "Kupiecka IKEA",
+            "lat": 51.28527,
+            "lon": 22.5689
+        },
+        {
+            "id": "2004",
+            "nazwa": "Kupiecka IKEA",
+            "lat": 51.28527,
+            "lon": 22.56889
+        },
+        {
+            "id": "2101",
+            "nazwa": "Krzemieniecka",
+            "lat": 51.255658,
+            "lon": 22.580943
+        },
+        {
+            "id": "2102",
+            "nazwa": "Krzemieniecka",
+            "lat": 51.255472,
+            "lon": 22.57981
+        },
+        {
+            "id": "2111",
+            "nazwa": "Rondo Berbeckiego",
+            "lat": 51.257577,
+            "lon": 22.58424
+        },
+        {
+            "id": "2112",
+            "nazwa": "Rondo Berbeckiego",
+            "lat": 51.257762,
+            "lon": 22.584109
+        },
+        {
+            "id": "2114",
+            "nazwa": "Rondo Berbeckiego",
+            "lat": 51.25881,
+            "lon": 22.58335
+        },
+        {
+            "id": "2115",
+            "nazwa": "Rondo Berbeckiego",
+            "lat": 51.258652,
+            "lon": 22.583081
+        },
+        {
+            "id": "2121",
+            "nazwa": "Kleeberga",
+            "lat": 51.257515,
+            "lon": 22.589191
+        },
+        {
+            "id": "2122",
+            "nazwa": "Kleeberga",
+            "lat": 51.257168,
+            "lon": 22.590553
+        },
+        {
+            "id": "2131",
+            "nazwa": "Koryznowej",
+            "lat": 51.260278,
+            "lon": 22.586026
+        },
+        {
+            "id": "2132",
+            "nazwa": "Koryznowej",
+            "lat": 51.260266,
+            "lon": 22.585953
+        },
+        {
+            "id": "2141",
+            "nazwa": "Andersa - cmentarz NŻ",
+            "lat": 51.259258,
+            "lon": 22.579853
+        },
+        {
+            "id": "2142",
+            "nazwa": "Andersa - cmentarz NŻ",
+            "lat": 51.259799,
+            "lon": 22.578471
+        },
+        {
+            "id": "2151",
+            "nazwa": "Walecznych - cmentarz",
+            "lat": 51.263112,
+            "lon": 22.580825
+        },
+        {
+            "id": "2152",
+            "nazwa": "Walecznych - cmentarz",
+            "lat": 51.263193,
+            "lon": 22.580729
+        },
+        {
+            "id": "2161",
+            "nazwa": "Ustronie",
+            "lat": 51.264255,
+            "lon": 22.584477
+        },
+        {
+            "id": "2162",
+            "nazwa": "Ustronie",
+            "lat": 51.264055,
+            "lon": 22.585578
+        },
+        {
+            "id": "2171",
+            "nazwa": "Trześniowska",
+            "lat": 51.262124,
+            "lon": 22.589225
+        },
+        {
+            "id": "2172",
+            "nazwa": "Trześniowska",
+            "lat": 51.262198,
+            "lon": 22.589268
+        },
+        {
+            "id": "2181",
+            "nazwa": "Daszyńskiego",
+            "lat": 51.262187,
+            "lon": 22.598668
+        },
+        {
+            "id": "2182",
+            "nazwa": "Daszyńskiego",
+            "lat": 51.262224,
+            "lon": 22.598494
+        },
+        {
+            "id": "2191",
+            "nazwa": "Niepodległości",
+            "lat": 51.258021,
+            "lon": 22.593597
+        },
+        {
+            "id": "2192",
+            "nazwa": "Niepodległości",
+            "lat": 51.257736,
+            "lon": 22.594005
+        },
+        {
+            "id": "2211",
+            "nazwa": "Targ Pod Zamkiem NŻ",
+            "lat": 51.245952,
+            "lon": 22.573559
+        },
+        {
+            "id": "2212",
+            "nazwa": "Targ Pod Zamkiem NŻ",
+            "lat": 51.247388,
+            "lon": 22.574372
+        },
+        {
+            "id": "2222",
+            "nazwa": "Stolarska NŻ",
+            "lat": 51.243312,
+            "lon": 22.573464
+        },
+        {
+            "id": "2231",
+            "nazwa": "Zamojska",
+            "lat": 51.242051,
+            "lon": 22.568931
+        },
+        {
+            "id": "2232",
+            "nazwa": "Zamojska",
+            "lat": 51.24155,
+            "lon": 22.569406
+        },
+        {
+            "id": "2261",
+            "nazwa": "Kasztanowa",
+            "lat": 51.26123,
+            "lon": 22.593684
+        },
+        {
+            "id": "2262",
+            "nazwa": "Kasztanowa",
+            "lat": 51.261317,
+            "lon": 22.593684
+        },
+        {
+            "id": "2301",
+            "nazwa": "Turystyczna Leclerc",
+            "lat": 51.251544,
+            "lon": 22.597879
+        },
+        {
+            "id": "2302",
+            "nazwa": "Turystyczna Leclerc",
+            "lat": 51.251757,
+            "lon": 22.597869
+        },
+        {
+            "id": "2311",
+            "nazwa": "Turystyczna",
+            "lat": 51.254525,
+            "lon": 22.604322
+        },
+        {
+            "id": "2312",
+            "nazwa": "Turystyczna",
+            "lat": 51.253604,
+            "lon": 22.60206
+        },
+        {
+            "id": "2313",
+            "nazwa": "Turystyczna",
+            "lat": 51.254047,
+            "lon": 22.603255
+        },
+        {
+            "id": "2314",
+            "nazwa": "Turystyczna",
+            "lat": 51.254234,
+            "lon": 22.603652
+        },
+        {
+            "id": "2321",
+            "nazwa": "Zadębie PKP NŻ",
+            "lat": 51.25792,
+            "lon": 22.61198
+        },
+        {
+            "id": "2322",
+            "nazwa": "Zadębie PKP NŻ",
+            "lat": 51.258717,
+            "lon": 22.613445
+        },
+        {
+            "id": "2331",
+            "nazwa": "Kijańska NŻ",
+            "lat": 51.260542,
+            "lon": 22.621329
+        },
+        {
+            "id": "2332",
+            "nazwa": "Kijańska NŻ",
+            "lat": 51.260854,
+            "lon": 22.622235
+        },
+        {
+            "id": "2341",
+            "nazwa": "Łagiewnicka",
+            "lat": 51.261503,
+            "lon": 22.625364
+        },
+        {
+            "id": "2351",
+            "nazwa": "Kasprowicza - Wólka",
+            "lat": 51.262906,
+            "lon": 22.629292
+        },
+        {
+            "id": "2352",
+            "nazwa": "Kasprowicza - Wólka",
+            "lat": 51.263747,
+            "lon": 22.630694
+        },
+        {
+            "id": "2361",
+            "nazwa": "Zabytkowa",
+            "lat": 51.273281,
+            "lon": 22.630273
+        },
+        {
+            "id": "2362",
+            "nazwa": "Zabytkowa",
+            "lat": 51.2732,
+            "lon": 22.630262
+        },
+        {
+            "id": "2371",
+            "nazwa": "Lipeckiego NŻ",
+            "lat": 51.281042,
+            "lon": 22.626064
+        },
+        {
+            "id": "2372",
+            "nazwa": "Lipeckiego NŻ",
+            "lat": 51.280782,
+            "lon": 22.62627
+        },
+        {
+            "id": "2381",
+            "nazwa": "Łysakowska NŻ",
+            "lat": 51.284792,
+            "lon": 22.624246
+        },
+        {
+            "id": "2382",
+            "nazwa": "Łysakowska NŻ",
+            "lat": 51.283894,
+            "lon": 22.624803
+        },
+        {
+            "id": "2391",
+            "nazwa": "Rudnik PKP NŻ",
+            "lat": 51.289128,
+            "lon": 22.625745
+        },
+        {
+            "id": "2392",
+            "nazwa": "Rudnik PKP NŻ",
+            "lat": 51.28835,
+            "lon": 22.624501
+        },
+        {
+            "id": "2451",
+            "nazwa": "Outlet Center NŻ",
+            "lat": 51.246491,
+            "lon": 22.614096
+        },
+        {
+            "id": "2452",
+            "nazwa": "Outlet Center NŻ",
+            "lat": 51.24676,
+            "lon": 22.61409
+        },
+        {
+            "id": "2471",
+            "nazwa": "Kasprowicza - szkoła",
+            "lat": 51.26265,
+            "lon": 22.63212
+        },
+        {
+            "id": "2472",
+            "nazwa": "Kasprowicza - szkoła",
+            "lat": 51.26177,
+            "lon": 22.63275
+        },
+        {
+            "id": "2481",
+            "nazwa": "Kasprowicza - Zadębie NŻ",
+            "lat": 51.25697,
+            "lon": 22.63402
+        },
+        {
+            "id": "2482",
+            "nazwa": "Kasprowicza - Zadębie NŻ",
+            "lat": 51.25588,
+            "lon": 22.63428
+        },
+        {
+            "id": "2491",
+            "nazwa": "Dziubińskiej NŻ",
+            "lat": 51.25149,
+            "lon": 22.63541
+        },
+        {
+            "id": "2492",
+            "nazwa": "Dziubińskiej NŻ",
+            "lat": 51.25237,
+            "lon": 22.63515
+        },
+        {
+            "id": "2501",
+            "nazwa": "Tatarska",
+            "lat": 51.25175,
+            "lon": 22.585567
+        },
+        {
+            "id": "2502",
+            "nazwa": "Tatarska",
+            "lat": 51.251683,
+            "lon": 22.5867
+        },
+        {
+            "id": "2511",
+            "nazwa": "Kalinowszczyzna",
+            "lat": 51.252018,
+            "lon": 22.591459
+        },
+        {
+            "id": "2512",
+            "nazwa": "Kalinowszczyzna",
+            "lat": 51.253407,
+            "lon": 22.594157
+        },
+        {
+            "id": "2513",
+            "nazwa": "Kalinowszczyzna",
+            "lat": 51.25338,
+            "lon": 22.593821
+        },
+        {
+            "id": "2514",
+            "nazwa": "Kalinowszczyzna",
+            "lat": 51.252177,
+            "lon": 22.592333
+        },
+        {
+            "id": "2521",
+            "nazwa": "Montażowa",
+            "lat": 51.248764,
+            "lon": 22.600842
+        },
+        {
+            "id": "2522",
+            "nazwa": "Montażowa",
+            "lat": 51.248764,
+            "lon": 22.601964
+        },
+        {
+            "id": "2531",
+            "nazwa": "Mełgiewska WSEI",
+            "lat": 51.246941,
+            "lon": 22.611394
+        },
+        {
+            "id": "2532",
+            "nazwa": "Mełgiewska WSEI",
+            "lat": 51.247467,
+            "lon": 22.609755
+        },
+        {
+            "id": "2541",
+            "nazwa": "Tokarska",
+            "lat": 51.245419,
+            "lon": 22.6208
+        },
+        {
+            "id": "2542",
+            "nazwa": "Tokarska",
+            "lat": 51.24518,
+            "lon": 22.623469
+        },
+        {
+            "id": "2551",
+            "nazwa": "Tyszowiecka NŻ",
+            "lat": 51.244297,
+            "lon": 22.627547
+        },
+        {
+            "id": "2561",
+            "nazwa": "Kasprowicza NŻ",
+            "lat": 51.245826,
+            "lon": 22.637205
+        },
+        {
+            "id": "2562",
+            "nazwa": "Kasprowicza NŻ",
+            "lat": 51.245317,
+            "lon": 22.636451
+        },
+        {
+            "id": "2571",
+            "nazwa": "Mełgiewska - chłodnia",
+            "lat": 51.245846,
+            "lon": 22.642624
+        },
+        {
+            "id": "2572",
+            "nazwa": "Mełgiewska - chłodnia",
+            "lat": 51.246025,
+            "lon": 22.641566
+        },
+        {
+            "id": "2573",
+            "nazwa": "Mełgiewska - chłodnia",
+            "lat": 51.24621,
+            "lon": 22.64127
+        },
+        {
+            "id": "2581",
+            "nazwa": "Zadębie",
+            "lat": 51.243812,
+            "lon": 22.652111
+        },
+        {
+            "id": "2582",
+            "nazwa": "Zadębie",
+            "lat": 51.243831,
+            "lon": 22.652059
+        },
+        {
+            "id": "2601",
+            "nazwa": "Firlejowska",
+            "lat": 51.240475,
+            "lon": 22.585449
+        },
+        {
+            "id": "2602",
+            "nazwa": "Firlejowska",
+            "lat": 51.240498,
+            "lon": 22.585278
+        },
+        {
+            "id": "2611",
+            "nazwa": "Przyjaźni",
+            "lat": 51.24197,
+            "lon": 22.588793
+        },
+        {
+            "id": "2612",
+            "nazwa": "Przyjaźni",
+            "lat": 51.242798,
+            "lon": 22.590649
+        },
+        {
+            "id": "2613",
+            "nazwa": "Przyjaźni",
+            "lat": 51.241997,
+            "lon": 22.591566
+        },
+        {
+            "id": "2621",
+            "nazwa": "Hutnicza",
+            "lat": 51.242592,
+            "lon": 22.593714
+        },
+        {
+            "id": "2631",
+            "nazwa": "Dworzec Północny",
+            "lat": 51.242719,
+            "lon": 22.597232
+        },
+        {
+            "id": "2632",
+            "nazwa": "Dworzec Północny",
+            "lat": 51.242872,
+            "lon": 22.597081
+        },
+        {
+            "id": "2641",
+            "nazwa": "Kresowa",
+            "lat": 51.245397,
+            "lon": 22.600561
+        },
+        {
+            "id": "2642",
+            "nazwa": "Kresowa",
+            "lat": 51.245858,
+            "lon": 22.600938
+        },
+        {
+            "id": "26501",
+            "nazwa": "Osmolice Pierwsze - Leśniczówka NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26502",
+            "nazwa": "Osmolice Pierwsze - Leśniczówka NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26511",
+            "nazwa": "Osmolice Pierwsze - Stara Wieś NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26512",
+            "nazwa": "Osmolice Pierwsze - Stara Wieś NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "2652",
+            "nazwa": "Składowa",
+            "lat": 51.238915,
+            "lon": 22.581775
+        },
+        {
+            "id": "26521",
+            "nazwa": "Osmolice Pierwsze - Szkolna NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26522",
+            "nazwa": "Osmolice Pierwsze - Szkolna NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26531",
+            "nazwa": "Osmolice Pierwsze Srażacka NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26532",
+            "nazwa": "Osmolice Pierwsze Srażacka NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26541",
+            "nazwa": "Osmolice Pierwsze Rondo NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26551",
+            "nazwa": "Osmolice Pierwsze Małysówka NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26552",
+            "nazwa": "Osmolice Pierwsze Małysówka NŻ",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26561",
+            "nazwa": "Piotrowice - Ośrodek Zdrowia",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26562",
+            "nazwa": "Piotrowice - Ośrodek Zdrowia",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26571",
+            "nazwa": "Piotrowice",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "26572",
+            "nazwa": "Piotrowice",
+            "lat": 51.248365,
+            "lon": 22.518861
+        },
+        {
+            "id": "2701",
+            "nazwa": "Makro NŻ",
+            "lat": 51.237957,
+            "lon": 22.598721
+        },
+        {
+            "id": "2702",
+            "nazwa": "Makro NŻ",
+            "lat": 51.237822,
+            "lon": 22.6
+        },
+        {
+            "id": "2711",
+            "nazwa": "Grabskiego",
+            "lat": 51.237402,
+            "lon": 22.604809
+        },
+        {
+            "id": "2712",
+            "nazwa": "Grabskiego",
+            "lat": 51.237488,
+            "lon": 22.603408
+        },
+        {
+            "id": "2721",
+            "nazwa": "Walentynowicz NŻ",
+            "lat": 51.236702,
+            "lon": 22.612873
+        },
+        {
+            "id": "2722",
+            "nazwa": "Walentynowicz NŻ",
+            "lat": 51.236734,
+            "lon": 22.613447
+        },
+        {
+            "id": "2731",
+            "nazwa": "Grenadierów",
+            "lat": 51.23608,
+            "lon": 22.62041
+        },
+        {
+            "id": "2732",
+            "nazwa": "Grenadierów",
+            "lat": 51.236246,
+            "lon": 22.618791
+        },
+        {
+            "id": "2741",
+            "nazwa": "Dworzec Towarowy PKP NŻ",
+            "lat": 51.235878,
+            "lon": 22.625083
+        },
+        {
+            "id": "2742",
+            "nazwa": "Dworzec Towarowy PKP NŻ",
+            "lat": 51.235999,
+            "lon": 22.624004
+        },
+        {
+            "id": "2751",
+            "nazwa": "Rataja",
+            "lat": 51.235699,
+            "lon": 22.627748
+        },
+        {
+            "id": "2752",
+            "nazwa": "Rataja",
+            "lat": 51.235699,
+            "lon": 22.628407
+        },
+        {
+            "id": "2762",
+            "nazwa": "Plewińskiego MPK",
+            "lat": 51.230195,
+            "lon": 22.626976
+        },
+        {
+            "id": "2772",
+            "nazwa": "Metalurgiczna II NŻ",
+            "lat": 51.242227,
+            "lon": 22.641854
+        },
+        {
+            "id": "2781",
+            "nazwa": "Metalurgiczna - hurtownia",
+            "lat": 51.24247,
+            "lon": 22.63694
+        },
+        {
+            "id": "2782",
+            "nazwa": "Metalurgiczna - hurtownia",
+            "lat": 51.243518,
+            "lon": 22.635419
+        },
+        {
+            "id": "2791",
+            "nazwa": "Metalurgiczna",
+            "lat": 51.240458,
+            "lon": 22.648995
+        },
+        {
+            "id": "2792",
+            "nazwa": "Metalurgiczna",
+            "lat": 51.240264,
+            "lon": 22.649723
+        },
+        {
+            "id": "2801",
+            "nazwa": "Grygowej - osiedle",
+            "lat": 51.240908,
+            "lon": 22.634175
+        },
+        {
+            "id": "2802",
+            "nazwa": "Grygowej - osiedle",
+            "lat": 51.240628,
+            "lon": 22.634175
+        },
+        {
+            "id": "2811",
+            "nazwa": "Rondo Geodetów NŻ",
+            "lat": 51.234282,
+            "lon": 22.626507
+        },
+        {
+            "id": "2812",
+            "nazwa": "Rondo Geodetów NŻ",
+            "lat": 51.235134,
+            "lon": 22.627727
+        },
+        {
+            "id": "2821",
+            "nazwa": "Pancerniaków",
+            "lat": 51.23035,
+            "lon": 22.621681
+        },
+        {
+            "id": "2822",
+            "nazwa": "Pancerniaków",
+            "lat": 51.231229,
+            "lon": 22.623055
+        },
+        {
+            "id": "2823",
+            "nazwa": "Pancerniaków",
+            "lat": 51.230642,
+            "lon": 22.623167
+        },
+        {
+            "id": "2824",
+            "nazwa": "Pancerniaków",
+            "lat": 51.230082,
+            "lon": 22.621791
+        },
+        {
+            "id": "2825",
+            "nazwa": "Pancerniaków ",
+            "lat": 51.230039,
+            "lon": 22.621767
+        },
+        {
+            "id": "2826",
+            "nazwa": "Pancerniaków",
+            "lat": 51.231274,
+            "lon": 22.621378
+        },
+        {
+            "id": "2831",
+            "nazwa": "Plewińskiego NŻ",
+            "lat": 51.230043,
+            "lon": 22.636149
+        },
+        {
+            "id": "2832",
+            "nazwa": "Plewińskiego NŻ",
+            "lat": 51.230737,
+            "lon": 22.634721
+        },
+        {
+            "id": "2841",
+            "nazwa": "Rondo Przemysłowców NŻ",
+            "lat": 51.225906,
+            "lon": 22.646808
+        },
+        {
+            "id": "2842",
+            "nazwa": "Rondo Przemysłowców NŻ",
+            "lat": 51.226315,
+            "lon": 22.645099
+        },
+        {
+            "id": "2843",
+            "nazwa": "Rondo Przemysłowców NŻ",
+            "lat": 51.226478,
+            "lon": 22.64628
+        },
+        {
+            "id": "2844",
+            "nazwa": "Rondo Przemysłowców NŻ",
+            "lat": 51.22566,
+            "lon": 22.645268
+        },
+        {
+            "id": "2846",
+            "nazwa": "Rondo Przemysłowców NŻ",
+            "lat": 51.225646,
+            "lon": 22.645235
+        },
+        {
+            "id": "2851",
+            "nazwa": "Felin Spiessa",
+            "lat": 51.225936,
+            "lon": 22.653133
+        },
+        {
+            "id": "2852",
+            "nazwa": "Felin Spiessa",
+            "lat": 51.226117,
+            "lon": 22.653176
+        },
+        {
+            "id": "2853",
+            "nazwa": "Felin Spiessa NŻ",
+            "lat": 51.224934,
+            "lon": 22.653849
+        },
+        {
+            "id": "2861",
+            "nazwa": "Dworzec Towarowy PKP II NŻ",
+            "lat": 51.235524,
+            "lon": 22.629828
+        },
+        {
+            "id": "2871",
+            "nazwa": "Wilhelma Hessa NŻ",
+            "lat": 51.233559,
+            "lon": 22.638733
+        },
+        {
+            "id": "2881",
+            "nazwa": "Braci Krausse NŻ",
+            "lat": 51.22927,
+            "lon": 22.649102
+        },
+        {
+            "id": "2891",
+            "nazwa": "Brzegowa NŻ",
+            "lat": 51.227662,
+            "lon": 22.654041
+        },
+        {
+            "id": "2911",
+            "nazwa": "Witosa Carrefour",
+            "lat": 51.234069,
+            "lon": 22.601628
+        },
+        {
+            "id": "2912",
+            "nazwa": "Witosa Carrefour",
+            "lat": 51.234923,
+            "lon": 22.601184
+        },
+        {
+            "id": "2921",
+            "nazwa": "Rolna Osada NŻ",
+            "lat": 51.232912,
+            "lon": 22.605242
+        },
+        {
+            "id": "2922",
+            "nazwa": "Rolna Osada NŻ",
+            "lat": 51.232986,
+            "lon": 22.606561
+        },
+        {
+            "id": "2931",
+            "nazwa": "Witosa Felicity",
+            "lat": 51.230043,
+            "lon": 22.613456
+        },
+        {
+            "id": "2932",
+            "nazwa": "Witosa Felicity",
+            "lat": 51.230728,
+            "lon": 22.612657
+        },
+        {
+            "id": "2941",
+            "nazwa": "Grygowej",
+            "lat": 51.227281,
+            "lon": 22.620352
+        },
+        {
+            "id": "2942",
+            "nazwa": "Grygowej",
+            "lat": 51.228804,
+            "lon": 22.618804
+        },
+        {
+            "id": "2943",
+            "nazwa": "Grygowej",
+            "lat": 51.228785,
+            "lon": 22.620296
+        },
+        {
+            "id": "2944",
+            "nazwa": "Grygowej",
+            "lat": 51.227539,
+            "lon": 22.618321
+        },
+        {
+            "id": "2951",
+            "nazwa": "Doświadczalna",
+            "lat": 51.224146,
+            "lon": 22.632657
+        },
+        {
+            "id": "2952",
+            "nazwa": "Doświadczalna",
+            "lat": 51.223968,
+            "lon": 22.631374
+        },
+        {
+            "id": "2953",
+            "nazwa": "Doświadczalna",
+            "lat": 51.2234,
+            "lon": 22.631536
+        },
+        {
+            "id": "2955",
+            "nazwa": "Doświadczalna",
+            "lat": 51.223202,
+            "lon": 22.632642
+        },
+        {
+            "id": "2961",
+            "nazwa": "Felin Uniwersytet",
+            "lat": 51.224771,
+            "lon": 22.634733
+        },
+        {
+            "id": "2962",
+            "nazwa": "Felin Uniwersytet",
+            "lat": 51.225644,
+            "lon": 22.633614
+        },
+        {
+            "id": "2963",
+            "nazwa": "Felin Uniwersytet",
+            "lat": 51.2256,
+            "lon": 22.63402
+        },
+        {
+            "id": "2992",
+            "nazwa": "Zajezdnia Grygowej",
+            "lat": 51.229974,
+            "lon": 22.625395
+        },
+        {
+            "id": "3011",
+            "nazwa": "Felin Europark",
+            "lat": 51.220114,
+            "lon": 22.641147
+        },
+        {
+            "id": "3012",
+            "nazwa": "Felin Europark",
+            "lat": 51.220408,
+            "lon": 22.640691
+        },
+        {
+            "id": "3021",
+            "nazwa": "Moritza NŻ",
+            "lat": 51.220232,
+            "lon": 22.6447
+        },
+        {
+            "id": "3032",
+            "nazwa": "Vetterów NŻ",
+            "lat": 51.221413,
+            "lon": 22.645977
+        },
+        {
+            "id": "3034",
+            "nazwa": "Vetterów NŻ",
+            "lat": 51.220862,
+            "lon": 22.645792
+        },
+        {
+            "id": "3042",
+            "nazwa": "Vetterów II NŻ",
+            "lat": 51.21797,
+            "lon": 22.651695
+        },
+        {
+            "id": "3052",
+            "nazwa": "Brzegowa - wiadukt NŻ",
+            "lat": 51.234004,
+            "lon": 22.657253
+        },
+        {
+            "id": "3061",
+            "nazwa": "Rondo Karszo-Siedlewskiego NŻ",
+            "lat": 51.22342,
+            "lon": 22.642738
+        },
+        {
+            "id": "3062",
+            "nazwa": "Rondo Karszo-Siedlewskiego NŻ",
+            "lat": 51.223926,
+            "lon": 22.64057
+        },
+        {
+            "id": "3063",
+            "nazwa": "Rondo Karszo-Siedlewskiego NŻ",
+            "lat": 51.224283,
+            "lon": 22.643053
+        },
+        {
+            "id": "3065",
+            "nazwa": "Rondo Karszo-Siedlewskiego NŻ",
+            "lat": 51.22423,
+            "lon": 22.64294
+        },
+        {
+            "id": "3071",
+            "nazwa": "Ordonówny NŻ",
+            "lat": 51.231846,
+            "lon": 22.608106
+        },
+        {
+            "id": "3081",
+            "nazwa": "Pancerniaków Felicity",
+            "lat": 51.232675,
+            "lon": 22.617453
+        },
+        {
+            "id": "3082",
+            "nazwa": "Pancerniaków Felicity",
+            "lat": 51.232651,
+            "lon": 22.617101
+        },
+        {
+            "id": "3083",
+            "nazwa": "Pancerniaków Felicity",
+            "lat": 51.232647,
+            "lon": 22.617111
+        },
+        {
+            "id": "3101",
+            "nazwa": "Rondo Lubelskiego Lipca",
+            "lat": 51.23777,
+            "lon": 22.572762
+        },
+        {
+            "id": "3102",
+            "nazwa": "Rondo Lubelskiego Lipca",
+            "lat": 51.23696,
+            "lon": 22.570173
+        },
+        {
+            "id": "3103",
+            "nazwa": "Rondo Lubelskiego Lipca",
+            "lat": 51.237689,
+            "lon": 22.570612
+        },
+        {
+            "id": "3104",
+            "nazwa": "Rondo Lubelskiego Lipca",
+            "lat": 51.238251,
+            "lon": 22.570259
+        },
+        {
+            "id": "3105",
+            "nazwa": "Rondo Lubelskiego Lipca",
+            "lat": 51.238102,
+            "lon": 22.569855
+        },
+        {
+            "id": "3111",
+            "nazwa": "Park Bronowice",
+            "lat": 51.236981,
+            "lon": 22.577889
+        },
+        {
+            "id": "3112",
+            "nazwa": "Park Bronowice",
+            "lat": 51.236139,
+            "lon": 22.575925
+        },
+        {
+            "id": "3113",
+            "nazwa": "Park Bronowice",
+            "lat": 51.23604,
+            "lon": 22.577853
+        },
+        {
+            "id": "3114",
+            "nazwa": "Park Bronowice",
+            "lat": 51.237007,
+            "lon": 22.575505
+        },
+        {
+            "id": "3121",
+            "nazwa": "Lotnicza",
+            "lat": 51.232863,
+            "lon": 22.58679
+        },
+        {
+            "id": "3122",
+            "nazwa": "Lotnicza",
+            "lat": 51.233268,
+            "lon": 22.585886
+        },
+        {
+            "id": "3131",
+            "nazwa": "Dulęby",
+            "lat": 51.22998,
+            "lon": 22.594727
+        },
+        {
+            "id": "3132",
+            "nazwa": "Dulęby",
+            "lat": 51.230533,
+            "lon": 22.593519
+        },
+        {
+            "id": "3141",
+            "nazwa": "Majdanek - pomnik NŻ",
+            "lat": 51.227222,
+            "lon": 22.602341
+        },
+        {
+            "id": "3142",
+            "nazwa": "Majdanek - pomnik NŻ",
+            "lat": 51.227314,
+            "lon": 22.602482
+        },
+        {
+            "id": "3151",
+            "nazwa": "Majdanek",
+            "lat": 51.224952,
+            "lon": 22.608734
+        },
+        {
+            "id": "3152",
+            "nazwa": "Majdanek",
+            "lat": 51.224776,
+            "lon": 22.610066
+        },
+        {
+            "id": "3181",
+            "nazwa": "Felin",
+            "lat": 51.220538,
+            "lon": 22.628471
+        },
+        {
+            "id": "3182",
+            "nazwa": "Felin",
+            "lat": 51.22086,
+            "lon": 22.629283
+        },
+        {
+            "id": "3183",
+            "nazwa": "Felin",
+            "lat": 51.220614,
+            "lon": 22.628338
+        },
+        {
+            "id": "3201",
+            "nazwa": "Pogodna",
+            "lat": 51.234904,
+            "lon": 22.594427
+        },
+        {
+            "id": "3202",
+            "nazwa": "Pogodna",
+            "lat": 51.235865,
+            "lon": 22.594674
+        },
+        {
+            "id": "3211",
+            "nazwa": "Łabędzia",
+            "lat": 51.23205,
+            "lon": 22.591859
+        },
+        {
+            "id": "3212",
+            "nazwa": "Łabędzia",
+            "lat": 51.232598,
+            "lon": 22.591975
+        },
+        {
+            "id": "3221",
+            "nazwa": "Kosmonautów",
+            "lat": 51.230668,
+            "lon": 22.590179
+        },
+        {
+            "id": "3222",
+            "nazwa": "Kosmonautów",
+            "lat": 51.230353,
+            "lon": 22.590238
+        },
+        {
+            "id": "3231",
+            "nazwa": "Olchowa",
+            "lat": 51.227755,
+            "lon": 22.585113
+        },
+        {
+            "id": "3241",
+            "nazwa": "Żelazna",
+            "lat": 51.226758,
+            "lon": 22.582069
+        },
+        {
+            "id": "3242",
+            "nazwa": "Żelazna",
+            "lat": 51.226003,
+            "lon": 22.581161
+        },
+        {
+            "id": "3251",
+            "nazwa": "Pawia",
+            "lat": 51.227442,
+            "lon": 22.573777
+        },
+        {
+            "id": "3252",
+            "nazwa": "Pawia",
+            "lat": 51.228122,
+            "lon": 22.575441
+        },
+        {
+            "id": "3261",
+            "nazwa": "Park Naukowo-Technologiczny NŻ",
+            "lat": 51.222751,
+            "lon": 22.614452
+        },
+        {
+            "id": "3263",
+            "nazwa": "Park Naukowo-Technologiczny NŻ",
+            "lat": 51.22371,
+            "lon": 22.614404
+        },
+        {
+            "id": "3271",
+            "nazwa": "Dobrzańskiego NŻ",
+            "lat": 51.220901,
+            "lon": 22.619683
+        },
+        {
+            "id": "3272",
+            "nazwa": "Dobrzańskiego NŻ",
+            "lat": 51.22159,
+            "lon": 22.618389
+        },
+        {
+            "id": "3281",
+            "nazwa": "Instytut Agrofizyki",
+            "lat": 51.219169,
+            "lon": 22.626362
+        },
+        {
+            "id": "3282",
+            "nazwa": "Instytut Agrofizyki",
+            "lat": 51.219021,
+            "lon": 22.625504
+        },
+        {
+            "id": "3291",
+            "nazwa": "Skalskiego",
+            "lat": 51.21702,
+            "lon": 22.630479
+        },
+        {
+            "id": "3292",
+            "nazwa": "Skalskiego",
+            "lat": 51.217716,
+            "lon": 22.629143
+        },
+        {
+            "id": "3301",
+            "nazwa": "Bukowa",
+            "lat": 51.228258,
+            "lon": 22.58136
+        },
+        {
+            "id": "3302",
+            "nazwa": "Bukowa",
+            "lat": 51.227907,
+            "lon": 22.582016
+        },
+        {
+            "id": "3311",
+            "nazwa": "Wilcza",
+            "lat": 51.224863,
+            "lon": 22.586266
+        },
+        {
+            "id": "3312",
+            "nazwa": "Wilcza",
+            "lat": 51.224803,
+            "lon": 22.586548
+        },
+        {
+            "id": "3321",
+            "nazwa": "Hubalczyków",
+            "lat": 51.219259,
+            "lon": 22.588964
+        },
+        {
+            "id": "3322",
+            "nazwa": "Hubalczyków",
+            "lat": 51.220875,
+            "lon": 22.588664
+        },
+        {
+            "id": "3323",
+            "nazwa": "Hubalczyków",
+            "lat": 51.220033,
+            "lon": 22.5867
+        },
+        {
+            "id": "3331",
+            "nazwa": "Skrzynicka",
+            "lat": 51.214589,
+            "lon": 22.59175
+        },
+        {
+            "id": "3332",
+            "nazwa": "Skrzynicka",
+            "lat": 51.21515,
+            "lon": 22.591469
+        },
+        {
+            "id": "3341",
+            "nazwa": "Grunwaldzka",
+            "lat": 51.210942,
+            "lon": 22.595019
+        },
+        {
+            "id": "3342",
+            "nazwa": "Grunwaldzka",
+            "lat": 51.211783,
+            "lon": 22.594275
+        },
+        {
+            "id": "3351",
+            "nazwa": "Szklarniana",
+            "lat": 51.205331,
+            "lon": 22.596519
+        },
+        {
+            "id": "3352",
+            "nazwa": "Szklarniana",
+            "lat": 51.206834,
+            "lon": 22.597879
+        },
+        {
+            "id": "3354",
+            "nazwa": "Szklarniana",
+            "lat": 51.206554,
+            "lon": 22.596453
+        },
+        {
+            "id": "3371",
+            "nazwa": "Sulisławicka",
+            "lat": 51.229369,
+            "lon": 22.596399
+        },
+        {
+            "id": "3372",
+            "nazwa": "Sulisławicka",
+            "lat": 51.229208,
+            "lon": 22.597128
+        },
+        {
+            "id": "3373",
+            "nazwa": "Sulisławicka",
+            "lat": 51.229839,
+            "lon": 22.596517
+        },
+        {
+            "id": "3381",
+            "nazwa": "Jesienna",
+            "lat": 51.232537,
+            "lon": 22.599175
+        },
+        {
+            "id": "3391",
+            "nazwa": "Felin Kalinówka",
+            "lat": 51.21441,
+            "lon": 22.63781
+        },
+        {
+            "id": "3392",
+            "nazwa": "Felin Kalinówka",
+            "lat": 51.2148,
+            "lon": 22.63695
+        },
+        {
+            "id": "3401",
+            "nazwa": "MPWiK",
+            "lat": 51.240109,
+            "lon": 22.558213
+        },
+        {
+            "id": "3402",
+            "nazwa": "MPWiK",
+            "lat": 51.240475,
+            "lon": 22.557704
+        },
+        {
+            "id": "3411",
+            "nazwa": "Targi Lublin",
+            "lat": 51.236102,
+            "lon": 22.56608
+        },
+        {
+            "id": "3412",
+            "nazwa": "Targi Lublin",
+            "lat": 51.235371,
+            "lon": 22.567843
+        },
+        {
+            "id": "3413",
+            "nazwa": "Targi Lublin",
+            "lat": 51.234703,
+            "lon": 22.568042
+        },
+        {
+            "id": "3414",
+            "nazwa": "Targi Lublin",
+            "lat": 51.235345,
+            "lon": 22.569211
+        },
+        {
+            "id": "3421",
+            "nazwa": "Dworzec Lublin",
+            "lat": 51.23191,
+            "lon": 22.56674
+        },
+        {
+            "id": "3422",
+            "nazwa": "Dworzec Lublin",
+            "lat": 51.23197,
+            "lon": 22.56685
+        },
+        {
+            "id": "3423",
+            "nazwa": "Dworzec Lublin",
+            "lat": 51.23126,
+            "lon": 22.56692
+        },
+        {
+            "id": "3425",
+            "nazwa": "Dworzec Lublin",
+            "lat": 51.2313,
+            "lon": 22.56702
+        },
+        {
+            "id": "3451",
+            "nazwa": "Arena Lublin NŻ",
+            "lat": 51.232009,
+            "lon": 22.560897
+        },
+        {
+            "id": "3452",
+            "nazwa": "Arena Lublin NŻ",
+            "lat": 51.232419,
+            "lon": 22.562903
+        },
+        {
+            "id": "3453",
+            "nazwa": "Arena Lublin NŻ",
+            "lat": 51.231687,
+            "lon": 22.562292
+        },
+        {
+            "id": "3454",
+            "nazwa": "Arena Lublin NŻ",
+            "lat": 51.23258,
+            "lon": 22.561229
+        },
+        {
+            "id": "3455",
+            "nazwa": "Arena Lublin NŻ",
+            "lat": 51.231713,
+            "lon": 22.562238
+        },
+        {
+            "id": "3462",
+            "nazwa": "Cukrownicza NŻ",
+            "lat": 51.230121,
+            "lon": 22.556584
+        },
+        {
+            "id": "3471",
+            "nazwa": "Włościańska",
+            "lat": 51.22747,
+            "lon": 22.54864
+        },
+        {
+            "id": "3472",
+            "nazwa": "Włościańska",
+            "lat": 51.22804,
+            "lon": 22.55099
+        },
+        {
+            "id": "3501",
+            "nazwa": "Zorza NŻ",
+            "lat": 51.202157,
+            "lon": 22.594239
+        },
+        {
+            "id": "3502",
+            "nazwa": "Zorza NŻ",
+            "lat": 51.203575,
+            "lon": 22.595061
+        },
+        {
+            "id": "3503",
+            "nazwa": "Zorza NŻ",
+            "lat": 51.203047,
+            "lon": 22.595253
+        },
+        {
+            "id": "3511",
+            "nazwa": "Sachsów",
+            "lat": 51.198737,
+            "lon": 22.594404
+        },
+        {
+            "id": "3512",
+            "nazwa": "Sachsów",
+            "lat": 51.199599,
+            "lon": 22.594523
+        },
+        {
+            "id": "3521",
+            "nazwa": "Miętowa",
+            "lat": 51.190977,
+            "lon": 22.596584
+        },
+        {
+            "id": "3522",
+            "nazwa": "Miętowa",
+            "lat": 51.192125,
+            "lon": 22.597177
+        },
+        {
+            "id": "3531",
+            "nazwa": "Strojnowskiego",
+            "lat": 51.184267,
+            "lon": 22.596728
+        },
+        {
+            "id": "3532",
+            "nazwa": "Strojnowskiego",
+            "lat": 51.18503,
+            "lon": 22.596826
+        },
+        {
+            "id": "3541",
+            "nazwa": "Głusk",
+            "lat": 51.181536,
+            "lon": 22.598203
+        },
+        {
+            "id": "3542",
+            "nazwa": "Głusk",
+            "lat": 51.181536,
+            "lon": 22.598667
+        },
+        {
+            "id": "3551",
+            "nazwa": "Strojnowskiego II",
+            "lat": 51.180388,
+            "lon": 22.586564
+        },
+        {
+            "id": "3552",
+            "nazwa": "Strojnowskiego II",
+            "lat": 51.181358,
+            "lon": 22.58701
+        },
+        {
+            "id": "3561",
+            "nazwa": "Głusk - cmentarz NŻ",
+            "lat": 51.1942,
+            "lon": 22.596576
+        },
+        {
+            "id": "3562",
+            "nazwa": "Głusk - cmentarz NŻ",
+            "lat": 51.194942,
+            "lon": 22.596218
+        },
+        {
+            "id": "3571",
+            "nazwa": "Dominowska NŻ",
+            "lat": 51.186909,
+            "lon": 22.596667
+        },
+        {
+            "id": "3572",
+            "nazwa": "Dominowska NŻ",
+            "lat": 51.187124,
+            "lon": 22.596817
+        },
+        {
+            "id": "3611",
+            "nazwa": "Zorza - fabryka NŻ",
+            "lat": 51.203688,
+            "lon": 22.604986
+        },
+        {
+            "id": "3612",
+            "nazwa": "Zorza - fabryka NŻ",
+            "lat": 51.203741,
+            "lon": 22.604467
+        },
+        {
+            "id": "3621",
+            "nazwa": "Zorza - sklep NŻ",
+            "lat": 51.204225,
+            "lon": 22.612911
+        },
+        {
+            "id": "3622",
+            "nazwa": "Zorza - sklep NŻ",
+            "lat": 51.204269,
+            "lon": 22.612625
+        },
+        {
+            "id": "3631",
+            "nazwa": "Abramowice Prywatne I NŻ",
+            "lat": 51.204912,
+            "lon": 22.623139
+        },
+        {
+            "id": "3632",
+            "nazwa": "Abramowice Prywatne I NŻ",
+            "lat": 51.204993,
+            "lon": 22.62331
+        },
+        {
+            "id": "3641",
+            "nazwa": "Zdrowa NŻ",
+            "lat": 51.189059,
+            "lon": 22.59913
+        },
+        {
+            "id": "3642",
+            "nazwa": "Zdrowa NŻ",
+            "lat": 51.189454,
+            "lon": 22.598549
+        },
+        {
+            "id": "3651",
+            "nazwa": "Wygodna I NŻ",
+            "lat": 51.185431,
+            "lon": 22.607096
+        },
+        {
+            "id": "3652",
+            "nazwa": "Wygodna I NŻ",
+            "lat": 51.185858,
+            "lon": 22.606453
+        },
+        {
+            "id": "3661",
+            "nazwa": "Wygodna",
+            "lat": 51.179162,
+            "lon": 22.621009
+        },
+        {
+            "id": "3662",
+            "nazwa": "Wygodna",
+            "lat": 51.179339,
+            "lon": 22.620648
+        },
+        {
+            "id": "3691",
+            "nazwa": "Dworzec Lublin - Kunickiego",
+            "lat": 51.23145,
+            "lon": 22.571544
+        },
+        {
+            "id": "3692",
+            "nazwa": "Dworzec Lublin - Kunickiego",
+            "lat": 51.229586,
+            "lon": 22.57228
+        },
+        {
+            "id": "3701",
+            "nazwa": "Plac Bychawski",
+            "lat": 51.233901,
+            "lon": 22.570918
+        },
+        {
+            "id": "3702",
+            "nazwa": "Plac Bychawski",
+            "lat": 51.234644,
+            "lon": 22.571997
+        },
+        {
+            "id": "3703",
+            "nazwa": "Plac Bychawski",
+            "lat": 51.23455,
+            "lon": 22.571997
+        },
+        {
+            "id": "3711",
+            "nazwa": "Dom Kolejarza",
+            "lat": 51.228196,
+            "lon": 22.571415
+        },
+        {
+            "id": "3721",
+            "nazwa": "Dąbrowska",
+            "lat": 51.226486,
+            "lon": 22.572839
+        },
+        {
+            "id": "3722",
+            "nazwa": "Dąbrowska",
+            "lat": 51.225658,
+            "lon": 22.573668
+        },
+        {
+            "id": "3731",
+            "nazwa": "Wyścigowa",
+            "lat": 51.222404,
+            "lon": 22.575971
+        },
+        {
+            "id": "3732",
+            "nazwa": "Wyścigowa",
+            "lat": 51.22388,
+            "lon": 22.575209
+        },
+        {
+            "id": "3733",
+            "nazwa": "Wyścigowa",
+            "lat": 51.223208,
+            "lon": 22.574576
+        },
+        {
+            "id": "3734",
+            "nazwa": "Wyścigowa",
+            "lat": 51.223458,
+            "lon": 22.576378
+        },
+        {
+            "id": "3741",
+            "nazwa": "Mickiewicza",
+            "lat": 51.216927,
+            "lon": 22.580219
+        },
+        {
+            "id": "3742",
+            "nazwa": "Mickiewicza",
+            "lat": 51.216326,
+            "lon": 22.581029
+        },
+        {
+            "id": "3744",
+            "nazwa": "Mickiewicza",
+            "lat": 51.217829,
+            "lon": 22.579853
+        },
+        {
+            "id": "3751",
+            "nazwa": "Reja",
+            "lat": 51.212405,
+            "lon": 22.583807
+        },
+        {
+            "id": "3752",
+            "nazwa": "Reja",
+            "lat": 51.211857,
+            "lon": 22.584368
+        },
+        {
+            "id": "3762",
+            "nazwa": "Sierpińskiego",
+            "lat": 51.208929,
+            "lon": 22.586032
+        },
+        {
+            "id": "3763",
+            "nazwa": "Sierpińskiego",
+            "lat": 51.207145,
+            "lon": 22.586634
+        },
+        {
+            "id": "3772",
+            "nazwa": "Kuncewiczowej NŻ",
+            "lat": 51.20734,
+            "lon": 22.590959
+        },
+        {
+            "id": "3782",
+            "nazwa": "Kraszewskiego",
+            "lat": 51.221643,
+            "lon": 22.576834
+        },
+        {
+            "id": "3791",
+            "nazwa": "Szpital Neuropsychiatryczny",
+            "lat": 51.203751,
+            "lon": 22.586013
+        },
+        {
+            "id": "3792",
+            "nazwa": "Szpital Neuropsychiatryczny",
+            "lat": 51.205707,
+            "lon": 22.587032
+        },
+        {
+            "id": "3901",
+            "nazwa": "Makowa",
+            "lat": 51.200401,
+            "lon": 22.585805
+        },
+        {
+            "id": "3902",
+            "nazwa": "Makowa",
+            "lat": 51.201089,
+            "lon": 22.586128
+        },
+        {
+            "id": "3911",
+            "nazwa": "Powojowa NŻ",
+            "lat": 51.194438,
+            "lon": 22.585696
+        },
+        {
+            "id": "3912",
+            "nazwa": "Powojowa NŻ",
+            "lat": 51.195691,
+            "lon": 22.585923
+        },
+        {
+            "id": "3921",
+            "nazwa": "Abramowicka - posesja 102 NŻ",
+            "lat": 51.189519,
+            "lon": 22.585512
+        },
+        {
+            "id": "3922",
+            "nazwa": "Abramowicka - posesja 102 NŻ",
+            "lat": 51.188938,
+            "lon": 22.585653
+        },
+        {
+            "id": "3931",
+            "nazwa": "Wólczańska",
+            "lat": 51.184188,
+            "lon": 22.586418
+        },
+        {
+            "id": "3932",
+            "nazwa": "Wólczańska",
+            "lat": 51.184476,
+            "lon": 22.586527
+        },
+        {
+            "id": "3941",
+            "nazwa": "Abramowicka Dominów",
+            "lat": 51.175083,
+            "lon": 22.585578
+        },
+        {
+            "id": "3942",
+            "nazwa": "Abramowicka Dominów",
+            "lat": 51.175364,
+            "lon": 22.585858
+        },
+        {
+            "id": "3951",
+            "nazwa": "Abramowice",
+            "lat": 51.196806,
+            "lon": 22.586258
+        },
+        {
+            "id": "3952",
+            "nazwa": "Abramowice",
+            "lat": 51.19728,
+            "lon": 22.58601
+        },
+        {
+            "id": "4101",
+            "nazwa": "Świętochowskiego",
+            "lat": 51.211689,
+            "lon": 22.574672
+        },
+        {
+            "id": "4102",
+            "nazwa": "Świętochowskiego",
+            "lat": 51.210982,
+            "lon": 22.573681
+        },
+        {
+            "id": "4111",
+            "nazwa": "ZSTK",
+            "lat": 51.207856,
+            "lon": 22.56835
+        },
+        {
+            "id": "4112",
+            "nazwa": "ZSTK",
+            "lat": 51.207602,
+            "lon": 22.56808
+        },
+        {
+            "id": "4121",
+            "nazwa": "Budowlana",
+            "lat": 51.205378,
+            "lon": 22.564146
+        },
+        {
+            "id": "4122",
+            "nazwa": "Budowlana",
+            "lat": 51.204911,
+            "lon": 22.563661
+        },
+        {
+            "id": "4123",
+            "nazwa": "Budowlana",
+            "lat": 51.206733,
+            "lon": 22.564028
+        },
+        {
+            "id": "4124",
+            "nazwa": "Budowlana",
+            "lat": 51.206439,
+            "lon": 22.564244
+        },
+        {
+            "id": "4131",
+            "nazwa": "Elektromontaż",
+            "lat": 51.202464,
+            "lon": 22.559323
+        },
+        {
+            "id": "4132",
+            "nazwa": "Elektromontaż",
+            "lat": 51.203153,
+            "lon": 22.560716
+        },
+        {
+            "id": "4133",
+            "nazwa": "Elektromontaż",
+            "lat": 51.203367,
+            "lon": 22.559539
+        },
+        {
+            "id": "4141",
+            "nazwa": "Osmolicka NŻ",
+            "lat": 51.192892,
+            "lon": 22.546412
+        },
+        {
+            "id": "4142",
+            "nazwa": "Osmolicka NŻ",
+            "lat": 51.195985,
+            "lon": 22.548753
+        },
+        {
+            "id": "4143",
+            "nazwa": "Osmolicka NŻ",
+            "lat": 51.195164,
+            "lon": 22.545667
+        },
+        {
+            "id": "4151",
+            "nazwa": "Granata",
+            "lat": 51.19818,
+            "lon": 22.55218
+        },
+        {
+            "id": "4152",
+            "nazwa": "Granata",
+            "lat": 51.1989,
+            "lon": 22.55348
+        },
+        {
+            "id": "4201",
+            "nazwa": "Młodzieżowa",
+            "lat": 51.212852,
+            "lon": 22.574209
+        },
+        {
+            "id": "4202",
+            "nazwa": "Młodzieżowa",
+            "lat": 51.213781,
+            "lon": 22.572601
+        },
+        {
+            "id": "4211",
+            "nazwa": "Herberta - szpital",
+            "lat": 51.214896,
+            "lon": 22.570616
+        },
+        {
+            "id": "4221",
+            "nazwa": "Herberta",
+            "lat": 51.215116,
+            "lon": 22.566272
+        },
+        {
+            "id": "4222",
+            "nazwa": "Herberta",
+            "lat": 51.215049,
+            "lon": 22.566013
+        },
+        {
+            "id": "4223",
+            "nazwa": "Herberta",
+            "lat": 51.21493,
+            "lon": 22.56433
+        },
+        {
+            "id": "4224",
+            "nazwa": "Herberta",
+            "lat": 51.214829,
+            "lon": 22.564934
+        },
+        {
+            "id": "4231",
+            "nazwa": "Smoluchowskiego koszary NŻ",
+            "lat": 51.218718,
+            "lon": 22.559442
+        },
+        {
+            "id": "4232",
+            "nazwa": "Smoluchowskiego koszary NŻ",
+            "lat": 51.218631,
+            "lon": 22.560381
+        },
+        {
+            "id": "4241",
+            "nazwa": "Elektrociepłownia NŻ",
+            "lat": 51.217228,
+            "lon": 22.555892
+        },
+        {
+            "id": "4242",
+            "nazwa": "Elektrociepłownia NŻ",
+            "lat": 51.217508,
+            "lon": 22.556733
+        },
+        {
+            "id": "4252",
+            "nazwa": "Inżynierska",
+            "lat": 51.218906,
+            "lon": 22.552189
+        },
+        {
+            "id": "4253",
+            "nazwa": "Inżynierska",
+            "lat": 51.219241,
+            "lon": 22.55218
+        },
+        {
+            "id": "4261",
+            "nazwa": "Ciepłownicza NŻ",
+            "lat": 51.2101,
+            "lon": 22.560661
+        },
+        {
+            "id": "4262",
+            "nazwa": "Ciepłownicza NŻ",
+            "lat": 51.211536,
+            "lon": 22.559064
+        },
+        {
+            "id": "4311",
+            "nazwa": "Ośrodek Wrotków NŻ",
+            "lat": 51.188483,
+            "lon": 22.545018
+        },
+        {
+            "id": "4312",
+            "nazwa": "Ośrodek Wrotków NŻ",
+            "lat": 51.189336,
+            "lon": 22.545415
+        },
+        {
+            "id": "4321",
+            "nazwa": "Dąbrowa",
+            "lat": 51.181884,
+            "lon": 22.542489
+        },
+        {
+            "id": "4322",
+            "nazwa": "Dąbrowa",
+            "lat": 51.181659,
+            "lon": 22.542383
+        },
+        {
+            "id": "4401",
+            "nazwa": "Samsonowicza",
+            "lat": 51.2101,
+            "lon": 22.548764
+        },
+        {
+            "id": "4402",
+            "nazwa": "Samsonowicza",
+            "lat": 51.210381,
+            "lon": 22.548483
+        },
+        {
+            "id": "4411",
+            "nazwa": "Domeyki",
+            "lat": 51.205939,
+            "lon": 22.552266
+        },
+        {
+            "id": "4412",
+            "nazwa": "Domeyki",
+            "lat": 51.206246,
+            "lon": 22.550193
+        },
+        {
+            "id": "4422",
+            "nazwa": "Energetyków",
+            "lat": 51.205124,
+            "lon": 22.555622
+        },
+        {
+            "id": "4461",
+            "nazwa": "Dunikowskiego - szpital",
+            "lat": 51.216191,
+            "lon": 22.571377
+        },
+        {
+            "id": "4462",
+            "nazwa": "Dunikowskiego - szpital",
+            "lat": 51.215556,
+            "lon": 22.571407
+        },
+        {
+            "id": "4471",
+            "nazwa": "Dunikowskiego - osiedle",
+            "lat": 51.22145,
+            "lon": 22.57154
+        },
+        {
+            "id": "4472",
+            "nazwa": "Dunikowskiego - osiedle",
+            "lat": 51.219711,
+            "lon": 22.571617
+        },
+        {
+            "id": "4491",
+            "nazwa": "Smoluchowskiego NŻ",
+            "lat": 51.22224,
+            "lon": 22.557217
+        },
+        {
+            "id": "4502",
+            "nazwa": "Leśna",
+            "lat": 51.226753,
+            "lon": 22.568652
+        },
+        {
+            "id": "4511",
+            "nazwa": "Nowy Świat",
+            "lat": 51.225905,
+            "lon": 22.564417
+        },
+        {
+            "id": "4512",
+            "nazwa": "Nowy Świat",
+            "lat": 51.225831,
+            "lon": 22.564532
+        },
+        {
+            "id": "4521",
+            "nazwa": "Skwer Borowiczan",
+            "lat": 51.224033,
+            "lon": 22.557632
+        },
+        {
+            "id": "4522",
+            "nazwa": "Skwer Borowiczan",
+            "lat": 51.224364,
+            "lon": 22.558691
+        },
+        {
+            "id": "4531",
+            "nazwa": "Lubella",
+            "lat": 51.220875,
+            "lon": 22.551964
+        },
+        {
+            "id": "4532",
+            "nazwa": "Lubella",
+            "lat": 51.221182,
+            "lon": 22.554187
+        },
+        {
+            "id": "4541",
+            "nazwa": "Medalionów",
+            "lat": 51.218123,
+            "lon": 22.545925
+        },
+        {
+            "id": "4542",
+            "nazwa": "Medalionów",
+            "lat": 51.217809,
+            "lon": 22.546337
+        },
+        {
+            "id": "4551",
+            "nazwa": "Romera - kościół",
+            "lat": 51.214816,
+            "lon": 22.545429
+        },
+        {
+            "id": "4552",
+            "nazwa": "Romera - kościół",
+            "lat": 51.214542,
+            "lon": 22.545322
+        },
+        {
+            "id": "4561",
+            "nazwa": "Os. Nałkowskich",
+            "lat": 51.2101,
+            "lon": 22.54175
+        },
+        {
+            "id": "4562",
+            "nazwa": "Os. Nałkowskich",
+            "lat": 51.210883,
+            "lon": 22.542172
+        },
+        {
+            "id": "4571",
+            "nazwa": "Romera",
+            "lat": 51.205759,
+            "lon": 22.542359
+        },
+        {
+            "id": "4572",
+            "nazwa": "Romera",
+            "lat": 51.206458,
+            "lon": 22.54215
+        },
+        {
+            "id": "4581",
+            "nazwa": "Biskupa Fulmana",
+            "lat": 51.199873,
+            "lon": 22.541895
+        },
+        {
+            "id": "4582",
+            "nazwa": "Biskupa Fulmana",
+            "lat": 51.200911,
+            "lon": 22.542559
+        },
+        {
+            "id": "4591",
+            "nazwa": "Zalewskiego",
+            "lat": 51.195278,
+            "lon": 22.538309
+        },
+        {
+            "id": "4592",
+            "nazwa": "Zalewskiego",
+            "lat": 51.19665,
+            "lon": 22.539727
+        },
+        {
+            "id": "4601",
+            "nazwa": "Most im. Kaczorowskiego NŻ",
+            "lat": 51.19517,
+            "lon": 22.537786
+        },
+        {
+            "id": "4611",
+            "nazwa": "Wapowskiego",
+            "lat": 51.20367,
+            "lon": 22.54329
+        },
+        {
+            "id": "4612",
+            "nazwa": "Wapowskiego",
+            "lat": 51.204,
+            "lon": 22.54353
+        },
+        {
+            "id": "4621",
+            "nazwa": "Żeglarska II NŻ",
+            "lat": 51.19522,
+            "lon": 22.54033
+        },
+        {
+            "id": "4622",
+            "nazwa": "Żeglarska II NŻ",
+            "lat": 51.19511,
+            "lon": 22.54175
+        },
+        {
+            "id": "4631",
+            "nazwa": "Żeglarska ",
+            "lat": 51.194931,
+            "lon": 22.531178
+        },
+        {
+            "id": "4632",
+            "nazwa": "Żeglarska ",
+            "lat": 51.194763,
+            "lon": 22.531661
+        },
+        {
+            "id": "4634",
+            "nazwa": "Żeglarska",
+            "lat": 51.194689,
+            "lon": 22.531275
+        },
+        {
+            "id": "4691",
+            "nazwa": "Kawia NŻ",
+            "lat": 51.229987,
+            "lon": 22.561931
+        },
+        {
+            "id": "4692",
+            "nazwa": "Kawia NŻ",
+            "lat": 51.22911,
+            "lon": 22.56009
+        },
+        {
+            "id": "4711",
+            "nazwa": "Spółdzielcza",
+            "lat": 51.226488,
+            "lon": 22.55328
+        },
+        {
+            "id": "4712",
+            "nazwa": "Spółdzielcza",
+            "lat": 51.226807,
+            "lon": 22.554467
+        },
+        {
+            "id": "4721",
+            "nazwa": "Betonowa",
+            "lat": 51.224421,
+            "lon": 22.548138
+        },
+        {
+            "id": "4722",
+            "nazwa": "Betonowa",
+            "lat": 51.224228,
+            "lon": 22.548008
+        },
+        {
+            "id": "4731",
+            "nazwa": "Rondo Żołnierzy - Górników",
+            "lat": 51.22352,
+            "lon": 22.5408
+        },
+        {
+            "id": "4732",
+            "nazwa": "Rondo Żołnierzy - Górników",
+            "lat": 51.22214,
+            "lon": 22.54242
+        },
+        {
+            "id": "4734",
+            "nazwa": "Rondo Żołnierzy - Górników",
+            "lat": 51.222925,
+            "lon": 22.543248
+        },
+        {
+            "id": "4741",
+            "nazwa": "Wąwozowa NŻ",
+            "lat": 51.222439,
+            "lon": 22.538458
+        },
+        {
+            "id": "4742",
+            "nazwa": "Wąwozowa NŻ",
+            "lat": 51.222253,
+            "lon": 22.538771
+        },
+        {
+            "id": "4751",
+            "nazwa": "Koło NŻ",
+            "lat": 51.21835,
+            "lon": 22.5367
+        },
+        {
+            "id": "4752",
+            "nazwa": "Koło NŻ",
+            "lat": 51.218583,
+            "lon": 22.537023
+        },
+        {
+            "id": "4761",
+            "nazwa": "Janowska - stacja pomp NŻ",
+            "lat": 51.216339,
+            "lon": 22.535199
+        },
+        {
+            "id": "4762",
+            "nazwa": "Janowska - stacja pomp NŻ",
+            "lat": 51.21636,
+            "lon": 22.535319
+        },
+        {
+            "id": "4771",
+            "nazwa": "Parczewska NŻ",
+            "lat": 51.210387,
+            "lon": 22.530382
+        },
+        {
+            "id": "4772",
+            "nazwa": "Parczewska NŻ",
+            "lat": 51.210661,
+            "lon": 22.530954
+        },
+        {
+            "id": "4781",
+            "nazwa": "Rąblowska NŻ",
+            "lat": 51.205604,
+            "lon": 22.528741
+        },
+        {
+            "id": "4782",
+            "nazwa": "Rąblowska NŻ",
+            "lat": 51.206172,
+            "lon": 22.529011
+        },
+        {
+            "id": "4791",
+            "nazwa": "Lipska",
+            "lat": 51.200561,
+            "lon": 22.527608
+        },
+        {
+            "id": "4792",
+            "nazwa": "Lipska",
+            "lat": 51.199332,
+            "lon": 22.527705
+        },
+        {
+            "id": "4801",
+            "nazwa": "Krężnicka - kemping NŻ",
+            "lat": 51.194288,
+            "lon": 22.527253
+        },
+        {
+            "id": "4802",
+            "nazwa": "Krężnicka - kemping NŻ",
+            "lat": 51.192872,
+            "lon": 22.527047
+        },
+        {
+            "id": "4811",
+            "nazwa": "Marina NŻ",
+            "lat": 51.19034,
+            "lon": 22.525698
+        },
+        {
+            "id": "4812",
+            "nazwa": "Marina NŻ",
+            "lat": 51.190448,
+            "lon": 22.525946
+        },
+        {
+            "id": "4821",
+            "nazwa": "Letniskowa NŻ",
+            "lat": 51.182658,
+            "lon": 22.520594
+        },
+        {
+            "id": "4822",
+            "nazwa": "Letniskowa NŻ",
+            "lat": 51.183614,
+            "lon": 22.521436
+        },
+        {
+            "id": "4831",
+            "nazwa": "Hotel pod Kasztanami NŻ",
+            "lat": 51.177608,
+            "lon": 22.516272
+        },
+        {
+            "id": "4832",
+            "nazwa": "Hotel pod Kasztanami NŻ",
+            "lat": 51.179485,
+            "lon": 22.518597
+        },
+        {
+            "id": "4841",
+            "nazwa": "Krężnicka - przychodnia",
+            "lat": 51.173975,
+            "lon": 22.509723
+        },
+        {
+            "id": "4842",
+            "nazwa": "Krężnicka - przychodnia",
+            "lat": 51.174242,
+            "lon": 22.510661
+        },
+        {
+            "id": "4851",
+            "nazwa": "Krężnicka - szkoła",
+            "lat": 51.171409,
+            "lon": 22.504639
+        },
+        {
+            "id": "4852",
+            "nazwa": "Krężnicka - szkoła",
+            "lat": 51.171744,
+            "lon": 22.505547
+        },
+        {
+            "id": "4861",
+            "nazwa": "Cienista",
+            "lat": 51.16809,
+            "lon": 22.499389
+        },
+        {
+            "id": "4862",
+            "nazwa": "Cienista",
+            "lat": 51.168853,
+            "lon": 22.499983
+        },
+        {
+            "id": "4863",
+            "nazwa": "Cienista",
+            "lat": 51.168045,
+            "lon": 22.498149
+        },
+        {
+            "id": "4871",
+            "nazwa": "Roślinna",
+            "lat": 51.163821,
+            "lon": 22.506312
+        },
+        {
+            "id": "4872",
+            "nazwa": "Roślinna",
+            "lat": 51.164362,
+            "lon": 22.505611
+        },
+        {
+            "id": "4881",
+            "nazwa": "Poranna NŻ",
+            "lat": 51.154603,
+            "lon": 22.510529
+        },
+        {
+            "id": "4882",
+            "nazwa": "Poranna NŻ",
+            "lat": 51.155115,
+            "lon": 22.510865
+        },
+        {
+            "id": "4891",
+            "nazwa": "Wykietówka NŻ",
+            "lat": 51.146185,
+            "lon": 22.50846
+        },
+        {
+            "id": "4892",
+            "nazwa": "Wykietówka NŻ",
+            "lat": 51.146239,
+            "lon": 22.508697
+        },
+        {
+            "id": "4901",
+            "nazwa": "Krężnicka - przejazd NŻ",
+            "lat": 51.165992,
+            "lon": 22.494275
+        },
+        {
+            "id": "4902",
+            "nazwa": "Krężnicka - przejazd NŻ",
+            "lat": 51.166299,
+            "lon": 22.495074
+        },
+        {
+            "id": "4911",
+            "nazwa": "Ptasia NŻ",
+            "lat": 51.159225,
+            "lon": 22.485642
+        },
+        {
+            "id": "4912",
+            "nazwa": "Ptasia NŻ",
+            "lat": 51.159258,
+            "lon": 22.485858
+        },
+        {
+            "id": "4921",
+            "nazwa": "Zemborzyce Górne",
+            "lat": 51.15606,
+            "lon": 22.481706
+        },
+        {
+            "id": "4922",
+            "nazwa": "Zemborzyce Górne",
+            "lat": 51.15588,
+            "lon": 22.481892
+        },
+        {
+            "id": "4924",
+            "nazwa": "Zemborzyce Górne",
+            "lat": 51.15592,
+            "lon": 22.481459
+        },
+        {
+            "id": "4931",
+            "nazwa": "Marzanny NŻ",
+            "lat": 51.15272,
+            "lon": 22.47616
+        },
+        {
+            "id": "4932",
+            "nazwa": "Marzanny NŻ",
+            "lat": 51.153387,
+            "lon": 22.478935
+        },
+        {
+            "id": "4982",
+            "nazwa": "Zemborzyce - kościół",
+            "lat": 51.173815,
+            "lon": 22.508179
+        },
+        {
+            "id": "4983",
+            "nazwa": "Zemborzyce - kościół",
+            "lat": 51.173876,
+            "lon": 22.508254
+        },
+        {
+            "id": "4991",
+            "nazwa": "Prawiedniki",
+            "lat": 51.141041,
+            "lon": 22.504127
+        },
+        {
+            "id": "4992",
+            "nazwa": "Prawiedniki",
+            "lat": 51.140902,
+            "lon": 22.504046
+        },
+        {
+            "id": "5101",
+            "nazwa": "Muzyczna",
+            "lat": 51.239736,
+            "lon": 22.552902
+        },
+        {
+            "id": "5102",
+            "nazwa": "Muzyczna",
+            "lat": 51.240067,
+            "lon": 22.553367
+        },
+        {
+            "id": "5103",
+            "nazwa": "Muzyczna",
+            "lat": 51.239433,
+            "lon": 22.5514
+        },
+        {
+            "id": "5111",
+            "nazwa": "Politechnika",
+            "lat": 51.236139,
+            "lon": 22.546843
+        },
+        {
+            "id": "5112",
+            "nazwa": "Politechnika",
+            "lat": 51.236868,
+            "lon": 22.54843
+        },
+        {
+            "id": "5121",
+            "nazwa": "Pozytywistów",
+            "lat": 51.231817,
+            "lon": 22.537822
+        },
+        {
+            "id": "5122",
+            "nazwa": "Pozytywistów",
+            "lat": 51.232371,
+            "lon": 22.538728
+        },
+        {
+            "id": "5131",
+            "nazwa": "Os. Skarpa",
+            "lat": 51.225905,
+            "lon": 22.537313
+        },
+        {
+            "id": "5132",
+            "nazwa": "Os. Skarpa",
+            "lat": 51.225665,
+            "lon": 22.537531
+        },
+        {
+            "id": "5141",
+            "nazwa": "Stary Gaj",
+            "lat": 51.206351,
+            "lon": 22.522743
+        },
+        {
+            "id": "5142",
+            "nazwa": "Stary Gaj",
+            "lat": 51.206351,
+            "lon": 22.522743
+        },
+        {
+            "id": "5191",
+            "nazwa": "Szkoła muzyczna",
+            "lat": 51.23727,
+            "lon": 22.55509
+        },
+        {
+            "id": "5192",
+            "nazwa": "Szkoła muzyczna",
+            "lat": 51.237837,
+            "lon": 22.55492
+        },
+        {
+            "id": "5201",
+            "nazwa": "Wiercieńskiego",
+            "lat": 51.240861,
+            "lon": 22.546519
+        },
+        {
+            "id": "5202",
+            "nazwa": "Wiercieńskiego",
+            "lat": 51.240314,
+            "lon": 22.547969
+        },
+        {
+            "id": "5211",
+            "nazwa": "Pana Tadeusza",
+            "lat": 51.24468,
+            "lon": 22.53148
+        },
+        {
+            "id": "5212",
+            "nazwa": "Pana Tadeusza",
+            "lat": 51.244297,
+            "lon": 22.531551
+        },
+        {
+            "id": "5221",
+            "nazwa": "Kampus Zachodni UMCS",
+            "lat": 51.24648,
+            "lon": 22.52424
+        },
+        {
+            "id": "5281",
+            "nazwa": "Sowińskiego",
+            "lat": 51.249594,
+            "lon": 22.539171
+        },
+        {
+            "id": "5283",
+            "nazwa": "Sowińskiego",
+            "lat": 51.24888,
+            "lon": 22.53894
+        },
+        {
+            "id": "5291",
+            "nazwa": "UMCS",
+            "lat": 51.246336,
+            "lon": 22.539178
+        },
+        {
+            "id": "5292",
+            "nazwa": "UMCS",
+            "lat": 51.24494,
+            "lon": 22.539607
+        },
+        {
+            "id": "5301",
+            "nazwa": "Park Akademicki",
+            "lat": 51.243321,
+            "lon": 22.535555
+        },
+        {
+            "id": "5303",
+            "nazwa": "Park Akademicki",
+            "lat": 51.244021,
+            "lon": 22.535015
+        },
+        {
+            "id": "5304",
+            "nazwa": "Park Akademicki",
+            "lat": 51.242634,
+            "lon": 22.5401
+        },
+        {
+            "id": "5311",
+            "nazwa": "Piastowska",
+            "lat": 51.240628,
+            "lon": 22.530921
+        },
+        {
+            "id": "5312",
+            "nazwa": "Piastowska",
+            "lat": 51.240616,
+            "lon": 22.531547
+        },
+        {
+            "id": "5321",
+            "nazwa": "Rzeckiego",
+            "lat": 51.234739,
+            "lon": 22.529108
+        },
+        {
+            "id": "5322",
+            "nazwa": "Rzeckiego",
+            "lat": 51.235332,
+            "lon": 22.529305
+        },
+        {
+            "id": "5331",
+            "nazwa": "Sympatyczna",
+            "lat": 51.230938,
+            "lon": 22.527446
+        },
+        {
+            "id": "5332",
+            "nazwa": "Sympatyczna",
+            "lat": 51.230839,
+            "lon": 22.527844
+        },
+        {
+            "id": "5341",
+            "nazwa": "Fantastyczna",
+            "lat": 51.228169,
+            "lon": 22.524803
+        },
+        {
+            "id": "5342",
+            "nazwa": "Fantastyczna",
+            "lat": 51.227889,
+            "lon": 22.525364
+        },
+        {
+            "id": "5351",
+            "nazwa": "Os. Widok",
+            "lat": 51.223404,
+            "lon": 22.522969
+        },
+        {
+            "id": "5352",
+            "nazwa": "Os. Widok",
+            "lat": 51.223222,
+            "lon": 22.523199
+        },
+        {
+            "id": "5401",
+            "nazwa": "Brzeskiej",
+            "lat": 51.236101,
+            "lon": 22.535727
+        },
+        {
+            "id": "5402",
+            "nazwa": "Brzeskiej",
+            "lat": 51.235565,
+            "lon": 22.536685
+        },
+        {
+            "id": "5411",
+            "nazwa": "ZUS",
+            "lat": 51.236981,
+            "lon": 22.529011
+        },
+        {
+            "id": "5412",
+            "nazwa": "ZUS",
+            "lat": 51.238805,
+            "lon": 22.530697
+        },
+        {
+            "id": "5414",
+            "nazwa": "ZUS",
+            "lat": 51.237295,
+            "lon": 22.530975
+        },
+        {
+            "id": "5416",
+            "nazwa": "ZUS",
+            "lat": 51.238383,
+            "lon": 22.52845
+        },
+        {
+            "id": "5421",
+            "nazwa": "Zana ZUS",
+            "lat": 51.238621,
+            "lon": 22.526653
+        },
+        {
+            "id": "5423",
+            "nazwa": "Zana ZUS",
+            "lat": 51.238759,
+            "lon": 22.526278
+        },
+        {
+            "id": "5431",
+            "nazwa": "Jana Sawy",
+            "lat": 51.238865,
+            "lon": 22.525769
+        },
+        {
+            "id": "5432",
+            "nazwa": "Jana Sawy",
+            "lat": 51.239606,
+            "lon": 22.524522
+        },
+        {
+            "id": "5441",
+            "nazwa": "Zana Leclerc",
+            "lat": 51.240742,
+            "lon": 22.517852
+        },
+        {
+            "id": "5442",
+            "nazwa": "Zana Leclerc",
+            "lat": 51.241162,
+            "lon": 22.51998
+        },
+        {
+            "id": "5443",
+            "nazwa": "Zana Leclerc",
+            "lat": 51.240675,
+            "lon": 22.520833
+        },
+        {
+            "id": "5444",
+            "nazwa": "Zana Leclerc",
+            "lat": 51.241992,
+            "lon": 22.517519
+        },
+        {
+            "id": "5446",
+            "nazwa": "Zana Leclerc",
+            "lat": 51.24111,
+            "lon": 22.520329
+        },
+        {
+            "id": "5451",
+            "nazwa": "Krasińskiego",
+            "lat": 51.242427,
+            "lon": 22.516555
+        },
+        {
+            "id": "5461",
+            "nazwa": "Irydiona",
+            "lat": 51.241478,
+            "lon": 22.508795
+        },
+        {
+            "id": "5471",
+            "nazwa": "Brzeskiej II",
+            "lat": 51.234922,
+            "lon": 22.540255
+        },
+        {
+            "id": "5472",
+            "nazwa": "Brzeskiej II",
+            "lat": 51.234724,
+            "lon": 22.54088
+        },
+        {
+            "id": "5501",
+            "nazwa": "Os. Słowackiego",
+            "lat": 51.243029,
+            "lon": 22.520244
+        },
+        {
+            "id": "5502",
+            "nazwa": "Os. Słowackiego",
+            "lat": 51.24338,
+            "lon": 22.52159
+        },
+        {
+            "id": "5511",
+            "nazwa": "Skrzetuskiego",
+            "lat": 51.23953,
+            "lon": 22.51308
+        },
+        {
+            "id": "5512",
+            "nazwa": "Skrzetuskiego",
+            "lat": 51.23969,
+            "lon": 22.51522
+        },
+        {
+            "id": "5521",
+            "nazwa": "Dziewanny",
+            "lat": 51.235191,
+            "lon": 22.510995
+        },
+        {
+            "id": "5522",
+            "nazwa": "Dziewanny",
+            "lat": 51.234462,
+            "lon": 22.511697
+        },
+        {
+            "id": "5531",
+            "nazwa": "Jutrzenki",
+            "lat": 51.230137,
+            "lon": 22.512927
+        },
+        {
+            "id": "5532",
+            "nazwa": "Jutrzenki",
+            "lat": 51.230133,
+            "lon": 22.513467
+        },
+        {
+            "id": "5541",
+            "nazwa": "Bociania",
+            "lat": 51.227796,
+            "lon": 22.511994
+        },
+        {
+            "id": "5542",
+            "nazwa": "Bociania",
+            "lat": 51.227296,
+            "lon": 22.511297
+        },
+        {
+            "id": "5551",
+            "nazwa": "Perłowa",
+            "lat": 51.225083,
+            "lon": 22.503928
+        },
+        {
+            "id": "5552",
+            "nazwa": "Perłowa",
+            "lat": 51.225303,
+            "lon": 22.505384
+        },
+        {
+            "id": "5561",
+            "nazwa": "Kryształowa",
+            "lat": 51.225224,
+            "lon": 22.496811
+        },
+        {
+            "id": "5562",
+            "nazwa": "Kryształowa",
+            "lat": 51.224769,
+            "lon": 22.497965
+        },
+        {
+            "id": "5571",
+            "nazwa": "Roztocze",
+            "lat": 51.226051,
+            "lon": 22.491233
+        },
+        {
+            "id": "5572",
+            "nazwa": "Roztocze",
+            "lat": 51.225564,
+            "lon": 22.492624
+        },
+        {
+            "id": "5574",
+            "nazwa": "Roztocze",
+            "lat": 51.226193,
+            "lon": 22.492005
+        },
+        {
+            "id": "5581",
+            "nazwa": "Gęsia",
+            "lat": 51.226905,
+            "lon": 22.479205
+        },
+        {
+            "id": "5582",
+            "nazwa": "Gęsia",
+            "lat": 51.22667,
+            "lon": 22.481383
+        },
+        {
+            "id": "5586",
+            "nazwa": "Gęsia",
+            "lat": 51.226663,
+            "lon": 22.481064
+        },
+        {
+            "id": "5591",
+            "nazwa": "Węglinek NŻ",
+            "lat": 51.227266,
+            "lon": 22.474
+        },
+        {
+            "id": "5592",
+            "nazwa": "Węglinek NŻ",
+            "lat": 51.228136,
+            "lon": 22.476281
+        },
+        {
+            "id": "5594",
+            "nazwa": "Węglinek NŻ",
+            "lat": 51.227085,
+            "lon": 22.476151
+        },
+        {
+            "id": "5601",
+            "nazwa": "Os. Górki",
+            "lat": 51.225408,
+            "lon": 22.531661
+        },
+        {
+            "id": "5602",
+            "nazwa": "Os. Górki",
+            "lat": 51.22538,
+            "lon": 22.530201
+        },
+        {
+            "id": "5611",
+            "nazwa": "Szmaragdowa",
+            "lat": 51.227612,
+            "lon": 22.519474
+        },
+        {
+            "id": "5612",
+            "nazwa": "Szmaragdowa",
+            "lat": 51.227361,
+            "lon": 22.519385
+        },
+        {
+            "id": "5621",
+            "nazwa": "Gęsia II",
+            "lat": 51.2269,
+            "lon": 22.48494
+        },
+        {
+            "id": "5651",
+            "nazwa": "Wiklinowa",
+            "lat": 51.232442,
+            "lon": 22.507035
+        },
+        {
+            "id": "5652",
+            "nazwa": "Wiklinowa",
+            "lat": 51.232442,
+            "lon": 22.505939
+        },
+        {
+            "id": "5661",
+            "nazwa": "Poznańska",
+            "lat": 51.233488,
+            "lon": 22.499368
+        },
+        {
+            "id": "5662",
+            "nazwa": "Poznańska",
+            "lat": 51.233365,
+            "lon": 22.498001
+        },
+        {
+            "id": "5701",
+            "nazwa": "Nałęczowska",
+            "lat": 51.24822,
+            "lon": 22.518937
+        },
+        {
+            "id": "5702",
+            "nazwa": "Nałęczowska",
+            "lat": 51.248859,
+            "lon": 22.521146
+        },
+        {
+            "id": "5704",
+            "nazwa": "Nałęczowska",
+            "lat": 51.24793,
+            "lon": 22.520202
+        },
+        {
+            "id": "5711",
+            "nazwa": "Wojciechowska",
+            "lat": 51.245789,
+            "lon": 22.515255
+        },
+        {
+            "id": "5712",
+            "nazwa": "Wojciechowska",
+            "lat": 51.246586,
+            "lon": 22.516098
+        },
+        {
+            "id": "5713",
+            "nazwa": "Wojciechowska",
+            "lat": 51.246054,
+            "lon": 22.514229
+        },
+        {
+            "id": "5715",
+            "nazwa": "Wojciechowska",
+            "lat": 51.246594,
+            "lon": 22.514697
+        },
+        {
+            "id": "5721",
+            "nazwa": "Poczekajka",
+            "lat": 51.242357,
+            "lon": 22.50603
+        },
+        {
+            "id": "5722",
+            "nazwa": "Poczekajka",
+            "lat": 51.243161,
+            "lon": 22.508499
+        },
+        {
+            "id": "5723",
+            "nazwa": "Poczekajka",
+            "lat": 51.24326,
+            "lon": 22.506717
+        },
+        {
+            "id": "5724",
+            "nazwa": "Poczekajka",
+            "lat": 51.241991,
+            "lon": 22.507711
+        },
+        {
+            "id": "5731",
+            "nazwa": "Szpital Wojewódzki",
+            "lat": 51.239364,
+            "lon": 22.499367
+        },
+        {
+            "id": "5732",
+            "nazwa": "Szpital Wojewódzki",
+            "lat": 51.239922,
+            "lon": 22.501276
+        },
+        {
+            "id": "5741",
+            "nazwa": "Zwycięska",
+            "lat": 51.23753,
+            "lon": 22.495374
+        },
+        {
+            "id": "5742",
+            "nazwa": "Zwycięska",
+            "lat": 51.238103,
+            "lon": 22.4972
+        },
+        {
+            "id": "5751",
+            "nazwa": "Rzemieślnicza",
+            "lat": 51.234524,
+            "lon": 22.488562
+        },
+        {
+            "id": "5752",
+            "nazwa": "Rzemieślnicza",
+            "lat": 51.235086,
+            "lon": 22.49047
+        },
+        {
+            "id": "5753",
+            "nazwa": "Rzemieślnicza",
+            "lat": 51.234188,
+            "lon": 22.489903
+        },
+        {
+            "id": "5761",
+            "nazwa": "Węglin",
+            "lat": 51.230861,
+            "lon": 22.481062
+        },
+        {
+            "id": "5762",
+            "nazwa": "Węglin",
+            "lat": 51.231346,
+            "lon": 22.482634
+        },
+        {
+            "id": "5763",
+            "nazwa": "Węglin",
+            "lat": 51.230003,
+            "lon": 22.480315
+        },
+        {
+            "id": "5781",
+            "nazwa": "Węglin Wróbla",
+            "lat": 51.22488,
+            "lon": 22.46939
+        },
+        {
+            "id": "5782",
+            "nazwa": "Węglin Wróbla",
+            "lat": 51.22577,
+            "lon": 22.47119
+        },
+        {
+            "id": "5783",
+            "nazwa": "Węglin Wróbla",
+            "lat": 51.22498,
+            "lon": 22.47033
+        },
+        {
+            "id": "5801",
+            "nazwa": "Os. Świt",
+            "lat": 51.229053,
+            "lon": 22.492286
+        },
+        {
+            "id": "5802",
+            "nazwa": "Os. Świt",
+            "lat": 51.229921,
+            "lon": 22.492509
+        },
+        {
+            "id": "5811",
+            "nazwa": "Mazowiecka",
+            "lat": 51.232875,
+            "lon": 22.490997
+        },
+        {
+            "id": "5812",
+            "nazwa": "Mazowiecka",
+            "lat": 51.232652,
+            "lon": 22.491386
+        },
+        {
+            "id": "5821",
+            "nazwa": "Wertera NŻ",
+            "lat": 51.23623,
+            "lon": 22.488683
+        },
+        {
+            "id": "5822",
+            "nazwa": "Wertera NŻ",
+            "lat": 51.235787,
+            "lon": 22.488759
+        },
+        {
+            "id": "5831",
+            "nazwa": "Heloizy",
+            "lat": 51.240102,
+            "lon": 22.489127
+        },
+        {
+            "id": "5832",
+            "nazwa": "Heloizy",
+            "lat": 51.240058,
+            "lon": 22.489277
+        },
+        {
+            "id": "5841",
+            "nazwa": "Ofelii NŻ",
+            "lat": 51.240232,
+            "lon": 22.493597
+        },
+        {
+            "id": "5842",
+            "nazwa": "Ofelii NŻ",
+            "lat": 51.238794,
+            "lon": 22.494615
+        },
+        {
+            "id": "5851",
+            "nazwa": "Granitowa",
+            "lat": 51.22398,
+            "lon": 22.501892
+        },
+        {
+            "id": "5861",
+            "nazwa": "Os. Poręba",
+            "lat": 51.222075,
+            "lon": 22.501856
+        },
+        {
+            "id": "5862",
+            "nazwa": "Os. Poręba",
+            "lat": 51.221364,
+            "lon": 22.502184
+        },
+        {
+            "id": "5901",
+            "nazwa": "KUL",
+            "lat": 51.250003,
+            "lon": 22.542579
+        },
+        {
+            "id": "5902",
+            "nazwa": "KUL",
+            "lat": 51.24864,
+            "lon": 22.542857
+        },
+        {
+            "id": "5903",
+            "nazwa": "KUL",
+            "lat": 51.249102,
+            "lon": 22.541224
+        },
+        {
+            "id": "5911",
+            "nazwa": "Liceum im. Staszica",
+            "lat": 51.250047,
+            "lon": 22.535313
+        },
+        {
+            "id": "5912",
+            "nazwa": "Liceum im. Staszica",
+            "lat": 51.249543,
+            "lon": 22.53728
+        },
+        {
+            "id": "5921",
+            "nazwa": "Spadochroniarzy",
+            "lat": 51.250707,
+            "lon": 22.5311
+        },
+        {
+            "id": "5922",
+            "nazwa": "Spadochroniarzy",
+            "lat": 51.250245,
+            "lon": 22.532736
+        },
+        {
+            "id": "5931",
+            "nazwa": "Rondo Krwiodawców",
+            "lat": 51.252026,
+            "lon": 22.526385
+        },
+        {
+            "id": "5932",
+            "nazwa": "Rondo Krwiodawców",
+            "lat": 51.251107,
+            "lon": 22.527025
+        },
+        {
+            "id": "5933",
+            "nazwa": "Rondo Krwiodawców",
+            "lat": 51.250425,
+            "lon": 22.523948
+        },
+        {
+            "id": "5935",
+            "nazwa": "Rondo Krwiodawców",
+            "lat": 51.252711,
+            "lon": 22.523221
+        },
+        {
+            "id": "6101",
+            "nazwa": "Wojciechowska - zespół szkół",
+            "lat": 51.247126,
+            "lon": 22.50956
+        },
+        {
+            "id": "6102",
+            "nazwa": "Wojciechowska - zespół szkół",
+            "lat": 51.24701,
+            "lon": 22.507989
+        },
+        {
+            "id": "6111",
+            "nazwa": "Bohaterów M. Cassino",
+            "lat": 51.24722,
+            "lon": 22.5059
+        },
+        {
+            "id": "6112",
+            "nazwa": "Bohaterów M. Cassino",
+            "lat": 51.246486,
+            "lon": 22.50665
+        },
+        {
+            "id": "6113",
+            "nazwa": "Bohaterów M. Cassino",
+            "lat": 51.247559,
+            "lon": 22.507135
+        },
+        {
+            "id": "6114",
+            "nazwa": "Bohaterów M. Cassino",
+            "lat": 51.246681,
+            "lon": 22.506694
+        },
+        {
+            "id": "6121",
+            "nazwa": "Polfa",
+            "lat": 51.24718,
+            "lon": 22.50121
+        },
+        {
+            "id": "6122",
+            "nazwa": "Polfa",
+            "lat": 51.24699,
+            "lon": 22.50279
+        },
+        {
+            "id": "6131",
+            "nazwa": "Lipniak",
+            "lat": 51.247245,
+            "lon": 22.490964
+        },
+        {
+            "id": "6132",
+            "nazwa": "Lipniak",
+            "lat": 51.247151,
+            "lon": 22.490417
+        },
+        {
+            "id": "6201",
+            "nazwa": "Morwowa - Helenów NŻ",
+            "lat": 51.248193,
+            "lon": 22.514024
+        },
+        {
+            "id": "6202",
+            "nazwa": "Morwowa - Helenów NŻ",
+            "lat": 51.248838,
+            "lon": 22.513738
+        },
+        {
+            "id": "6261",
+            "nazwa": "Sobótki",
+            "lat": 51.254663,
+            "lon": 22.495043
+        },
+        {
+            "id": "6271",
+            "nazwa": "Sławin NŻ",
+            "lat": 51.256376,
+            "lon": 22.492182
+        },
+        {
+            "id": "6272",
+            "nazwa": "Sławin NŻ",
+            "lat": 51.256306,
+            "lon": 22.49204
+        },
+        {
+            "id": "6281",
+            "nazwa": "Hospicjum Małego Księcia NŻ",
+            "lat": 51.257103,
+            "lon": 22.490632
+        },
+        {
+            "id": "6282",
+            "nazwa": "Hospicjum Małego Księcia NŻ",
+            "lat": 51.256762,
+            "lon": 22.48963
+        },
+        {
+            "id": "6291",
+            "nazwa": "Ślężan NŻ",
+            "lat": 51.257535,
+            "lon": 22.487534
+        },
+        {
+            "id": "6292",
+            "nazwa": "Ślężan NŻ",
+            "lat": 51.256826,
+            "lon": 22.48786
+        },
+        {
+            "id": "6301",
+            "nazwa": "Wądolna",
+            "lat": 51.262039,
+            "lon": 22.483664
+        },
+        {
+            "id": "6302",
+            "nazwa": "Wądolna",
+            "lat": 51.26214,
+            "lon": 22.483422
+        },
+        {
+            "id": "6311",
+            "nazwa": "Cisowa",
+            "lat": 51.250793,
+            "lon": 22.510115
+        },
+        {
+            "id": "6312",
+            "nazwa": "Cisowa",
+            "lat": 51.25043,
+            "lon": 22.51102
+        },
+        {
+            "id": "6321",
+            "nazwa": "Mazowieckiego",
+            "lat": 51.25266,
+            "lon": 22.50189
+        },
+        {
+            "id": "6322",
+            "nazwa": "Mazowieckiego",
+            "lat": 51.25203,
+            "lon": 22.50364
+        },
+        {
+            "id": "6331",
+            "nazwa": "Gnieźnieńska",
+            "lat": 51.255526,
+            "lon": 22.490928
+        },
+        {
+            "id": "6332",
+            "nazwa": "Gnieźnieńska",
+            "lat": 51.255153,
+            "lon": 22.49313
+        },
+        {
+            "id": "6341",
+            "nazwa": "Szerokie",
+            "lat": 51.255099,
+            "lon": 22.482488
+        },
+        {
+            "id": "6342",
+            "nazwa": "Szerokie",
+            "lat": 51.255253,
+            "lon": 22.484518
+        },
+        {
+            "id": "6351",
+            "nazwa": "Wola Sławińska",
+            "lat": 51.254778,
+            "lon": 22.476978
+        },
+        {
+            "id": "6352",
+            "nazwa": "Wola Sławińska",
+            "lat": 51.254707,
+            "lon": 22.478653
+        },
+        {
+            "id": "6361",
+            "nazwa": "Kolonia Dąbrowica",
+            "lat": 51.256218,
+            "lon": 22.466266
+        },
+        {
+            "id": "6362",
+            "nazwa": "Kolonia Dąbrowica",
+            "lat": 51.255397,
+            "lon": 22.466837
+        },
+        {
+            "id": "6363",
+            "nazwa": "Kolonia Dąbrowica",
+            "lat": 51.255517,
+            "lon": 22.465265
+        },
+        {
+            "id": "6401",
+            "nazwa": "Gajowa",
+            "lat": 51.26747,
+            "lon": 22.505401
+        },
+        {
+            "id": "6402",
+            "nazwa": "Gajowa",
+            "lat": 51.266372,
+            "lon": 22.505014
+        },
+        {
+            "id": "6411",
+            "nazwa": "Jemiołowa",
+            "lat": 51.271543,
+            "lon": 22.505361
+        },
+        {
+            "id": "6412",
+            "nazwa": "Jemiołowa",
+            "lat": 51.27225,
+            "lon": 22.50505
+        },
+        {
+            "id": "6421",
+            "nazwa": "Zbożowa",
+            "lat": 51.275801,
+            "lon": 22.506623
+        },
+        {
+            "id": "6422",
+            "nazwa": "Zbożowa",
+            "lat": 51.275168,
+            "lon": 22.504569
+        },
+        {
+            "id": "6423",
+            "nazwa": "Zbożowa",
+            "lat": 51.276007,
+            "lon": 22.506808
+        },
+        {
+            "id": "6492",
+            "nazwa": "Czeremchowa",
+            "lat": 51.25343,
+            "lon": 22.52178
+        },
+        {
+            "id": "6501",
+            "nazwa": "Gen. Zajączka",
+            "lat": 51.255117,
+            "lon": 22.519023
+        },
+        {
+            "id": "6502",
+            "nazwa": "Gen. Zajączka",
+            "lat": 51.25532,
+            "lon": 22.518389
+        },
+        {
+            "id": "6511",
+            "nazwa": "Botaniczna",
+            "lat": 51.256982,
+            "lon": 22.515995
+        },
+        {
+            "id": "6521",
+            "nazwa": "Warszawska - cerkiew",
+            "lat": 51.260114,
+            "lon": 22.510631
+        },
+        {
+            "id": "6522",
+            "nazwa": "Warszawska - cerkiew",
+            "lat": 51.259935,
+            "lon": 22.510536
+        },
+        {
+            "id": "6531",
+            "nazwa": "Skansen",
+            "lat": 51.264195,
+            "lon": 22.504778
+        },
+        {
+            "id": "6532",
+            "nazwa": "Skansen",
+            "lat": 51.263009,
+            "lon": 22.505251
+        },
+        {
+            "id": "6533",
+            "nazwa": "Skansen",
+            "lat": 51.264005,
+            "lon": 22.503928
+        },
+        {
+            "id": "6534",
+            "nazwa": "Skansen",
+            "lat": 51.263179,
+            "lon": 22.504383
+        },
+        {
+            "id": "6535",
+            "nazwa": "Skansen",
+            "lat": 51.26329,
+            "lon": 22.50431
+        },
+        {
+            "id": "6541",
+            "nazwa": "Skowronkowa NŻ",
+            "lat": 51.265753,
+            "lon": 22.500911
+        },
+        {
+            "id": "6542",
+            "nazwa": "Skowronkowa NŻ",
+            "lat": 51.267813,
+            "lon": 22.497044
+        },
+        {
+            "id": "6551",
+            "nazwa": "Główna",
+            "lat": 51.271171,
+            "lon": 22.491613
+        },
+        {
+            "id": "6552",
+            "nazwa": "Główna",
+            "lat": 51.270485,
+            "lon": 22.492481
+        },
+        {
+            "id": "6571",
+            "nazwa": "Kmieca NŻ",
+            "lat": 51.275243,
+            "lon": 22.484603
+        },
+        {
+            "id": "6572",
+            "nazwa": "Kmieca NŻ",
+            "lat": 51.275015,
+            "lon": 22.48472
+        },
+        {
+            "id": "6581",
+            "nazwa": "Dębówka II NŻ",
+            "lat": 51.278901,
+            "lon": 22.47839
+        },
+        {
+            "id": "6582",
+            "nazwa": "Dębówka II NŻ",
+            "lat": 51.277325,
+            "lon": 22.480738
+        },
+        {
+            "id": "6681",
+            "nazwa": "Nowickiego",
+            "lat": 51.261503,
+            "lon": 22.530786
+        },
+        {
+            "id": "6682",
+            "nazwa": "Nowickiego",
+            "lat": 51.2607,
+            "lon": 22.531071
+        },
+        {
+            "id": "6683",
+            "nazwa": "Nowickiego",
+            "lat": 51.260726,
+            "lon": 22.531823
+        },
+        {
+            "id": "6701",
+            "nazwa": "Popiełuszki",
+            "lat": 51.255639,
+            "lon": 22.530621
+        },
+        {
+            "id": "6702",
+            "nazwa": "Popiełuszki",
+            "lat": 51.254824,
+            "lon": 22.528439
+        },
+        {
+            "id": "6711",
+            "nazwa": "Sikorskiego NŻ",
+            "lat": 51.257448,
+            "lon": 22.535805
+        },
+        {
+            "id": "6712",
+            "nazwa": "Sikorskiego NŻ",
+            "lat": 51.258135,
+            "lon": 22.531634
+        },
+        {
+            "id": "6713",
+            "nazwa": "Sikorskiego NŻ",
+            "lat": 51.258861,
+            "lon": 22.533124
+        },
+        {
+            "id": "6715",
+            "nazwa": "Sikorskiego NŻ",
+            "lat": 51.259368,
+            "lon": 22.530653
+        },
+        {
+            "id": "6721",
+            "nazwa": "Mineralna",
+            "lat": 51.263535,
+            "lon": 22.528671
+        },
+        {
+            "id": "6722",
+            "nazwa": "Mineralna",
+            "lat": 51.262211,
+            "lon": 22.528845
+        },
+        {
+            "id": "6723",
+            "nazwa": "Mineralna",
+            "lat": 51.262903,
+            "lon": 22.527636
+        },
+        {
+            "id": "6731",
+            "nazwa": "Tarasowa",
+            "lat": 51.26479,
+            "lon": 22.521339
+        },
+        {
+            "id": "6732",
+            "nazwa": "Tarasowa",
+            "lat": 51.264076,
+            "lon": 22.523821
+        },
+        {
+            "id": "6742",
+            "nazwa": "Ogród Botaniczny",
+            "lat": 51.265622,
+            "lon": 22.517415
+        },
+        {
+            "id": "6751",
+            "nazwa": "Bogdanówka",
+            "lat": 51.267422,
+            "lon": 22.513924
+        },
+        {
+            "id": "6752",
+            "nazwa": "Bogdanówka",
+            "lat": 51.267664,
+            "lon": 22.513023
+        },
+        {
+            "id": "6761",
+            "nazwa": "Lisa",
+            "lat": 51.27087,
+            "lon": 22.51111
+        },
+        {
+            "id": "6762",
+            "nazwa": "Lisa",
+            "lat": 51.27173,
+            "lon": 22.5106
+        },
+        {
+            "id": "6771",
+            "nazwa": "Dzbenin NŻ",
+            "lat": 51.279211,
+            "lon": 22.504875
+        },
+        {
+            "id": "6772",
+            "nazwa": "Dzbenin NŻ",
+            "lat": 51.278269,
+            "lon": 22.505416
+        },
+        {
+            "id": "6781",
+            "nazwa": "Sławinkowska",
+            "lat": 51.283843,
+            "lon": 22.50051
+        },
+        {
+            "id": "6782",
+            "nazwa": "Sławinkowska",
+            "lat": 51.283749,
+            "lon": 22.500087
+        },
+        {
+            "id": "6783",
+            "nazwa": "Sławinkowska",
+            "lat": 51.283842,
+            "lon": 22.500211
+        },
+        {
+            "id": "6791",
+            "nazwa": "Szafranowa NŻ",
+            "lat": 51.28153,
+            "lon": 22.50271
+        },
+        {
+            "id": "6792",
+            "nazwa": "Szafranowa NŻ",
+            "lat": 51.28103,
+            "lon": 22.50318
+        },
+        {
+            "id": "6902",
+            "nazwa": "Wytwórnia Szczepionek",
+            "lat": 51.26364,
+            "lon": 22.485145
+        },
+        {
+            "id": "6911",
+            "nazwa": "Poligonowa - osiedle",
+            "lat": 51.26744,
+            "lon": 22.52901
+        },
+        {
+            "id": "6912",
+            "nazwa": "Poligonowa - osiedle",
+            "lat": 51.26651,
+            "lon": 22.52857
+        },
+        {
+            "id": "6921",
+            "nazwa": "Zielone Wzgórze",
+            "lat": 51.27026,
+            "lon": 22.52926
+        },
+        {
+            "id": "6922",
+            "nazwa": "Zielone Wzgórze",
+            "lat": 51.2691,
+            "lon": 22.528804
+        },
+        {
+            "id": "6931",
+            "nazwa": "Górki Czechowskie NŻ",
+            "lat": 51.277277,
+            "lon": 22.52773
+        },
+        {
+            "id": "6932",
+            "nazwa": "Górki Czechowskie NŻ",
+            "lat": 51.27754,
+            "lon": 22.528265
+        },
+        {
+            "id": "6941",
+            "nazwa": "Poligon",
+            "lat": 51.280556,
+            "lon": 22.529936
+        },
+        {
+            "id": "6942",
+            "nazwa": "Poligon",
+            "lat": 51.28069,
+            "lon": 22.52982
+        },
+        {
+            "id": "6951",
+            "nazwa": "Poligonowa",
+            "lat": 51.28438,
+            "lon": 22.53028
+        },
+        {
+            "id": "6952",
+            "nazwa": "Poligonowa",
+            "lat": 51.284387,
+            "lon": 22.530133
+        },
+        {
+            "id": "7011",
+            "nazwa": "Jakubowice - Ogrodowa",
+            "lat": 51.289422,
+            "lon": 22.54547
+        },
+        {
+            "id": "7012",
+            "nazwa": "Jakubowice - Ogrodowa",
+            "lat": 51.288493,
+            "lon": 22.546214
+        },
+        {
+            "id": "7021",
+            "nazwa": "Jakubowice - Akacjowa NŻ",
+            "lat": 51.294286,
+            "lon": 22.542513
+        },
+        {
+            "id": "7022",
+            "nazwa": "Jakubowice - Akacjowa NŻ",
+            "lat": 51.29282,
+            "lon": 22.542743
+        },
+        {
+            "id": "7041",
+            "nazwa": "Jakubowice - Kasztanowa NŻ",
+            "lat": 51.303029,
+            "lon": 22.540062
+        },
+        {
+            "id": "7042",
+            "nazwa": "Jakubowice - Kasztanowa NŻ",
+            "lat": 51.301298,
+            "lon": 22.540355
+        },
+        {
+            "id": "7051",
+            "nazwa": "Jakubowice - Szkolna NŻ",
+            "lat": 51.311834,
+            "lon": 22.5377
+        },
+        {
+            "id": "7052",
+            "nazwa": "Jakubowice - Szkolna NŻ",
+            "lat": 51.31079,
+            "lon": 22.537808
+        },
+        {
+            "id": "7061",
+            "nazwa": "Jakubowice - Nowowiejska NŻ",
+            "lat": 51.319513,
+            "lon": 22.532077
+        },
+        {
+            "id": "7062",
+            "nazwa": "Jakubowice - Nowowiejska NŻ",
+            "lat": 51.318663,
+            "lon": 22.532756
+        },
+        {
+            "id": "7071",
+            "nazwa": "Jakubowice - Słoneczne Wzgórze NŻ",
+            "lat": 51.321642,
+            "lon": 22.52804
+        },
+        {
+            "id": "7072",
+            "nazwa": "Jakubowice - Słoneczne Wzgórze NŻ",
+            "lat": 51.32087,
+            "lon": 22.52954
+        },
+        {
+            "id": "7081",
+            "nazwa": "Jakubowice - Czeremchowa NŻ",
+            "lat": 51.325034,
+            "lon": 22.52415
+        },
+        {
+            "id": "7091",
+            "nazwa": "Jakubowice - Zemborska NŻ",
+            "lat": 51.328297,
+            "lon": 22.517978
+        },
+        {
+            "id": "7092",
+            "nazwa": "Jakubowice - Zemborska NŻ",
+            "lat": 51.327104,
+            "lon": 22.519956
+        },
+        {
+            "id": "7101",
+            "nazwa": "Smugi II NŻ",
+            "lat": 51.333066,
+            "lon": 22.50873
+        },
+        {
+            "id": "7102",
+            "nazwa": "Smugi II NŻ",
+            "lat": 51.332508,
+            "lon": 22.50954
+        },
+        {
+            "id": "7111",
+            "nazwa": "Elizówka",
+            "lat": 51.298267,
+            "lon": 22.576189
+        },
+        {
+            "id": "7112",
+            "nazwa": "Elizówka",
+            "lat": 51.29774,
+            "lon": 22.5762
+        },
+        {
+            "id": "7113",
+            "nazwa": "Elizówka",
+            "lat": 51.29784,
+            "lon": 22.57623
+        },
+        {
+            "id": "7121",
+            "nazwa": "Elizówka bloki",
+            "lat": 51.288523,
+            "lon": 22.577442
+        },
+        {
+            "id": "7122",
+            "nazwa": "Elizówka bloki",
+            "lat": 51.287672,
+            "lon": 22.576963
+        },
+        {
+            "id": "7124",
+            "nazwa": "Elizówka bloki",
+            "lat": 51.288064,
+            "lon": 22.577087
+        },
+        {
+            "id": "7131",
+            "nazwa": "Elizówka hotel NŻ",
+            "lat": 51.29772,
+            "lon": 22.58039
+        },
+        {
+            "id": "7142",
+            "nazwa": "Elizówka II NŻ",
+            "lat": 51.29376,
+            "lon": 22.575247
+        },
+        {
+            "id": "7151",
+            "nazwa": "Elizówka - obwodnica NŻ",
+            "lat": 51.302288,
+            "lon": 22.576793
+        },
+        {
+            "id": "7152",
+            "nazwa": "Elizówka - obwodnica NŻ",
+            "lat": 51.302225,
+            "lon": 22.576743
+        },
+        {
+            "id": "7161",
+            "nazwa": "Dys - Samsonówka NŻ",
+            "lat": 51.30473,
+            "lon": 22.588287
+        },
+        {
+            "id": "7171",
+            "nazwa": "Dys - Słoneczna NŻ",
+            "lat": 51.305245,
+            "lon": 22.582676
+        },
+        {
+            "id": "7181",
+            "nazwa": "Dys - Wąwozowa",
+            "lat": 51.305086,
+            "lon": 22.577163
+        },
+        {
+            "id": "7182",
+            "nazwa": "Dys - Wąwozowa",
+            "lat": 51.304914,
+            "lon": 22.577145
+        },
+        {
+            "id": "7191",
+            "nazwa": "Majdan Krasieniński - sklep NŻ",
+            "lat": 51.343683,
+            "lon": 22.488239
+        },
+        {
+            "id": "7192",
+            "nazwa": "Majdan Krasieniński - sklep NŻ",
+            "lat": 51.342642,
+            "lon": 22.489941
+        },
+        {
+            "id": "7193",
+            "nazwa": "Majdan Krasieniński - sklep",
+            "lat": 51.34849,
+            "lon": 22.47937
+        },
+        {
+            "id": "7201",
+            "nazwa": "Majdan Krasieniński NŻ",
+            "lat": 51.34892,
+            "lon": 22.4782
+        },
+        {
+            "id": "7202",
+            "nazwa": "Majdan Krasieniński NŻ",
+            "lat": 51.347961,
+            "lon": 22.479832
+        },
+        {
+            "id": "7211",
+            "nazwa": "Krasienin - skrzyżowanie NŻ",
+            "lat": 51.353674,
+            "lon": 22.471816
+        },
+        {
+            "id": "7212",
+            "nazwa": "Krasienin - skrzyżowanie NŻ",
+            "lat": 51.350838,
+            "lon": 22.474161
+        },
+        {
+            "id": "7221",
+            "nazwa": "Krasienin - Lipy NŻ",
+            "lat": 51.35733,
+            "lon": 22.47041
+        },
+        {
+            "id": "7222",
+            "nazwa": "Krasienin - Lipy NŻ",
+            "lat": 51.35534,
+            "lon": 22.470947
+        },
+        {
+            "id": "7231",
+            "nazwa": "Krasienin-Kolonia - szkoła",
+            "lat": 51.361739,
+            "lon": 22.468688
+        },
+        {
+            "id": "7232",
+            "nazwa": "Krasienin-Kolonia - szkoła",
+            "lat": 51.361234,
+            "lon": 22.468705
+        },
+        {
+            "id": "7251",
+            "nazwa": "Krasienin-Kolonia",
+            "lat": 51.369608,
+            "lon": 22.467406
+        },
+        {
+            "id": "7252",
+            "nazwa": "Krasienin-Kolonia",
+            "lat": 51.369594,
+            "lon": 22.467245
+        },
+        {
+            "id": "7291",
+            "nazwa": "Rudnik - kościół",
+            "lat": 51.283671,
+            "lon": 22.597944
+        },
+        {
+            "id": "7292",
+            "nazwa": "Rudnik - kościół",
+            "lat": 51.28385,
+            "lon": 22.59774
+        },
+        {
+            "id": "7301",
+            "nazwa": "Rudnik",
+            "lat": 51.28111,
+            "lon": 22.60365
+        },
+        {
+            "id": "7302",
+            "nazwa": "Rudnik",
+            "lat": 51.28093,
+            "lon": 22.60364
+        },
+        {
+            "id": "7311",
+            "nazwa": "Marianówka NŻ",
+            "lat": 51.28643,
+            "lon": 22.61347
+        },
+        {
+            "id": "7312",
+            "nazwa": "Marianówka NŻ",
+            "lat": 51.28624,
+            "lon": 22.61311
+        },
+        {
+            "id": "7321",
+            "nazwa": "Kolonia Pliszczyn NŻ",
+            "lat": 51.2896,
+            "lon": 22.61919
+        },
+        {
+            "id": "7322",
+            "nazwa": "Kolonia Pliszczyn NŻ",
+            "lat": 51.28979,
+            "lon": 22.61884
+        },
+        {
+            "id": "7331",
+            "nazwa": "Kolonia Pliszczyn II NŻ",
+            "lat": 51.29217,
+            "lon": 22.61676
+        },
+        {
+            "id": "7332",
+            "nazwa": "Kolonia Pliszczyn II NŻ",
+            "lat": 51.2926,
+            "lon": 22.61609
+        },
+        {
+            "id": "7343",
+            "nazwa": "Łagiewniki NŻ",
+            "lat": 51.2963,
+            "lon": 22.61043
+        },
+        {
+            "id": "7344",
+            "nazwa": "Łagiewniki NŻ",
+            "lat": 51.295857,
+            "lon": 22.611531
+        },
+        {
+            "id": "7351",
+            "nazwa": "Ciecierzyn - Żulin III NŻ",
+            "lat": 51.30065,
+            "lon": 22.59802
+        },
+        {
+            "id": "7352",
+            "nazwa": "Ciecierzyn - Żulin III NŻ",
+            "lat": 51.299757,
+            "lon": 22.600061
+        },
+        {
+            "id": "7361",
+            "nazwa": "Ciecierzyn - Żulin II NŻ",
+            "lat": 51.30227,
+            "lon": 22.59311
+        },
+        {
+            "id": "7362",
+            "nazwa": "Ciecierzyn - Żulin II NŻ",
+            "lat": 51.302077,
+            "lon": 22.592991
+        },
+        {
+            "id": "7371",
+            "nazwa": "Ciecierzyn - Żulin",
+            "lat": 51.3039,
+            "lon": 22.591004
+        },
+        {
+            "id": "7372",
+            "nazwa": "Ciecierzyn - Żulin",
+            "lat": 51.303927,
+            "lon": 22.591219
+        },
+        {
+            "id": "7391",
+            "nazwa": "Ciecierzyn I NŻ",
+            "lat": 51.311517,
+            "lon": 22.599338
+        },
+        {
+            "id": "7392",
+            "nazwa": "Ciecierzyn I NŻ",
+            "lat": 51.310268,
+            "lon": 22.59752
+        },
+        {
+            "id": "7401",
+            "nazwa": "Ciecierzyn - szkoła",
+            "lat": 51.315897,
+            "lon": 22.601953
+        },
+        {
+            "id": "7402",
+            "nazwa": "Ciecierzyn - szkoła",
+            "lat": 51.315721,
+            "lon": 22.602619
+        },
+        {
+            "id": "7411",
+            "nazwa": "Dys - Gajowa NŻ",
+            "lat": 51.316095,
+            "lon": 22.590889
+        },
+        {
+            "id": "7412",
+            "nazwa": "Dys - Gajowa NŻ",
+            "lat": 51.316128,
+            "lon": 22.591848
+        },
+        {
+            "id": "7421",
+            "nazwa": "Dys - zalew NŻ",
+            "lat": 51.314243,
+            "lon": 22.580077
+        },
+        {
+            "id": "7422",
+            "nazwa": "Dys - zalew NŻ",
+            "lat": 51.314673,
+            "lon": 22.581557
+        },
+        {
+            "id": "7431",
+            "nazwa": "Dys - Wąwozowa II NŻ",
+            "lat": 51.31178,
+            "lon": 22.5746
+        },
+        {
+            "id": "7432",
+            "nazwa": "Dys - Wąwozowa II NŻ",
+            "lat": 51.31195,
+            "lon": 22.57541
+        },
+        {
+            "id": "7441",
+            "nazwa": "Dys - szkoła",
+            "lat": 51.31373,
+            "lon": 22.5629
+        },
+        {
+            "id": "7442",
+            "nazwa": "Dys - szkoła",
+            "lat": 51.31257,
+            "lon": 22.56425
+        },
+        {
+            "id": "7451",
+            "nazwa": "Dys - Zbożowa NŻ",
+            "lat": 51.32243,
+            "lon": 22.56098
+        },
+        {
+            "id": "7452",
+            "nazwa": "Dys - Zbożowa NŻ",
+            "lat": 51.32081,
+            "lon": 22.56097
+        },
+        {
+            "id": "7461",
+            "nazwa": "Pólko - Lipowa NŻ",
+            "lat": 51.32697,
+            "lon": 22.55913
+        },
+        {
+            "id": "7462",
+            "nazwa": "Pólko - Lipowa NŻ",
+            "lat": 51.32659,
+            "lon": 22.55917
+        },
+        {
+            "id": "7471",
+            "nazwa": "Pólko - Kasztanowa NŻ",
+            "lat": 51.33386,
+            "lon": 22.55341
+        },
+        {
+            "id": "7472",
+            "nazwa": "Pólko - Kasztanowa NŻ",
+            "lat": 51.333513,
+            "lon": 22.553423
+        },
+        {
+            "id": "7481",
+            "nazwa": "Nasutów - masarnia NŻ",
+            "lat": 51.34259,
+            "lon": 22.54616
+        },
+        {
+            "id": "7482",
+            "nazwa": "Nasutów - masarnia NŻ",
+            "lat": 51.34202,
+            "lon": 22.54638
+        },
+        {
+            "id": "7491",
+            "nazwa": "Nasutów-Kolonia NŻ",
+            "lat": 51.35111,
+            "lon": 22.539158
+        },
+        {
+            "id": "7492",
+            "nazwa": "Nasutów-Kolonia NŻ",
+            "lat": 51.35079,
+            "lon": 22.53919
+        },
+        {
+            "id": "7501",
+            "nazwa": "Nasutów - kościół",
+            "lat": 51.36134,
+            "lon": 22.53113
+        },
+        {
+            "id": "7502",
+            "nazwa": "Nasutów - kościół",
+            "lat": 51.3613,
+            "lon": 22.53089
+        },
+        {
+            "id": "7511",
+            "nazwa": "Zagrodna NŻ",
+            "lat": 51.294386,
+            "lon": 22.627798
+        },
+        {
+            "id": "7512",
+            "nazwa": "Zagrodna NŻ",
+            "lat": 51.292535,
+            "lon": 22.628097
+        },
+        {
+            "id": "7521",
+            "nazwa": "Pliszczyn",
+            "lat": 51.30175,
+            "lon": 22.64013
+        },
+        {
+            "id": "7522",
+            "nazwa": "Pliszczyn",
+            "lat": 51.30191,
+            "lon": 22.63888
+        },
+        {
+            "id": "7523",
+            "nazwa": "Pliszczyn",
+            "lat": 51.301784,
+            "lon": 22.639958
+        },
+        {
+            "id": "7531",
+            "nazwa": "Pliszczyn - szkoła",
+            "lat": 51.30009,
+            "lon": 22.63466
+        },
+        {
+            "id": "7532",
+            "nazwa": "Pliszczyn - szkoła",
+            "lat": 51.30012,
+            "lon": 22.63445
+        },
+        {
+            "id": "7541",
+            "nazwa": "Pliszczyn - remiza NŻ",
+            "lat": 51.300694,
+            "lon": 22.650064
+        },
+        {
+            "id": "7542",
+            "nazwa": "Pliszczyn - remiza NŻ",
+            "lat": 51.300774,
+            "lon": 22.649421
+        },
+        {
+            "id": "7551",
+            "nazwa": "Łysaków NŻ",
+            "lat": 51.297027,
+            "lon": 22.659589
+        },
+        {
+            "id": "7552",
+            "nazwa": "Łysaków NŻ",
+            "lat": 51.297327,
+            "lon": 22.660379
+        },
+        {
+            "id": "7561",
+            "nazwa": "Sobianowice II NŻ",
+            "lat": 51.299027,
+            "lon": 22.6681
+        },
+        {
+            "id": "7562",
+            "nazwa": "Sobianowice II NŻ",
+            "lat": 51.299121,
+            "lon": 22.6673
+        },
+        {
+            "id": "7571",
+            "nazwa": "Sobianowice NŻ",
+            "lat": 51.30084,
+            "lon": 22.679589
+        },
+        {
+            "id": "7572",
+            "nazwa": "Sobianowice NŻ",
+            "lat": 51.3008,
+            "lon": 22.6788
+        },
+        {
+            "id": "7582",
+            "nazwa": "Sobianowice - szkoła",
+            "lat": 51.30408,
+            "lon": 22.687279
+        },
+        {
+            "id": "7591",
+            "nazwa": "Sobianowice - skrzyżowanie NŻ",
+            "lat": 51.305266,
+            "lon": 22.689129
+        },
+        {
+            "id": "7592",
+            "nazwa": "Sobianowice - skrzyżowanie NŻ",
+            "lat": 51.304966,
+            "lon": 22.687789
+        },
+        {
+            "id": "7601",
+            "nazwa": "Wólka",
+            "lat": 51.266666,
+            "lon": 22.634948
+        },
+        {
+            "id": "7602",
+            "nazwa": "Wólka",
+            "lat": 51.2658,
+            "lon": 22.634354
+        },
+        {
+            "id": "7603",
+            "nazwa": "Wólka",
+            "lat": 51.26653,
+            "lon": 22.63542
+        },
+        {
+            "id": "7611",
+            "nazwa": "Długie - stolarnia NŻ",
+            "lat": 51.270904,
+            "lon": 22.640367
+        },
+        {
+            "id": "7612",
+            "nazwa": "Długie - stolarnia NŻ",
+            "lat": 51.26998,
+            "lon": 22.63902
+        },
+        {
+            "id": "7621",
+            "nazwa": "Długie NŻ",
+            "lat": 51.274497,
+            "lon": 22.648342
+        },
+        {
+            "id": "7622",
+            "nazwa": "Długie NŻ",
+            "lat": 51.273813,
+            "lon": 22.646173
+        },
+        {
+            "id": "7631",
+            "nazwa": "Turka",
+            "lat": 51.278533,
+            "lon": 22.659352
+        },
+        {
+            "id": "7632",
+            "nazwa": "Turka",
+            "lat": 51.278067,
+            "lon": 22.657903
+        },
+        {
+            "id": "7641",
+            "nazwa": "Turka - Dębowa",
+            "lat": 51.276587,
+            "lon": 22.664164
+        },
+        {
+            "id": "7642",
+            "nazwa": "Turka - Dębowa",
+            "lat": 51.277106,
+            "lon": 22.663792
+        },
+        {
+            "id": "7651",
+            "nazwa": "Turka - os. Borek",
+            "lat": 51.273946,
+            "lon": 22.66597
+        },
+        {
+            "id": "7652",
+            "nazwa": "Turka - os. Borek",
+            "lat": 51.273279,
+            "lon": 22.666177
+        },
+        {
+            "id": "7681",
+            "nazwa": "Franciszków - Szkolna II NŻ",
+            "lat": 51.224195,
+            "lon": 22.717388
+        },
+        {
+            "id": "7682",
+            "nazwa": "Franciszków - Szkolna II NŻ",
+            "lat": 51.224625,
+            "lon": 22.717624
+        },
+        {
+            "id": "7691",
+            "nazwa": "Wyszyńskiego - Klonowa NŻ",
+            "lat": 51.209028,
+            "lon": 22.6952
+        },
+        {
+            "id": "7692",
+            "nazwa": "Wyszyńskiego - Klonowa NŻ",
+            "lat": 51.209397,
+            "lon": 22.6952
+        },
+        {
+            "id": "7711",
+            "nazwa": "Kalinówka NŻ",
+            "lat": 51.20554,
+            "lon": 22.66149
+        },
+        {
+            "id": "7712",
+            "nazwa": "Kalinówka NŻ",
+            "lat": 51.20528,
+            "lon": 22.662419
+        },
+        {
+            "id": "7721",
+            "nazwa": "Kalinówka - wiadukt NŻ",
+            "lat": 51.20127,
+            "lon": 22.67307
+        },
+        {
+            "id": "7722",
+            "nazwa": "Kalinówka - wiadukt NŻ",
+            "lat": 51.201733,
+            "lon": 22.672119
+        },
+        {
+            "id": "7732",
+            "nazwa": "Lotników Polskich - wiadukt NŻ",
+            "lat": 51.20187,
+            "lon": 22.67498
+        },
+        {
+            "id": "7751",
+            "nazwa": "Wyszyńskiego - cmentarz",
+            "lat": 51.19915,
+            "lon": 22.69261
+        },
+        {
+            "id": "7752",
+            "nazwa": "Wyszyńskiego - cmentarz",
+            "lat": 51.19864,
+            "lon": 22.6919
+        },
+        {
+            "id": "7761",
+            "nazwa": "Wyszyńskiego - Wiejska NŻ",
+            "lat": 51.20509,
+            "lon": 22.69477
+        },
+        {
+            "id": "7762",
+            "nazwa": "Wyszyńskiego - Wiejska NŻ",
+            "lat": 51.20401,
+            "lon": 22.69452
+        },
+        {
+            "id": "7791",
+            "nazwa": "Klonowa - kościół NŻ",
+            "lat": 51.21006,
+            "lon": 22.70297
+        },
+        {
+            "id": "7792",
+            "nazwa": "Klonowa - kościół NŻ",
+            "lat": 51.21017,
+            "lon": 22.70372
+        },
+        {
+            "id": "7801",
+            "nazwa": "Abramowice Prywatne",
+            "lat": 51.20548,
+            "lon": 22.63257
+        },
+        {
+            "id": "7802",
+            "nazwa": "Abramowice Prywatne",
+            "lat": 51.20562,
+            "lon": 22.63209
+        },
+        {
+            "id": "7811",
+            "nazwa": "Kalinówka - Dwie Topole NŻ",
+            "lat": 51.208077,
+            "lon": 22.639595
+        },
+        {
+            "id": "7812",
+            "nazwa": "Kalinówka - Dwie Topole NŻ",
+            "lat": 51.20905,
+            "lon": 22.640213
+        },
+        {
+            "id": "7821",
+            "nazwa": "Kalinówka - skrzyżowanie NŻ",
+            "lat": 51.21193,
+            "lon": 22.64304
+        },
+        {
+            "id": "7822",
+            "nazwa": "Kalinówka - skrzyżowanie NŻ",
+            "lat": 51.21147,
+            "lon": 22.64249
+        },
+        {
+            "id": "7831",
+            "nazwa": "Kalinówka - stacja paliw NŻ",
+            "lat": 51.21078,
+            "lon": 22.64779
+        },
+        {
+            "id": "7832",
+            "nazwa": "Kalinówka - stacja paliw NŻ",
+            "lat": 51.21148,
+            "lon": 22.64622
+        },
+        {
+            "id": "7841",
+            "nazwa": "Wólka II NŻ",
+            "lat": 51.262022,
+            "lon": 22.642082
+        },
+        {
+            "id": "7842",
+            "nazwa": "Wólka II NŻ",
+            "lat": 51.262714,
+            "lon": 22.640762
+        },
+        {
+            "id": "7851",
+            "nazwa": "Wólka - masarnia NŻ",
+            "lat": 51.26403,
+            "lon": 22.63557
+        },
+        {
+            "id": "7852",
+            "nazwa": "Wólka - masarnia NŻ",
+            "lat": 51.26439,
+            "lon": 22.63485
+        },
+        {
+            "id": "7861",
+            "nazwa": "Świdniczek NŻ",
+            "lat": 51.259123,
+            "lon": 22.649506
+        },
+        {
+            "id": "7862",
+            "nazwa": "Świdniczek NŻ",
+            "lat": 51.259548,
+            "lon": 22.647701
+        },
+        {
+            "id": "7871",
+            "nazwa": "Biskupie Kolonia NŻ",
+            "lat": 51.257294,
+            "lon": 22.662747
+        },
+        {
+            "id": "7872",
+            "nazwa": "Biskupie Kolonia NŻ",
+            "lat": 51.257616,
+            "lon": 22.660383
+        },
+        {
+            "id": "7881",
+            "nazwa": "Świdnik Mały NŻ",
+            "lat": 51.256016,
+            "lon": 22.675388
+        },
+        {
+            "id": "7882",
+            "nazwa": "Świdnik Mały NŻ",
+            "lat": 51.256233,
+            "lon": 22.673799
+        },
+        {
+            "id": "7891",
+            "nazwa": "Świdnik Mały-szkoła",
+            "lat": 51.255348,
+            "lon": 22.681965
+        },
+        {
+            "id": "7892",
+            "nazwa": "Świdnik Mały - szkoła",
+            "lat": 51.255585,
+            "lon": 22.680615
+        },
+        {
+            "id": "7901",
+            "nazwa": "Świdnik Duży Pierwszy NŻ",
+            "lat": 51.254168,
+            "lon": 22.693041
+        },
+        {
+            "id": "7902",
+            "nazwa": "Świdnik Duży Pierwszy NŻ",
+            "lat": 51.254473,
+            "lon": 22.691079
+        },
+        {
+            "id": "7911",
+            "nazwa": "Świdnik Duży - Leśniczówka",
+            "lat": 51.253006,
+            "lon": 22.704538
+        },
+        {
+            "id": "7912",
+            "nazwa": "Świdnik Duży - Leśniczówka",
+            "lat": 51.253064,
+            "lon": 22.704171
+        },
+        {
+            "id": "7931",
+            "nazwa": "Franciszków - Szkolna NŻ",
+            "lat": 51.226995,
+            "lon": 22.720604
+        },
+        {
+            "id": "7932",
+            "nazwa": "Franciszków - Szkolna NŻ",
+            "lat": 51.22749,
+            "lon": 22.72094
+        },
+        {
+            "id": "7941",
+            "nazwa": "Franciszków - skrzyżowanie NŻ",
+            "lat": 51.233192,
+            "lon": 22.728134
+        },
+        {
+            "id": "7942",
+            "nazwa": "Franciszków - skrzyżowanie NŻ",
+            "lat": 51.233341,
+            "lon": 22.728224
+        },
+        {
+            "id": "7951",
+            "nazwa": "Jacków NŻ",
+            "lat": 51.22958,
+            "lon": 22.7388
+        },
+        {
+            "id": "7952",
+            "nazwa": "Jacków NŻ",
+            "lat": 51.23023,
+            "lon": 22.73713
+        },
+        {
+            "id": "7961",
+            "nazwa": "Jacków - sklep NŻ",
+            "lat": 51.22494,
+            "lon": 22.75167
+        },
+        {
+            "id": "7962",
+            "nazwa": "Jacków - sklep NŻ",
+            "lat": 51.226734,
+            "lon": 22.74703
+        },
+        {
+            "id": "7971",
+            "nazwa": "Jacków - fabryka NŻ",
+            "lat": 51.221748,
+            "lon": 22.762607
+        },
+        {
+            "id": "7972",
+            "nazwa": "Jacków - fabryka NŻ",
+            "lat": 51.22187,
+            "lon": 22.76314
+        },
+        {
+            "id": "7981",
+            "nazwa": "Mełgiew - Lubelska NŻ",
+            "lat": 51.226376,
+            "lon": 22.770688
+        },
+        {
+            "id": "7982",
+            "nazwa": "Mełgiew - Lubelska NŻ",
+            "lat": 51.228687,
+            "lon": 22.772897
+        },
+        {
+            "id": "7991",
+            "nazwa": "Mełgiew",
+            "lat": 51.230839,
+            "lon": 22.779914
+        },
+        {
+            "id": "7992",
+            "nazwa": "Mełgiew",
+            "lat": 51.230434,
+            "lon": 22.780059
+        },
+        {
+            "id": "8002",
+            "nazwa": "Mełgiew - Lubelska II NŻ",
+            "lat": 51.229591,
+            "lon": 22.773789
+        },
+        {
+            "id": "8011",
+            "nazwa": "Dominów - ogródki działkowe NŻ",
+            "lat": 51.17716,
+            "lon": 22.59948
+        },
+        {
+            "id": "8012",
+            "nazwa": "Dominów - ogródki działkowe NŻ",
+            "lat": 51.17752,
+            "lon": 22.59965
+        },
+        {
+            "id": "8021",
+            "nazwa": "Dominów - skrzyżowanie",
+            "lat": 51.17281,
+            "lon": 22.60019
+        },
+        {
+            "id": "8022",
+            "nazwa": "Dominów - skrzyżowanie",
+            "lat": 51.1727,
+            "lon": 22.600455
+        },
+        {
+            "id": "8031",
+            "nazwa": "Kolonia Dominów NŻ",
+            "lat": 51.16835,
+            "lon": 22.60097
+        },
+        {
+            "id": "8032",
+            "nazwa": "Kolonia Dominów NŻ",
+            "lat": 51.16851,
+            "lon": 22.60113
+        },
+        {
+            "id": "8041",
+            "nazwa": "Dominów",
+            "lat": 51.163901,
+            "lon": 22.60163
+        },
+        {
+            "id": "8042",
+            "nazwa": "Dominów",
+            "lat": 51.163724,
+            "lon": 22.60165
+        },
+        {
+            "id": "8051",
+            "nazwa": "Dominów - Urząd Gminy",
+            "lat": 51.17169,
+            "lon": 22.59603
+        },
+        {
+            "id": "8052",
+            "nazwa": "Dominów - Urząd Gminy",
+            "lat": 51.171804,
+            "lon": 22.594473
+        },
+        {
+            "id": "8061",
+            "nazwa": "Kawka - szklarnia NŻ",
+            "lat": 51.37552,
+            "lon": 22.46821
+        },
+        {
+            "id": "8062",
+            "nazwa": "Kawka - szklarnia NŻ",
+            "lat": 51.37574,
+            "lon": 22.46809
+        },
+        {
+            "id": "8071",
+            "nazwa": "Kawka",
+            "lat": 51.38193,
+            "lon": 22.46949
+        },
+        {
+            "id": "8072",
+            "nazwa": "Kawka NŻ",
+            "lat": 51.38164,
+            "lon": 22.46931
+        },
+        {
+            "id": "8081",
+            "nazwa": "Kawka - remiza NŻ",
+            "lat": 51.38715,
+            "lon": 22.47061
+        },
+        {
+            "id": "8082",
+            "nazwa": "Kawka - remiza NŻ",
+            "lat": 51.38735,
+            "lon": 22.47045
+        },
+        {
+            "id": "8091",
+            "nazwa": "Kawka - Zakątek NŻ",
+            "lat": 51.39502,
+            "lon": 22.47226
+        },
+        {
+            "id": "8092",
+            "nazwa": "Kawka - Zakątek NŻ",
+            "lat": 51.39514,
+            "lon": 22.47196
+        },
+        {
+            "id": "8101",
+            "nazwa": "Kawka - las",
+            "lat": 51.39836,
+            "lon": 22.47333
+        },
+        {
+            "id": "8102",
+            "nazwa": "Kawka - las",
+            "lat": 51.39875,
+            "lon": 22.47326
+        },
+        {
+            "id": "8111",
+            "nazwa": "Ćmiłów",
+            "lat": 51.16692,
+            "lon": 22.58239
+        },
+        {
+            "id": "8112",
+            "nazwa": "Ćmiłów",
+            "lat": 51.16542,
+            "lon": 22.58198
+        },
+        {
+            "id": "8121",
+            "nazwa": "Ćmiłów - kościół",
+            "lat": 51.16021,
+            "lon": 22.58126
+        },
+        {
+            "id": "8122",
+            "nazwa": "Ćmiłów - kościół",
+            "lat": 51.16155,
+            "lon": 22.58113
+        },
+        {
+            "id": "8131",
+            "nazwa": "Mętów - szkoła",
+            "lat": 51.15364,
+            "lon": 22.58343
+        },
+        {
+            "id": "8132",
+            "nazwa": "Mętów - szkoła",
+            "lat": 51.1544,
+            "lon": 22.5837
+        },
+        {
+            "id": "8152",
+            "nazwa": "Mętów",
+            "lat": 51.14731,
+            "lon": 22.59016
+        },
+        {
+            "id": "8153",
+            "nazwa": "Mętów",
+            "lat": 51.14632,
+            "lon": 22.59079
+        },
+        {
+            "id": "8161",
+            "nazwa": "Głuszczyzna",
+            "lat": 51.14182,
+            "lon": 22.59765
+        },
+        {
+            "id": "8162",
+            "nazwa": "Głuszczyzna",
+            "lat": 51.14207,
+            "lon": 22.59723
+        },
+        {
+            "id": "8171",
+            "nazwa": "Głuszczyzna - sklep",
+            "lat": 51.1377,
+            "lon": 22.5998
+        },
+        {
+            "id": "8172",
+            "nazwa": "Głuszczyzna - sklep",
+            "lat": 51.13928,
+            "lon": 22.599446
+        },
+        {
+            "id": "8181",
+            "nazwa": "Czerniejów - szkoła",
+            "lat": 51.121313,
+            "lon": 22.599379
+        },
+        {
+            "id": "8182",
+            "nazwa": "Czerniejów - szkoła",
+            "lat": 51.1236,
+            "lon": 22.6005
+        },
+        {
+            "id": "8191",
+            "nazwa": "Czerniejów",
+            "lat": 51.115393,
+            "lon": 22.594621
+        },
+        {
+            "id": "8192",
+            "nazwa": "Czerniejów",
+            "lat": 51.1159,
+            "lon": 22.595257
+        },
+        {
+            "id": "8201",
+            "nazwa": "Jabłonna - stacja paliw NŻ",
+            "lat": 51.105227,
+            "lon": 22.5842
+        },
+        {
+            "id": "8202",
+            "nazwa": "Jabłonna - stacja paliw NŻ",
+            "lat": 51.1061,
+            "lon": 22.5857
+        },
+        {
+            "id": "8211",
+            "nazwa": "Jabłonna - Urząd Gminy",
+            "lat": 51.09591,
+            "lon": 22.579049
+        },
+        {
+            "id": "8212",
+            "nazwa": "Jabłonna - Urząd Gminy",
+            "lat": 51.096813,
+            "lon": 22.578946
+        },
+        {
+            "id": "8213",
+            "nazwa": "Jabłonna - Urząd Gminy",
+            "lat": 51.0962,
+            "lon": 22.5798
+        },
+        {
+            "id": "8221",
+            "nazwa": "Traugutta - szkoła",
+            "lat": 51.22288,
+            "lon": 22.68606
+        },
+        {
+            "id": "8222",
+            "nazwa": "Traugutta - szkoła",
+            "lat": 51.22229,
+            "lon": 22.68564
+        },
+        {
+            "id": "8241",
+            "nazwa": "Racławicka - os. Radość",
+            "lat": 51.21833,
+            "lon": 22.68715
+        },
+        {
+            "id": "8242",
+            "nazwa": "Racławicka - os. Radość",
+            "lat": 51.21775,
+            "lon": 22.68807
+        },
+        {
+            "id": "8251",
+            "nazwa": "Kolonia Świdnik Mały NŻ",
+            "lat": 51.241329,
+            "lon": 22.674144
+        },
+        {
+            "id": "8252",
+            "nazwa": "Kolonia Świdnik Mały NŻ",
+            "lat": 51.241649,
+            "lon": 22.672369
+        },
+        {
+            "id": "8253",
+            "nazwa": "Kolonia Świdnik Mały NŻ",
+            "lat": 51.23976,
+            "lon": 22.67271
+        },
+        {
+            "id": "8262",
+            "nazwa": "Kolonia Świdnik Mały - rondo NŻ",
+            "lat": 51.241006,
+            "lon": 22.677933
+        },
+        {
+            "id": "8263",
+            "nazwa": "Kolonia Świdnik Mały - rondo NŻ",
+            "lat": 51.24095,
+            "lon": 22.67794
+        },
+        {
+            "id": "8281",
+            "nazwa": "Żwirki i Wigury II NŻ",
+            "lat": 51.225734,
+            "lon": 22.68482
+        },
+        {
+            "id": "8282",
+            "nazwa": "Żwirki i Wigury II NŻ",
+            "lat": 51.22598,
+            "lon": 22.683851
+        },
+        {
+            "id": "8291",
+            "nazwa": "Świdnik stadion",
+            "lat": 51.224791,
+            "lon": 22.695426
+        },
+        {
+            "id": "8292",
+            "nazwa": "Świdnik stadion",
+            "lat": 51.22493,
+            "lon": 22.695421
+        },
+        {
+            "id": "8294",
+            "nazwa": "Świdnik stadion",
+            "lat": 51.224421,
+            "lon": 22.693925
+        },
+        {
+            "id": "8301",
+            "nazwa": "Jana Pawła II NŻ",
+            "lat": 51.210023,
+            "lon": 22.672635
+        },
+        {
+            "id": "8302",
+            "nazwa": "Jana Pawła II NŻ",
+            "lat": 51.210605,
+            "lon": 22.670626
+        },
+        {
+            "id": "8311",
+            "nazwa": "Lotników Polskich - działki",
+            "lat": 51.209549,
+            "lon": 22.682459
+        },
+        {
+            "id": "8312",
+            "nazwa": "Lotników Polskich - działki",
+            "lat": 51.209193,
+            "lon": 22.68076
+        },
+        {
+            "id": "8321",
+            "nazwa": "Lotników Polskich - stacja paliw",
+            "lat": 51.213507,
+            "lon": 22.686594
+        },
+        {
+            "id": "8322",
+            "nazwa": "Lotników Polskich - stacja paliw",
+            "lat": 51.213041,
+            "lon": 22.685518
+        },
+        {
+            "id": "8331",
+            "nazwa": "Racławicka II",
+            "lat": 51.215964,
+            "lon": 22.69251
+        },
+        {
+            "id": "8332",
+            "nazwa": "Racławicka II",
+            "lat": 51.215988,
+            "lon": 22.695452
+        },
+        {
+            "id": "8341",
+            "nazwa": "Racławicka I",
+            "lat": 51.215253,
+            "lon": 22.702937
+        },
+        {
+            "id": "8342",
+            "nazwa": "Racławicka I",
+            "lat": 51.215048,
+            "lon": 22.705799
+        },
+        {
+            "id": "8351",
+            "nazwa": "Kosynierów I",
+            "lat": 51.217369,
+            "lon": 22.709381
+        },
+        {
+            "id": "8352",
+            "nazwa": "Kosynierów I",
+            "lat": 51.21707,
+            "lon": 22.709009
+        },
+        {
+            "id": "8361",
+            "nazwa": "Gen. Okulickiego I",
+            "lat": 51.22069,
+            "lon": 22.708299
+        },
+        {
+            "id": "8371",
+            "nazwa": "Gen. Okulickiego II",
+            "lat": 51.221718,
+            "lon": 22.701812
+        },
+        {
+            "id": "8381",
+            "nazwa": "Niepodległości - szpital",
+            "lat": 51.220924,
+            "lon": 22.69442
+        },
+        {
+            "id": "8382",
+            "nazwa": "Niepodległości - szpital",
+            "lat": 51.220551,
+            "lon": 22.695873
+        },
+        {
+            "id": "8391",
+            "nazwa": "Kino LOT",
+            "lat": 51.220318,
+            "lon": 22.693189
+        },
+        {
+            "id": "8401",
+            "nazwa": "Świdnik - Helikopter",
+            "lat": 51.21827,
+            "lon": 22.69195
+        },
+        {
+            "id": "8402",
+            "nazwa": "Świdnik - Helikopter",
+            "lat": 51.218236,
+            "lon": 22.69228
+        },
+        {
+            "id": "8412",
+            "nazwa": "Niepodległości I",
+            "lat": 51.218696,
+            "lon": 22.707793
+        },
+        {
+            "id": "8422",
+            "nazwa": "Kosynierów II",
+            "lat": 51.21952,
+            "lon": 22.710534
+        },
+        {
+            "id": "8431",
+            "nazwa": "Nadleśna NŻ",
+            "lat": 51.23527,
+            "lon": 22.67111
+        },
+        {
+            "id": "8432",
+            "nazwa": "Nadleśna NŻ",
+            "lat": 51.23614,
+            "lon": 22.67145
+        },
+        {
+            "id": "8441",
+            "nazwa": "Armii Krajowej",
+            "lat": 51.21906,
+            "lon": 22.71715
+        },
+        {
+            "id": "8442",
+            "nazwa": "Armii Krajowej",
+            "lat": 51.2189,
+            "lon": 22.71745
+        },
+        {
+            "id": "8452",
+            "nazwa": "Rondo Żołnierzy Wyklętych NŻ",
+            "lat": 51.213197,
+            "lon": 22.710907
+        },
+        {
+            "id": "8454",
+            "nazwa": "Rondo Żołnierzy Wyklętych NŻ",
+            "lat": 51.21462,
+            "lon": 22.71286
+        },
+        {
+            "id": "8462",
+            "nazwa": "Niepodległości - Pl. Konstytucji",
+            "lat": 51.21961,
+            "lon": 22.70227
+        },
+        {
+            "id": "8471",
+            "nazwa": "Dworzec Świdnik Miasto",
+            "lat": 51.22279,
+            "lon": 22.69405
+        },
+        {
+            "id": "8472",
+            "nazwa": "Dworzec Świdnik Miasto",
+            "lat": 51.22273,
+            "lon": 22.69413
+        },
+        {
+            "id": "8473",
+            "nazwa": "Dworzec Świdnik Miasto",
+            "lat": 51.22246,
+            "lon": 22.69363
+        },
+        {
+            "id": "8481",
+            "nazwa": "Port Lotniczy Lublin - odloty",
+            "lat": 51.235525,
+            "lon": 22.71622
+        },
+        {
+            "id": "8492",
+            "nazwa": "Port Lotniczy Lublin - przyloty",
+            "lat": 51.235148,
+            "lon": 22.713541
+        },
+        {
+            "id": "8501",
+            "nazwa": "Krężnica Jara PKP",
+            "lat": 51.151111,
+            "lon": 22.464324
+        },
+        {
+            "id": "8502",
+            "nazwa": "Krężnica Jara PKP",
+            "lat": 51.151206,
+            "lon": 22.46665
+        },
+        {
+            "id": "8511",
+            "nazwa": "Krężnica Jara - most",
+            "lat": 51.15061,
+            "lon": 22.459877
+        },
+        {
+            "id": "8512",
+            "nazwa": "Krężnica Jara - most",
+            "lat": 51.151198,
+            "lon": 22.460586
+        },
+        {
+            "id": "8521",
+            "nazwa": "Krężnica Jara",
+            "lat": 51.14501,
+            "lon": 22.461877
+        },
+        {
+            "id": "8522",
+            "nazwa": "Krężnica Jara",
+            "lat": 51.144862,
+            "lon": 22.462086
+        },
+        {
+            "id": "8531",
+            "nazwa": "Żwirki i Wigury NŻ",
+            "lat": 51.22743,
+            "lon": 22.67353
+        },
+        {
+            "id": "8532",
+            "nazwa": "Żwirki i Wigury NŻ",
+            "lat": 51.22765,
+            "lon": 22.67264
+        },
+        {
+            "id": "8541",
+            "nazwa": "Armii Krajowej - szkoła",
+            "lat": 51.21585,
+            "lon": 22.71388
+        },
+        {
+            "id": "8651",
+            "nazwa": "Stasin Polny-wiadukt NŻ",
+            "lat": 51.213893,
+            "lon": 22.457671
+        },
+        {
+            "id": "8652",
+            "nazwa": "Stasin Polny-wiadukt NŻ",
+            "lat": 51.214118,
+            "lon": 22.457053
+        },
+        {
+            "id": "8661",
+            "nazwa": "Stasin Polny PKP NŻ",
+            "lat": 51.21264,
+            "lon": 22.470579
+        },
+        {
+            "id": "8662",
+            "nazwa": "Stasin Polny PKP NŻ",
+            "lat": 51.212718,
+            "lon": 22.469977
+        },
+        {
+            "id": "8671",
+            "nazwa": "Stasin - szkoła",
+            "lat": 51.212825,
+            "lon": 22.478261
+        },
+        {
+            "id": "8672",
+            "nazwa": "Stasin - szkoła",
+            "lat": 51.212981,
+            "lon": 22.479202
+        },
+        {
+            "id": "8691",
+            "nazwa": "Stasin",
+            "lat": 51.213061,
+            "lon": 22.491106
+        },
+        {
+            "id": "8692",
+            "nazwa": "Stasin",
+            "lat": 51.213032,
+            "lon": 22.491412
+        },
+        {
+            "id": "8701",
+            "nazwa": "Konopnica - kościół",
+            "lat": 51.218412,
+            "lon": 22.457944
+        },
+        {
+            "id": "8702",
+            "nazwa": "Konopnica - kościół",
+            "lat": 51.219896,
+            "lon": 22.460609
+        },
+        {
+            "id": "8703",
+            "nazwa": "Konopnica - kościół",
+            "lat": 51.219543,
+            "lon": 22.457044
+        },
+        {
+            "id": "8711",
+            "nazwa": "Konopnica - las",
+            "lat": 51.209506,
+            "lon": 22.449628
+        },
+        {
+            "id": "8712",
+            "nazwa": "Konopnica - las",
+            "lat": 51.209647,
+            "lon": 22.450032
+        },
+        {
+            "id": "8713",
+            "nazwa": "Konopnica - las",
+            "lat": 51.209512,
+            "lon": 22.449886
+        },
+        {
+            "id": "8721",
+            "nazwa": "Zemborzyce Dolne NŻ",
+            "lat": 51.19592,
+            "lon": 22.44285
+        },
+        {
+            "id": "8722",
+            "nazwa": "Zemborzyce Dolne NŻ",
+            "lat": 51.19596,
+            "lon": 22.44303
+        },
+        {
+            "id": "8731",
+            "nazwa": "Zemborzyce Tereszyńskie NŻ",
+            "lat": 51.19175,
+            "lon": 22.44979
+        },
+        {
+            "id": "8732",
+            "nazwa": "Zemborzyce Tereszyńskie NŻ",
+            "lat": 51.192,
+            "lon": 22.44974
+        },
+        {
+            "id": "8741",
+            "nazwa": "Zemborzyce Tereszyńskie - szkoła",
+            "lat": 51.18373,
+            "lon": 22.46313
+        },
+        {
+            "id": "8742",
+            "nazwa": "Zemborzyce Tereszyńskie - szkoła",
+            "lat": 51.183804,
+            "lon": 22.463307
+        },
+        {
+            "id": "8751",
+            "nazwa": "Zemborzyce Wojciechowskie NŻ",
+            "lat": 51.17673,
+            "lon": 22.47472
+        },
+        {
+            "id": "8752",
+            "nazwa": "Zemborzyce Wojciechowskie NŻ",
+            "lat": 51.17682,
+            "lon": 22.47489
+        },
+        {
+            "id": "8761",
+            "nazwa": " Zemborzyce Wojciechowskie II NŻ",
+            "lat": 51.17321,
+            "lon": 22.48053
+        },
+        {
+            "id": "8762",
+            "nazwa": " Zemborzyce Wojciechowskie II NŻ",
+            "lat": 51.17388,
+            "lon": 22.47965
+        },
+        {
+            "id": "8771",
+            "nazwa": "Ku Słońcu NŻ",
+            "lat": 51.16991,
+            "lon": 22.48608
+        },
+        {
+            "id": "8772",
+            "nazwa": "Ku Słońcu NŻ",
+            "lat": 51.17027,
+            "lon": 22.48592
+        },
+        {
+            "id": "8811",
+            "nazwa": "Pszczela - cmentarz NŻ",
+            "lat": 51.178197,
+            "lon": 22.502961
+        },
+        {
+            "id": "8812",
+            "nazwa": "Pszczela - cmentarz NŻ",
+            "lat": 51.178169,
+            "lon": 22.502806
+        },
+        {
+            "id": "8821",
+            "nazwa": "Pszczela - granica miasta NŻ",
+            "lat": 51.18197,
+            "lon": 22.49689
+        },
+        {
+            "id": "8822",
+            "nazwa": "Pszczela - granica miasta NŻ",
+            "lat": 51.18181,
+            "lon": 22.49675
+        },
+        {
+            "id": "8831",
+            "nazwa": "Zemborzyce Podleśne - skrzyżowanie NŻ",
+            "lat": 51.18611,
+            "lon": 22.49008
+        },
+        {
+            "id": "8832",
+            "nazwa": "Zemborzyce Podleśne - skrzyżowanie NŻ",
+            "lat": 51.18605,
+            "lon": 22.4898
+        },
+        {
+            "id": "8841",
+            "nazwa": "Zemborzyce Podleśne I NŻ",
+            "lat": 51.18957,
+            "lon": 22.48442
+        },
+        {
+            "id": "8842",
+            "nazwa": "Zemborzyce Podleśne I NŻ",
+            "lat": 51.18948,
+            "lon": 22.48424
+        },
+        {
+            "id": "8851",
+            "nazwa": "Zemborzyce Podleśne - sklep NŻ",
+            "lat": 51.19294,
+            "lon": 22.47888
+        },
+        {
+            "id": "8852",
+            "nazwa": "Zemborzyce Podleśne - sklep NŻ",
+            "lat": 51.19287,
+            "lon": 22.47873
+        },
+        {
+            "id": "8861",
+            "nazwa": "Zemborzyce Podleśne",
+            "lat": 51.19847,
+            "lon": 22.48458
+        },
+        {
+            "id": "8862",
+            "nazwa": "Zemborzyce Podleśne",
+            "lat": 51.19834,
+            "lon": 22.48429
+        },
+        {
+            "id": "8891",
+            "nazwa": "Radawczyk Drugi - szkoła",
+            "lat": 51.18328,
+            "lon": 22.4102
+        },
+        {
+            "id": "8892",
+            "nazwa": "Radawczyk Drugi - szkoła",
+            "lat": 51.18313,
+            "lon": 22.41043
+        },
+        {
+            "id": "8894",
+            "nazwa": "Radawczyk Drugi - szkoła",
+            "lat": 51.1838,
+            "lon": 22.40979
+        },
+        {
+            "id": "8901",
+            "nazwa": "Konopnica - szkoła",
+            "lat": 51.22139,
+            "lon": 22.4466
+        },
+        {
+            "id": "8902",
+            "nazwa": "Konopnica - szkoła",
+            "lat": 51.221238,
+            "lon": 22.443633
+        },
+        {
+            "id": "8911",
+            "nazwa": "Motycz PKP - Marynin NŻ",
+            "lat": 51.22104,
+            "lon": 22.42438
+        },
+        {
+            "id": "8912",
+            "nazwa": "Motycz PKP - Marynin NŻ",
+            "lat": 51.22081,
+            "lon": 22.42529
+        },
+        {
+            "id": "8921",
+            "nazwa": "Marynin - ośrodek zdrowia",
+            "lat": 51.22122,
+            "lon": 22.418
+        },
+        {
+            "id": "8922",
+            "nazwa": "Marynin - ośrodek zdrowia",
+            "lat": 51.22093,
+            "lon": 22.41585
+        },
+        {
+            "id": "8931",
+            "nazwa": "Marynin - Cormay NŻ",
+            "lat": 51.21962,
+            "lon": 22.40652
+        },
+        {
+            "id": "8932",
+            "nazwa": "Marynin - Cormay NŻ",
+            "lat": 51.22022,
+            "lon": 22.4101
+        },
+        {
+            "id": "8941",
+            "nazwa": "Radawiec Duży - lotnisko NŻ",
+            "lat": 51.21579,
+            "lon": 22.3957
+        },
+        {
+            "id": "8942",
+            "nazwa": "Radawiec Duży - lotnisko NŻ",
+            "lat": 51.21617,
+            "lon": 22.39611
+        },
+        {
+            "id": "8953",
+            "nazwa": "Kozubszczyzna - Urząd Gminy",
+            "lat": 51.22341,
+            "lon": 22.42666
+        },
+        {
+            "id": "8954",
+            "nazwa": "Kozubszczyzna - Urząd Gminy",
+            "lat": 51.22372,
+            "lon": 22.42561
+        },
+        {
+            "id": "8961",
+            "nazwa": "Radawiec Duży - Rudki NŻ",
+            "lat": 51.21304,
+            "lon": 22.39386
+        },
+        {
+            "id": "8962",
+            "nazwa": "Radawiec Duży - Rudki NŻ",
+            "lat": 51.21363,
+            "lon": 22.39473
+        },
+        {
+            "id": "8971",
+            "nazwa": "Stara Wieś - stawy NŻ",
+            "lat": 51.24658,
+            "lon": 22.4061
+        },
+        {
+            "id": "8972",
+            "nazwa": "Stara Wieś - stawy NŻ",
+            "lat": 51.24619,
+            "lon": 22.40591
+        },
+        {
+            "id": "8981",
+            "nazwa": "Stara Wieś - remiza NŻ",
+            "lat": 51.24034,
+            "lon": 22.39091
+        },
+        {
+            "id": "8982",
+            "nazwa": "Stara Wieś - remiza NŻ",
+            "lat": 51.24099,
+            "lon": 22.39646
+        },
+        {
+            "id": "8991",
+            "nazwa": "Motycz - szkoła",
+            "lat": 51.23874,
+            "lon": 22.37623
+        },
+        {
+            "id": "8992",
+            "nazwa": "Motycz - szkoła",
+            "lat": 51.23961,
+            "lon": 22.37935
+        },
+        {
+            "id": "8994",
+            "nazwa": "Motycz - szkoła",
+            "lat": 51.23898,
+            "lon": 22.37963
+        },
+        {
+            "id": "9001",
+            "nazwa": "Motycz Leśny PKP NŻ",
+            "lat": 51.23828,
+            "lon": 22.37061
+        },
+        {
+            "id": "9002",
+            "nazwa": "Motycz Leśny PKP NŻ",
+            "lat": 51.23817,
+            "lon": 22.37053
+        },
+        {
+            "id": "9011",
+            "nazwa": "Motycz Leśny - przejazd NŻ",
+            "lat": 51.24279,
+            "lon": 22.36091
+        },
+        {
+            "id": "9012",
+            "nazwa": "Motycz Leśny - przejazd NŻ",
+            "lat": 51.24278,
+            "lon": 22.36053
+        },
+        {
+            "id": "9021",
+            "nazwa": "Motycz Leśny - remiza",
+            "lat": 51.242618,
+            "lon": 22.351028
+        },
+        {
+            "id": "9022",
+            "nazwa": "Motycz Leśny - remiza",
+            "lat": 51.242381,
+            "lon": 22.351173
+        },
+        {
+            "id": "9031",
+            "nazwa": "Radawiec Duży - skrzyżowanie NŻ",
+            "lat": 51.21446,
+            "lon": 22.38015
+        },
+        {
+            "id": "9032",
+            "nazwa": "Radawiec Duży - skrzyżowanie NŻ",
+            "lat": 51.21525,
+            "lon": 22.3806
+        },
+        {
+            "id": "9041",
+            "nazwa": "Motycz - Gawidzielówka NŻ",
+            "lat": 51.2359,
+            "lon": 22.41749
+        },
+        {
+            "id": "9042",
+            "nazwa": "Motycz - Gawidzielówka NŻ",
+            "lat": 51.23589,
+            "lon": 22.41715
+        },
+        {
+            "id": "9051",
+            "nazwa": "Kozubszczyzna II",
+            "lat": 51.22683,
+            "lon": 22.41548
+        },
+        {
+            "id": "9052",
+            "nazwa": "Kozubszczyzna II",
+            "lat": 51.22647,
+            "lon": 22.41628
+        },
+        {
+            "id": "9061",
+            "nazwa": "Kozubszczyzna",
+            "lat": 51.23002,
+            "lon": 22.40483
+        },
+        {
+            "id": "9062",
+            "nazwa": "Kozubszczyzna",
+            "lat": 51.22997,
+            "lon": 22.40352
+        },
+        {
+            "id": "9071",
+            "nazwa": "Motycz Góry NŻ",
+            "lat": 51.23222,
+            "lon": 22.40614
+        },
+        {
+            "id": "9072",
+            "nazwa": "Motycz Góry NŻ",
+            "lat": 51.23284,
+            "lon": 22.40655
+        },
+        {
+            "id": "9081",
+            "nazwa": "Uniszowice - kapliczka NŻ",
+            "lat": 51.24267,
+            "lon": 22.45197
+        },
+        {
+            "id": "9091",
+            "nazwa": "Kleopatry",
+            "lat": 51.246921,
+            "lon": 22.483901
+        },
+        {
+            "id": "9101",
+            "nazwa": "Szerokie - drukarnia NŻ",
+            "lat": 51.246554,
+            "lon": 22.475261
+        },
+        {
+            "id": "9111",
+            "nazwa": "Szerokie - posesja 101",
+            "lat": 51.2467,
+            "lon": 22.47209
+        },
+        {
+            "id": "9121",
+            "nazwa": "Dąbrowica - warsztat",
+            "lat": 51.24655,
+            "lon": 22.46387
+        },
+        {
+            "id": "9131",
+            "nazwa": "Dąbrowica - sklep",
+            "lat": 51.245264,
+            "lon": 22.457788
+        },
+        {
+            "id": "9141",
+            "nazwa": "Uniszowice - sklep meblowy NŻ",
+            "lat": 51.241081,
+            "lon": 22.445914
+        },
+        {
+            "id": "9151",
+            "nazwa": "Pietrzakowizna NŻ",
+            "lat": 51.24046,
+            "lon": 22.43565
+        },
+        {
+            "id": "9161",
+            "nazwa": "Konopnica - skrzyżowanie",
+            "lat": 51.238592,
+            "lon": 22.4282
+        },
+        {
+            "id": "9162",
+            "nazwa": "Konopnica - skrzyżowanie",
+            "lat": 51.23764,
+            "lon": 22.4263
+        },
+        {
+            "id": "9163",
+            "nazwa": "Konopnica - skrzyżowanie",
+            "lat": 51.23744,
+            "lon": 22.42623
+        },
+        {
+            "id": "9172",
+            "nazwa": "Motycz - chłodnia",
+            "lat": 51.244345,
+            "lon": 22.417874
+        },
+        {
+            "id": "9174",
+            "nazwa": "Motycz - chłodnia",
+            "lat": 51.243252,
+            "lon": 22.418483
+        },
+        {
+            "id": "9181",
+            "nazwa": "Motycz - hotel",
+            "lat": 51.248433,
+            "lon": 22.416668
+        },
+        {
+            "id": "9182",
+            "nazwa": "Motycz - hotel",
+            "lat": 51.24804,
+            "lon": 22.41898
+        },
+        {
+            "id": "9184",
+            "nazwa": "Motycz - hotel",
+            "lat": 51.248449,
+            "lon": 22.416128
+        },
+        {
+            "id": "9192",
+            "nazwa": "Uniszowice",
+            "lat": 51.24932,
+            "lon": 22.43153
+        },
+        {
+            "id": "9202",
+            "nazwa": "Uniszowice - stawy",
+            "lat": 51.251643,
+            "lon": 22.442756
+        },
+        {
+            "id": "9212",
+            "nazwa": "Uniszowice - działki NŻ",
+            "lat": 51.254818,
+            "lon": 22.453261
+        },
+        {
+            "id": "9221",
+            "nazwa": "Radawiec Duży NŻ",
+            "lat": 51.21124,
+            "lon": 22.38293
+        },
+        {
+            "id": "9222",
+            "nazwa": "Radawiec Duży NŻ",
+            "lat": 51.21149,
+            "lon": 22.38273
+        },
+        {
+            "id": "9231",
+            "nazwa": "Radawiec Duży - remiza",
+            "lat": 51.20661,
+            "lon": 22.38614
+        },
+        {
+            "id": "9232",
+            "nazwa": "Radawiec Duży - remiza",
+            "lat": 51.20621,
+            "lon": 22.3865
+        },
+        {
+            "id": "9241",
+            "nazwa": "Radawiec Duży - kościół",
+            "lat": 51.20303,
+            "lon": 22.38589
+        },
+        {
+            "id": "9242",
+            "nazwa": "Radawiec Duży - kościół",
+            "lat": 51.20313,
+            "lon": 22.38596
+        },
+        {
+            "id": "9251",
+            "nazwa": "Radawiec Duży II NŻ",
+            "lat": 51.19714,
+            "lon": 22.39051
+        },
+        {
+            "id": "9252",
+            "nazwa": "Radawiec Duży II NŻ",
+            "lat": 51.19787,
+            "lon": 22.3897
+        },
+        {
+            "id": "9261",
+            "nazwa": "Radawiec Mały - skład budowlany NŻ",
+            "lat": 51.1901,
+            "lon": 22.39568
+        },
+        {
+            "id": "9262",
+            "nazwa": "Radawiec Mały - skład budowlany NŻ",
+            "lat": 51.19038,
+            "lon": 22.39532
+        },
+        {
+            "id": "9271",
+            "nazwa": "Radawiec Mały NŻ",
+            "lat": 51.18719,
+            "lon": 22.40077
+        },
+        {
+            "id": "9272",
+            "nazwa": "Radawiec Mały NŻ",
+            "lat": 51.18705,
+            "lon": 22.40263
+        },
+        {
+            "id": "9281",
+            "nazwa": "Kozubszczyzna-przejazd NŻ",
+            "lat": 51.221111,
+            "lon": 22.429415
+        },
+        {
+            "id": "9282",
+            "nazwa": "Kozubszczyzna-przejazd NŻ",
+            "lat": 51.22136,
+            "lon": 22.43159
+        },
+        {
+            "id": "9291",
+            "nazwa": "Motycz PKP",
+            "lat": 51.221837,
+            "lon": 22.423659
+        },
+        {
+            "id": "9292",
+            "nazwa": "Motycz PKP",
+            "lat": 51.221763,
+            "lon": 22.424104
+        },
+        {
+            "id": "9301",
+            "nazwa": "Urodzajna NŻ",
+            "lat": 51.26123,
+            "lon": 22.46638
+        },
+        {
+            "id": "9302",
+            "nazwa": "Urodzajna NŻ",
+            "lat": 51.26104,
+            "lon": 22.4664
+        },
+        {
+            "id": "9311",
+            "nazwa": "Dąbrowica",
+            "lat": 51.266696,
+            "lon": 22.46248
+        },
+        {
+            "id": "9312",
+            "nazwa": "Dąbrowica",
+            "lat": 51.266478,
+            "lon": 22.462583
+        },
+        {
+            "id": "9401",
+            "nazwa": "Dębówka",
+            "lat": 51.28312,
+            "lon": 22.47119
+        },
+        {
+            "id": "9402",
+            "nazwa": "Dębówka",
+            "lat": 51.281746,
+            "lon": 22.473038
+        },
+        {
+            "id": "9403",
+            "nazwa": "Dębówka",
+            "lat": 51.281756,
+            "lon": 22.47283
+        },
+        {
+            "id": "9411",
+            "nazwa": "Barak NŻ",
+            "lat": 51.286066,
+            "lon": 22.466057
+        },
+        {
+            "id": "9412",
+            "nazwa": "Barak NŻ",
+            "lat": 51.286638,
+            "lon": 22.464558
+        },
+        {
+            "id": "9421",
+            "nazwa": "Panieńszczyzna NŻ",
+            "lat": 51.292715,
+            "lon": 22.454414
+        },
+        {
+            "id": "9422",
+            "nazwa": "Panieńszczyzna NŻ",
+            "lat": 51.291949,
+            "lon": 22.455266
+        },
+        {
+            "id": "9431",
+            "nazwa": "Panieńszczyzna - cmentarz NŻ",
+            "lat": 51.298055,
+            "lon": 22.444982
+        },
+        {
+            "id": "9432",
+            "nazwa": "Panieńszczyzna - cmentarz NŻ",
+            "lat": 51.296683,
+            "lon": 22.446957
+        },
+        {
+            "id": "9441",
+            "nazwa": "Jastków",
+            "lat": 51.304663,
+            "lon": 22.433367
+        },
+        {
+            "id": "9442",
+            "nazwa": "Jastków",
+            "lat": 51.303589,
+            "lon": 22.434819
+        },
+        {
+            "id": "9451",
+            "nazwa": "Jastków-biblioteka",
+            "lat": 51.31207,
+            "lon": 22.43356
+        },
+        {
+            "id": "9452",
+            "nazwa": "Jastków - biblioteka",
+            "lat": 51.31136,
+            "lon": 22.43329
+        },
+        {
+            "id": "9453",
+            "nazwa": "Jastków - biblioteka",
+            "lat": 51.3118,
+            "lon": 22.43304
+        },
+        {
+            "id": "9461",
+            "nazwa": "Jastków Podleśny NŻ",
+            "lat": 51.32463,
+            "lon": 22.43472
+        },
+        {
+            "id": "9462",
+            "nazwa": "Jastków Podleśny NŻ",
+            "lat": 51.323933,
+            "lon": 22.434517
+        },
+        {
+            "id": "9471",
+            "nazwa": "Piotrowice Wielkie NŻ",
+            "lat": 51.33763,
+            "lon": 22.43135
+        },
+        {
+            "id": "9472",
+            "nazwa": "Piotrowice Wielkie NŻ",
+            "lat": 51.33724,
+            "lon": 22.430823
+        },
+        {
+            "id": "9481",
+            "nazwa": "Piotrawin-Wygoda",
+            "lat": 51.3406,
+            "lon": 22.432954
+        },
+        {
+            "id": "9482",
+            "nazwa": "Piotrawin-Wygoda",
+            "lat": 51.340501,
+            "lon": 22.432966
+        },
+        {
+            "id": "9501",
+            "nazwa": "Marysin - Natalin",
+            "lat": 51.29428,
+            "lon": 22.49473
+        },
+        {
+            "id": "9502",
+            "nazwa": "Marysin - Natalin",
+            "lat": 51.29236,
+            "lon": 22.49513
+        },
+        {
+            "id": "9511",
+            "nazwa": "Snopków I",
+            "lat": 51.302979,
+            "lon": 22.491866
+        },
+        {
+            "id": "9512",
+            "nazwa": "Snopków I",
+            "lat": 51.299016,
+            "lon": 22.49294
+        },
+        {
+            "id": "9521",
+            "nazwa": "Snopków II",
+            "lat": 51.307971,
+            "lon": 22.490853
+        },
+        {
+            "id": "9522",
+            "nazwa": "Snopków II",
+            "lat": 51.30619,
+            "lon": 22.490605
+        },
+        {
+            "id": "9531",
+            "nazwa": "Snopków - osiedle",
+            "lat": 51.31122,
+            "lon": 22.49077
+        },
+        {
+            "id": "9532",
+            "nazwa": "Snopków - osiedle",
+            "lat": 51.3115,
+            "lon": 22.49053
+        },
+        {
+            "id": "9541",
+            "nazwa": "Helenów I NŻ",
+            "lat": 51.328354,
+            "lon": 22.49735
+        },
+        {
+            "id": "9542",
+            "nazwa": "Helenów I NŻ",
+            "lat": 51.326593,
+            "lon": 22.49709
+        },
+        {
+            "id": "9551",
+            "nazwa": "Smugi",
+            "lat": 51.333545,
+            "lon": 22.497776
+        },
+        {
+            "id": "9552",
+            "nazwa": "Smugi",
+            "lat": 51.333515,
+            "lon": 22.497659
+        },
+        {
+            "id": "9553",
+            "nazwa": "Smugi",
+            "lat": 51.33507,
+            "lon": 22.49775
+        },
+        {
+            "id": "9561",
+            "nazwa": "Kolonia Snopków NŻ",
+            "lat": 51.321977,
+            "lon": 22.496773
+        },
+        {
+            "id": "9562",
+            "nazwa": "Kolonia Snopków NŻ",
+            "lat": 51.320981,
+            "lon": 22.496578
+        },
+        {
+            "id": "9601",
+            "nazwa": "Bystrzyca - kościół",
+            "lat": 51.30802,
+            "lon": 22.697964
+        },
+        {
+            "id": "9602",
+            "nazwa": "Bystrzyca - kościół",
+            "lat": 51.30856,
+            "lon": 22.699389
+        },
+        {
+            "id": "9611",
+            "nazwa": "Bystrzyca - szkoła",
+            "lat": 51.31332,
+            "lon": 22.7089
+        },
+        {
+            "id": "9612",
+            "nazwa": "Bystrzyca - szkoła",
+            "lat": 51.313954,
+            "lon": 22.7096
+        },
+        {
+            "id": "9621",
+            "nazwa": "Charlęż NŻ",
+            "lat": 51.325127,
+            "lon": 22.717046
+        },
+        {
+            "id": "9622",
+            "nazwa": "Charlęż NŻ",
+            "lat": 51.326247,
+            "lon": 22.717568
+        },
+        {
+            "id": "9631",
+            "nazwa": "Charlęż - szkoła",
+            "lat": 51.333153,
+            "lon": 22.721904
+        },
+        {
+            "id": "9632",
+            "nazwa": "Charlęż - szkoła",
+            "lat": 51.3302,
+            "lon": 22.72
+        },
+        {
+            "id": "9641",
+            "nazwa": "Charlęż - las NŻ",
+            "lat": 51.339767,
+            "lon": 22.725989
+        },
+        {
+            "id": "9642",
+            "nazwa": "Charlęż - las NŻ",
+            "lat": 51.339313,
+            "lon": 22.725536
+        },
+        {
+            "id": "9651",
+            "nazwa": "Jawidz II NŻ",
+            "lat": 51.3504,
+            "lon": 22.7335
+        },
+        {
+            "id": "9652",
+            "nazwa": "Jawidz II NŻ",
+            "lat": 51.3491,
+            "lon": 22.7315
+        },
+        {
+            "id": "9661",
+            "nazwa": "Zawieprzyce - skrzyżowanie NŻ",
+            "lat": 51.35382,
+            "lon": 22.744376
+        },
+        {
+            "id": "9662",
+            "nazwa": "Zawieprzyce - skrzyżowanie NŻ",
+            "lat": 51.353,
+            "lon": 22.7414
+        },
+        {
+            "id": "9671",
+            "nazwa": "Zawieprzyce",
+            "lat": 51.357931,
+            "lon": 22.756619
+        },
+        {
+            "id": "9672",
+            "nazwa": "Zawieprzyce",
+            "lat": 51.357863,
+            "lon": 22.756493
+        },
+        {
+            "id": "9701",
+            "nazwa": "Kolonia Dąbrowica - ośr. zdrowia NŻ",
+            "lat": 51.25762,
+            "lon": 22.4478
+        },
+        {
+            "id": "9702",
+            "nazwa": "Kolonia Dąbrowica - ośr. zdrowia NŻ",
+            "lat": 51.25704,
+            "lon": 22.4491
+        },
+        {
+            "id": "9711",
+            "nazwa": "Płouszowice Kolonia NŻ",
+            "lat": 51.26132,
+            "lon": 22.43887
+        },
+        {
+            "id": "9712",
+            "nazwa": "Płouszowice Kolonia NŻ",
+            "lat": 51.26045,
+            "lon": 22.44052
+        },
+        {
+            "id": "9721",
+            "nazwa": "Płouszowice Pierwsze NŻ",
+            "lat": 51.26367,
+            "lon": 22.4326
+        },
+        {
+            "id": "9722",
+            "nazwa": "Płouszowice Pierwsze NŻ",
+            "lat": 51.26045,
+            "lon": 22.44052
+        },
+        {
+            "id": "9731",
+            "nazwa": "Płouszowice - cegielnia NŻ",
+            "lat": 51.26687,
+            "lon": 22.41828
+        },
+        {
+            "id": "9732",
+            "nazwa": "Płouszowice - cegielnia NŻ",
+            "lat": 51.266696,
+            "lon": 22.419024
+        },
+        {
+            "id": "9741",
+            "nazwa": "Płouszowice Drugie - zajazd NŻ",
+            "lat": 51.26734,
+            "lon": 22.40487
+        },
+        {
+            "id": "9742",
+            "nazwa": "Płouszowice Drugie - zajazd NŻ",
+            "lat": 51.26706,
+            "lon": 22.40861
+        },
+        {
+            "id": "9751",
+            "nazwa": "Płouszowice - kapliczka NŻ",
+            "lat": 51.26778,
+            "lon": 22.39402
+        },
+        {
+            "id": "9752",
+            "nazwa": "Płouszowice - kapliczka NŻ",
+            "lat": 51.26753,
+            "lon": 22.39576
+        },
+        {
+            "id": "9761",
+            "nazwa": "Tomaszowice - Lipy NŻ",
+            "lat": 51.27054,
+            "lon": 22.38584
+        },
+        {
+            "id": "9762",
+            "nazwa": "Tomaszowice - Lipy NŻ",
+            "lat": 51.26957,
+            "lon": 22.38739
+        },
+        {
+            "id": "9771",
+            "nazwa": "Tomaszowice - sklep NŻ",
+            "lat": 51.276354,
+            "lon": 22.372059
+        },
+        {
+            "id": "9791",
+            "nazwa": "Tomaszowice - kościół",
+            "lat": 51.27822,
+            "lon": 22.37152
+        },
+        {
+            "id": "9792",
+            "nazwa": "Tomaszowice - kościół",
+            "lat": 51.27798,
+            "lon": 22.37176
+        },
+        {
+            "id": "9793",
+            "nazwa": "Tomaszowice - kościół",
+            "lat": 51.27772,
+            "lon": 22.37048
+        },
+        {
+            "id": "9861",
+            "nazwa": " Dworzec Świdnik Wschodni",
+            "lat": 51.22086,
+            "lon": 22.71431
+        },
+        {
+            "id": "9862",
+            "nazwa": " Dworzec Świdnik Wschodni",
+            "lat": 51.22086,
+            "lon": 22.71431
+        },
+        {
+            "id": "9871",
+            "nazwa": "ZIELONA-Zajezdnia Grygowej",
+            "lat": 51.230571,
+            "lon": 22.623404
+        }
+    ],
+    "linie": []
+}

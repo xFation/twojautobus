@@ -1,0 +1,34 @@
+{
+    "stop_id": 1340,
+    "linie": [
+        {
+            "linia": 24,
+            "kolor": "E31E24",
+            "kierunki": [
+                {
+                    "kierunek": "Os. Michałów",
+                    "odjazdy": [
+                        "05:34",
+                        "11:38",
+                        "13:34",
+                        "15:17",
+                        "20:20"
+                    ]
+                },
+                {
+                    "kierunek": "Zajezdnia Żakowice",
+                    "odjazdy": [
+                        "16:44"
+                    ]
+                },
+                {
+                    "kierunek": "Józefów \/ Szpital",
+                    "odjazdy": [
+                        "06:27",
+                        "18:01"
+                    ]
+                }
+            ]
+        }
+    ]
+}

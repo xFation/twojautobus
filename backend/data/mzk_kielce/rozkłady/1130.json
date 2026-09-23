@@ -1,0 +1,22 @@
+{
+    "stop_id": 1130,
+    "linie": [
+        {
+            "linia": 31,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Chęciny Cmentarz",
+                    "odjazdy": [
+                        "06:24",
+                        "09:26",
+                        "11:34",
+                        "13:03",
+                        "15:51",
+                        "17:40"
+                    ]
+                }
+            ]
+        }
+    ]
+}

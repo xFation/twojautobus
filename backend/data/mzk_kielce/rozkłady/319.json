@@ -1,0 +1,20 @@
+{
+    "stop_id": 319,
+    "linie": [
+        {
+            "linia": 33,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Mójcza",
+                    "odjazdy": [
+                        "06:07",
+                        "06:43",
+                        "14:29",
+                        "16:28"
+                    ]
+                }
+            ]
+        }
+    ]
+}

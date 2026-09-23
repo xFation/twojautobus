@@ -1,0 +1,22 @@
+{
+    "stop_id": 26502,
+    "linie": [
+        {
+            "linia": 28,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "05:53",
+                        "06:57",
+                        "08:10",
+                        "16:25",
+                        "17:32",
+                        "21:01"
+                    ]
+                }
+            ]
+        }
+    ]
+}

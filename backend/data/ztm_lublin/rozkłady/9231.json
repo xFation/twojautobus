@@ -1,0 +1,22 @@
+{
+    "stop_id": 9231,
+    "linie": [
+        {
+            "linia": 43,
+            "kolor": "005EA2",
+            "kierunki": [
+                {
+                    "kierunek": "Kierunek nieznany",
+                    "odjazdy": [
+                        "06:14",
+                        "07:19",
+                        "08:42",
+                        "14:22",
+                        "15:44",
+                        "16:58"
+                    ]
+                }
+            ]
+        }
+    ]
+}

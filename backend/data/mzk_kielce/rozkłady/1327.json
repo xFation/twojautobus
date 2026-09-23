@@ -1,0 +1,26 @@
+{
+    "stop_id": 1327,
+    "linie": [
+        {
+            "linia": 45,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Dworzec Autobusowy",
+                    "odjazdy": [
+                        "05:09",
+                        "07:22",
+                        "14:18",
+                        "20:17"
+                    ]
+                },
+                {
+                    "kierunek": "Żytnia I",
+                    "odjazdy": [
+                        "16:18"
+                    ]
+                }
+            ]
+        }
+    ]
+}

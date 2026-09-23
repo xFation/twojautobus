@@ -1,0 +1,24 @@
+{
+    "stop_id": 1476,
+    "linie": [
+        {
+            "linia": 19,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Nowiny",
+                    "odjazdy": [
+                        "20:31",
+                        "20:32"
+                    ]
+                },
+                {
+                    "kierunek": "Morcinka Działki",
+                    "odjazdy": [
+                        "20:40"
+                    ]
+                }
+            ]
+        }
+    ]
+}

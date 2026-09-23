@@ -1,0 +1,20 @@
+{
+    "stop_id": 682,
+    "linie": [
+        {
+            "linia": 33,
+            "kolor": "F5BB37",
+            "kierunki": [
+                {
+                    "kierunek": "Starogórska",
+                    "odjazdy": [
+                        "06:21",
+                        "07:04",
+                        "14:41",
+                        "16:45"
+                    ]
+                }
+            ]
+        }
+    ]
+}
