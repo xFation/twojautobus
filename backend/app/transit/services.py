@@ -1,17 +1,8 @@
-import json
 from dataclasses import dataclass
-from datetime import datetime, timedelta
-from pathlib import Path
+from datetime import datetime
 from typing import Any
 
-
-DATA_DIR = Path(__file__).resolve().parents[2] / "data"
-
-PROVIDERS: dict[str, dict[str, str]] = {
-    "mzdik_radom": {"name": "MZDiK Radom", "directory": "mzdik_radom"},
-    "mzk_kielce": {"name": "MZK Kielce", "directory": "mzk_kielce"},
-    "ztm_lublin": {"name": "ZTM Lublin", "directory": "ztm_lublin"},
-}
+from app.database import get_departures, get_line_stops, get_provider, get_providers, get_stops
 
 
 @dataclass(frozen=True)
@@ -29,18 +20,6 @@ class Departure:
     time: int
 
 
-def _provider_dir(provider_id: str) -> Path:
-    try:
-        return DATA_DIR / PROVIDERS[provider_id]["directory"]
-    except KeyError as error:
-        raise ValueError(f"Nieznany przewoźnik: {provider_id}") from error
-
-
-def _read_json(path: Path) -> dict[str, Any]:
-    with path.open("r", encoding="utf-8") as file:
-        return json.load(file)
-
-
 def _minutes(value: str) -> int:
     hours, minutes = (int(part) for part in value.split(":", 1))
     return hours * 60 + minutes
@@ -50,12 +29,12 @@ def _time(value: int) -> str:
     return f"{value // 60:02d}:{value % 60:02d}"
 
 
-def _stop_from_json(item: dict[str, Any]) -> Stop:
+def _stop_from_row(item: dict[str, Any]) -> Stop:
     return Stop(
         id=str(item["id"]),
-        name=item["nazwa"],
-        latitude=float(item["lat"]),
-        longitude=float(item["lon"]),
+        name=item["name"],
+        latitude=float(item["latitude"]),
+        longitude=float(item["longitude"]),
     )
 
 
@@ -63,31 +42,13 @@ class TransitProvider:
 
     def __init__(self, provider_id: str):
         self.id = provider_id
-        self.name = PROVIDERS[provider_id]["name"]
-        directory = _provider_dir(provider_id)
-        self.stops = {
-            stop.id: stop
-            for stop in (_stop_from_json(item) for item in _read_json(directory / "mapa_komunikacja.json")["przystanki"])
-        }
-        self.departures: dict[str, list[Departure]] = {}
-        self.line_stops: dict[str, set[str]] = {}
-        for schedule_file in (directory / "rozkłady").glob("*.json"):
-            stop_id = schedule_file.stem
-            if stop_id not in self.stops:
-                continue
-            schedule = _read_json(schedule_file)
-            for line in schedule.get("linie", schedule.get("linia", [])):
-                line_id = str(line.get("linia"))
-                self.line_stops.setdefault(line_id, set()).add(stop_id)
-                for direction in line.get("kierunki", []):
-                    direction_name = direction.get("kierunek", "Kierunek nieznany")
-                    for departure in direction.get("odjazdy", []):
-                        self.departures.setdefault(stop_id, []).append(
-                            Departure(line_id, direction_name, _minutes(departure))
-                        )
-
-        for departures in self.departures.values():
-            departures.sort(key=lambda departure: departure.time)
+        provider = get_provider(provider_id)
+        if provider is None:
+            raise ValueError(f"Nieznany przewoźnik: {provider_id}")
+        self.name = provider["name"]
+        self.stops = {stop.id: stop for stop in (_stop_from_row(row) for row in get_stops(provider_id))}
+        self.line_stops = get_line_stops(provider_id)
+        self._departures_cache: dict[str, list[Departure]] = {}
 
     def find_stop(self, query: str) -> Stop:
         normalized = query.casefold().strip()
@@ -100,7 +61,13 @@ class TransitProvider:
         return matches[0]
 
     def departures_for(self, stop_id: str, line: str | None = None) -> list[Departure]:
-        departures = self.departures.get(stop_id, [])
+        if stop_id not in self._departures_cache:
+            rows = get_departures(self.id, stop_id)
+            self._departures_cache[stop_id] = [
+                Departure(row["line_id"], row["direction"], int(row["departure_minutes"]))
+                for row in rows
+            ]
+        departures = self._departures_cache[stop_id]
         return [departure for departure in departures if line is None or departure.line == line]
 
     def next_departure(self, stop_id: str, line: str, after: int, direction: str | None = None) -> Departure | None:
@@ -122,27 +89,13 @@ class TransitProvider:
 
 
 def provider_list() -> list[dict[str, Any]]:
-    result = []
-    for provider_id in PROVIDERS:
-        provider = TransitProvider(provider_id)
-        result.append(
-            {
-                "id": provider_id,
-                "name": provider.name,
-                "stops_count": len(provider.stops),
-                "lines_count": len(provider.line_stops),
-            }
-        )
-    return result
+    return get_providers()
 
 
 def provider_stops(provider_id: str, query: str | None = None) -> list[Stop]:
-    provider = TransitProvider(provider_id)
-    stops = list(provider.stops.values())
-    if query:
-        normalized = query.casefold().strip()
-        stops = [stop for stop in stops if normalized in stop.name.casefold() or normalized == stop.id]
-    return sorted(stops, key=lambda stop: stop.name)
+    if get_provider(provider_id) is None:
+        raise ValueError(f"Nieznany przewoźnik: {provider_id}")
+    return [_stop_from_row(row) for row in get_stops(provider_id, query)]
 
 
 def _direct_route(provider: TransitProvider, origin: Stop, destination: Stop, requested: int) -> dict[str, Any] | None:
@@ -242,5 +195,5 @@ def search_routes(provider_id: str, from_stop: str, to_stop: str, departure_time
         transfer = _one_transfer_route(provider, origin, destination, requested)
         if transfer:
             routes.append(transfer)
-    routes.sort(key=lambda route: (route["arrival_time"], route["transfers_count"]))
+    routes.sort(key=lambda route: (_minutes(route["arrival_time"]), route["transfers_count"]))
     return origin, destination, _time(requested), routes[:5]

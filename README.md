@@ -36,14 +36,32 @@ Po uruchomieniu otworz:
 
 ## Konfiguracja
 
-Skopiuj `backend/.env.example` do `backend/.env` i ustaw wlasny `JWT_SECRET`.
-Zmienne sa odczytywane z systemu. Przy uruchamianiu z terminala mozna ustawic je tak:
+Ustawienia sa odczytywane ze zmiennych srodowiskowych. Przy uruchamianiu z PowerShell ustaw je tak:
 
 ```powershell
 $env:JWT_SECRET = "local-development-secret"
 $env:PORT = "8000"
 $env:CORS_ORIGINS = "http://localhost:3000,http://localhost:5173"
 ```
+
+Plik `.env` nie jest ladowany automatycznie. Przyklady zmiennych znajduja sie w `backend/.env.example`.
+
+## Baza danych SQLite
+
+Przy pierwszym uruchomieniu backend tworzy `backend/data/twojautobus.sqlite3`.
+Importuje do niej dane trzech przewoznikow oraz konta i historie z dawnego
+`backend/data/users.json`. Kolejne starty korzystaja z SQLite i nie importuja
+ponownie juz zaladowanych przewoznikow.
+
+Aby jawnie ponownie wczytac rozklady ze zrodlowych plikow JSON, zatrzymaj backend
+i uruchom z katalogu `backend`:
+
+```powershell
+python -m app.database --reimport-transit
+```
+
+Ponowny import rozkladow nie usuwa kont uzytkownikow. Mozesz zmienic lokalizacje
+bazy przez zmienna `DATABASE_PATH`.
 
 ## Sprawdzanie wyszukiwarki tras
 
@@ -104,7 +122,7 @@ Authorization: Bearer <access_token>
 backend/
 |-- index.py                 # punkt wejscia aplikacji
 |-- requirements.txt         # zaleznosci Pythona
-|-- data/users.json          # lokalny magazyn uzytkownikow
+|-- data/twojautobus.sqlite3 # lokalna baza uzywana podczas pracy aplikacji
 `-- app/auth/
     |-- login.py             # logowanie i JWT
     |-- register.py          # rejestracja
@@ -113,5 +131,7 @@ backend/
     `-- schemas.py            # walidacja danych API
 ```
 
-Plik `users.json` jest dobry do lokalnego prototypu. Przed wdrozeniem produkcyjnym
-nalezy zastapic go baza danych oraz ustawic sekret JWT poza repozytorium.
+  Pliki przewoznikow `mapa_komunikacja.json` i `rozkłady/*.json` pozostaja zrodlowymi
+  plikami importu. Aplikacja odczytuje rozklady z SQLite. Plik `users.json` jest
+  uzywany tylko do jednorazowego przeniesienia istniejacych kont. Przed wdrozeniem
+  ustaw silny sekret JWT poza repozytorium.

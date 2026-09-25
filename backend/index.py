@@ -1,15 +1,23 @@
 import os
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.database import initialize_database
 from app.auth.login import router as login_router
 from app.auth.register import router as register_router
 from app.transit.routes import router as transit_router
 
 
-DEFAULT_CORS_ORIGINS = "http://localhost:3000,http://localhost:5173"
+DEFAULT_CORS_ORIGINS = "http://localhost:3000,http://localhost:5173,http://localhost:5500,http://127.0.0.1:5500"
 DEFAULT_PORT = 8000
+
+
+@asynccontextmanager
+async def lifespan(_: FastAPI):
+	initialize_database()
+	yield
 
 
 def get_allowed_origins() -> list[str]:
@@ -22,6 +30,7 @@ app = FastAPI(
 	title="Twoj Autobus API",
 	description="API dla rozkładów jazdy i komunikacji miejskiej.",
 	version="0.1.0",
+	lifespan=lifespan,
 )
 
 app.add_middleware(
