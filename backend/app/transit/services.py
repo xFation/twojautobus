@@ -60,7 +60,6 @@ def _stop_from_json(item: dict[str, Any]) -> Stop:
 
 
 class TransitProvider:
-    """Adapter for one provider's map and stop timetable files."""
 
     def __init__(self, provider_id: str):
         self.id = provider_id
