@@ -37,14 +37,21 @@ Utwórz pliki:
 ```text
 frontend/
 |-- index.html
+|-- home.html
 |-- assets/
-|   |-- css/style.css
-|   `-- javascript/app.js
+|   |-- css/simple.css
+|   `-- javascript/
+|       |-- api.js
+|       `-- home.js
 |-- components/
 `-- pages/
+  |-- wyniki.html
+  |-- map.html
+  |-- login.html
+  `-- register.html
 ```
 
-Pierwszy widok planowania podróży powinien mieć:
+Strona startowa ma już formularz planowania podróży z:
 
 1. Wybór przewoźnika.
 2. Pole przystanku początkowego i końcowego z podpowiedziami.
@@ -62,16 +69,25 @@ Otwórz drugi terminal w VS Code i uruchom prosty lokalny serwer plików:
 ```powershell
 cd frontend
 python -m http.server 5500
+|-- 404.html                   # wejściowa strona błędu dla hostingu statycznego
 ```
+|-- components/
+|   |-- header.html            # wspólna nawigacja
+|   `-- footer.html            # wspólna stopka
 
 Wejdź na `http://localhost:5500`. Ten adres jest dozwolony przez domyślny CORS
 backendu. Jeśli zmienisz port lub host frontendu, dodaj jego origin do
 `CORS_ORIGINS` przed uruchomieniem backendu, na przykład:
-
+|   |-- register.html          # rejestracja
+|   `-- 404.html               # właściwa treść błędu 404
 ```powershell
-$env:CORS_ORIGINS = "http://localhost:5500,http://localhost:3000"
+  |-- css/base.css           # globalne kolory, reset i typografia
+  |-- css/simple.css         # proste style układu stron
+  |-- css/home.css           # style strony startowej
+  |-- css/404.css            # style strony błędu
 ```
 
+    |-- layout.js          # wczytywanie header.html i footer.html
 Origin to protokół, host i port strony. Nie dopisuj do niego ścieżki `/docs` ani
 ukośnika z trasą API.
 
@@ -110,9 +126,13 @@ zachowaj jego `id` do żądania planowania.
 zawiera listę `legs` (odcinków), `transfers`, `departure_time`, `arrival_time`
 i `travel_minutes`. Na przesiadce pokazany jest przystanek i `wait_minutes`.
 
-## 5. Minimalny kod komunikacji
+## 5. Wspólny kod komunikacji
 
-W `frontend/assets/javascript/app.js` można zacząć od wspólnej funkcji do zapytań:
+Wspólna funkcja żądań znajduje się w `frontend/assets/javascript/api.js`. Logika
+poszczególnych stron jest w ich własnych plikach JavaScript, na przykład
+`home.js`, `results.js`, `map.js`, `login.js` i `register.js`.
+
+Przykładowa funkcja komunikacji:
 
 ```javascript
 const API_URL = "http://127.0.0.1:8000";
@@ -191,5 +211,88 @@ w `localStorage` zwiększa skutki ataku XSS.
 - Aktualne źródłowe rozkłady nie zawierają pełnej listy przystanków na przebiegu
   linii ani czasów pośrednich. API zwraca więc `stops_complete: false` i pokazuje
   znane punkty odcinka; pełna lista wymaga uzupełnienia źródła rozkładów.
+
+## Aktualne strony frontendu
+
+Frontend korzysta ze zwykłego HTML, CSS i JavaScriptu. Nie używa frameworka.
+
+```text
+frontend/
+|-- index.html                 # przekierowanie do strony startowej
+|-- home.html                  # wybór przewoźnika i przystanków
+|-- pages/
+|   |-- wyniki.html            # wyniki wyszukiwania
+|   |-- map.html               # OpenStreetMap i przystanki przewoźnika
+|   |-- login.html             # logowanie
+|   `-- register.html          # rejestracja
+`-- assets/
+    |-- css/simple.css         # podstawowe style do własnej rozbudowy
+    `-- javascript/
+        |-- api.js             # wspólne żądania HTTP do backendu
+        |-- home.js            # logika strony startowej
+        |-- results.js         # pobranie i wyświetlanie wyników
+        |-- map.js             # markery przystanków na mapie
+        |-- login.js           # formularz logowania
+        `-- register.js        # formularz rejestracji
+```
+
+Każda podstrona ma swój plik JavaScript. Wspólne `api.js` tylko udostępnia
+funkcję `window.apiRequest`. Jeśli backend działa na innym porcie, zmień
+`API_BASE_URL` w tym pliku.
+
+## Wspólny header i footer bez PHP
+
+`include` w PHP działa po stronie serwera. Zwykłe pliki `.html` nie wykonują PHP,
+więc zapis `<?php include ... ?>` w HTML zostanie pokazany jako tekst albo
+zignorowany. Tutaj te same fragmenty są wczytywane przez JavaScript:
+
+```html
+<div data-site-header></div>
+<!-- treść strony -->
+<div data-site-footer></div>
+
+<script src="../assets/javascript/layout.js" data-root="../" data-page="map" defer></script>
+```
+
+Na stronie `home.html` ustaw `data-root=""` albo `data-root="./"`, bo leży w
+katalogu głównym. Na stronach w `pages/` ustaw `data-root="../"`. Atrybut
+`data-page` wskazuje aktywny link menu. `layout.js` pobiera `components/header.html`
+i `components/footer.html`, wstawia je w placeholdery i dopasowuje ścieżki.
+
+Edytuj `frontend/components/header.html`, aby zmienić wspólne menu, albo
+`frontend/components/footer.html`, aby zmienić wspólną stopkę. Zmiana pojawi się
+na wszystkich stronach po ich odświeżeniu. Ponieważ fragmenty są ładowane przez
+`fetch`, stronę otwieraj przez Live Server, a nie jako plik `file://`.
+
+Strona 404 jest w `frontend/pages/404.html`, a `frontend/404.html` jest plikiem
+wejściowym rozpoznawanym przez popularne statyczne hostingi. W panelu hostingu
+ustaw `pages/404.html` jako własną stronę 404, jeśli hosting pozwala wskazać
+ścieżkę. Dla produkcyjnego serwera można też ustawić jego konfigurację błędu 404.
+
+Mapa korzysta z biblioteki Leaflet przez CDN i kafelków OpenStreetMap. Sam
+formularz, nawigacja i pozostałe skrypty są zwykłym JavaScriptem.
+
+## Automatyczne odświeżanie podczas pracy
+
+Najprostszy sposób w VS Code:
+
+1. Otwórz Extensions przez `Ctrl+Shift+X` i zainstaluj **Live Server**.
+2. Otwórz `frontend/home.html`, kliknij prawym przyciskiem i wybierz **Open with Live Server**. Możesz też kliknąć **Go Live** na pasku stanu.
+3. Przeciągnij otwartą kartę przeglądarki na drugi monitor.
+4. Zapisuj plik przez `Ctrl+S`; Live Server sam odświeży stronę po zapisaniu.
+
+Jeśli chcesz, aby VS Code zapisywał zmiany automatycznie, w ustawieniach
+wyszukaj `Auto Save` i wybierz `afterDelay`. Możesz też dodać do ustawień VS Code:
+
+```json
+{
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000
+}
+```
+
+Live Server i backend muszą działać równocześnie w dwóch terminalach. Wcześniej
+uruchomiony `python -m http.server` nie odświeża automatycznie strony po każdej
+zmianie; do pracy na żywo użyj Live Server.
 
 Dokumentacja operacyjna backendu i baza SQLite są opisane również w `README.md`.

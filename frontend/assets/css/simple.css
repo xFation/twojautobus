@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    color: #222;
+    background: #f4f5f2;
+    font-family: Arial, sans-serif;
+}
+
+.topbar, .main-nav, .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 5%;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.brand { color: #245943; font-size: 20px; font-weight: bold; text-decoration: none; }
+.brand-mark { margin-right: 8px; }
+.brand-light { font-weight: normal; }
+.main-nav { justify-content: flex-end; flex-wrap: wrap; padding: 0; border: 0; }
+.main-nav a, .footer a { color: #245943; text-decoration: none; }
+.main-nav a:hover, .main-nav a.active { text-decoration: underline; }
+.network-status { color: #555; font-size: 13px; }
+.status-dot { display: inline-block; width: 9px; height: 9px; margin-right: 5px; border-radius: 50%; background: #999; }
+.is-online .status-dot { background: #198754; }
+.is-offline .status-dot { background: #c33; }
+
+.page-shell, .container { width: min(900px, calc(100% - 32px)); margin: 32px auto; }
+.intro { margin-bottom: 24px; }
+.eyebrow, .field-label { color: #555; font-size: 12px; font-weight: bold; }
+.intro-copy { color: #555; }
+.planner, .result, .route-card { padding: 18px; border: 1px solid #ccc; border-radius: 4px; background: white; }
+.form-topline, .journey-fields, .form-bottomline { display: flex; align-items: end; flex-wrap: wrap; gap: 14px; margin-bottom: 16px; }
+.field { position: relative; display: grid; flex: 1 1 220px; gap: 7px; }
+.time-field { flex: 0 1 180px; }
+input, select, button { min-height: 40px; padding: 8px; font: inherit; }
+input, select { width: 100%; border: 1px solid #aaa; border-radius: 3px; background: white; }
+button { width: fit-content; border: 0; border-radius: 3px; color: white; background: #245943; cursor: pointer; }
+button:hover { background: #173e2f; }
+button:disabled { opacity: .6; cursor: wait; }
+.swap-button { min-width: 42px; }
+.input-wrap { display: flex; align-items: center; gap: 7px; }
+.stop-marker { width: 10px; height: 10px; border: 2px solid #245943; border-radius: 50%; }
+.marker-end { border-color: #b65032; border-radius: 0; }
+.suggestions { position: absolute; z-index: 2; top: 100%; right: 0; left: 0; max-height: 240px; overflow: auto; border: 1px solid #aaa; background: white; }
+.suggestions[hidden] { display: none; }
+.suggestion-option { display: flex; width: 100%; justify-content: space-between; border-bottom: 1px solid #ddd; border-radius: 0; color: #222; background: white; text-align: left; }
+.suggestion-option:hover { color: #222; background: #eee; }
+.suggestion-id, .muted { color: #666; font-size: 12px; }
+.form-error, .message { color: #a22; }
+.results-section { margin-top: 32px; }
+.results-heading, .route-card-header, .route-times, .timeline-stop { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.result-count, .route-meta { color: #555; font-size: 13px; }
+.empty-state { display: flex; align-items: center; gap: 12px; padding: 18px; border: 1px dashed #aaa; background: white; }
+.empty-state p { margin: 0; }
+.empty-icon { font-size: 22px; }
+.route-card { margin: 12px 0; }
+.route-leg { margin-top: 14px; padding-top: 12px; border-top: 1px solid #ddd; }
+.leg-header { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.line-badge { padding: 4px 8px; color: white; background: #245943; }
+.timeline-stop { justify-content: flex-start; margin: 10px 0; }
+.timeline-time { margin-left: auto; font-weight: bold; }
+.transfer-note { margin: 10px 0; padding: 10px; background: #fff2df; }
+.route-warning { color: #765921; font-size: 13px; }
+.basic-form { display: grid; max-width: 520px; gap: 8px; }
+.basic-form label { margin-top: 8px; font-weight: bold; }
+.basic-form button { margin-top: 8px; }
+.main-nav + .container { margin-top: 24px; }
+#map { width: 100%; height: 70vh; min-height: 360px; margin-top: 16px; border: 1px solid #aaa; }
+.map-controls { display: flex; align-items: end; flex-wrap: wrap; gap: 16px; }
+.map-controls label { display: grid; min-width: 240px; gap: 8px; font-weight: bold; }
+
+@media (max-width: 680px) {
+    .topbar { align-items: flex-start; flex-direction: column; }
+    .main-nav { justify-content: flex-start; gap: 12px; }
+    .page-shell, .container { margin-top: 22px; }
+    .form-topline, .journey-fields { align-items: stretch; flex-direction: column; }
+    .swap-button { align-self: center; }
+    #map { height: 60vh; }
+}
