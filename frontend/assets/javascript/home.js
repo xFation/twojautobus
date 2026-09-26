@@ -146,7 +146,7 @@ pageElements.form.addEventListener("submit", (event) => {
         max_transfers: Number(document.querySelector("#max-transfers").value),
     };
     sessionStorage.setItem("routeSearch", JSON.stringify(search));
-    window.location.href = "pages/wyniki.html";
+    window.location.href = "wyniki.html";
 });
 
 document.querySelector("#swap-stops").addEventListener("click", () => {

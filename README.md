@@ -1,76 +1,68 @@
-# Twoj Autobus
+# Twój Autobus
 
-Backend aplikacji jest napisany we frameworku FastAPI. Na tym etapie zawiera:
+Aplikacja do wyszukiwania połączeń komunikacji miejskiej. Frontend jest napisany
+w zwykłym HTML, CSS i JavaScripcie, a backend udostępnia API w FastAPI. Dane
+użytkowników, przystanków, linii i odjazdów są przechowywane w SQLite.
 
-- endpoint zdrowia aplikacji: `GET /health`,
-- rejestracje: `POST /auth/register`,
-- logowanie z tokenem JWT: `POST /auth/login`,
-- lista przewoźników: `GET /transit/providers`,
-- wyszukiwanie przystanków: `GET /transit/{provider_id}/stops`,
-- wyszukiwanie trasy: `POST /transit/search`,
-- automatyczna dokumentacje API pod `/docs`.
+## Funkcje
 
-## Uruchomienie backendu na Windows
+- wybór jednego z przewoźników: MZDiK Radom, MZK Kielce i ZTM Lublin,
+- podpowiedzi przystanków i wyszukiwanie połączeń z maksymalnie jedną przesiadką,
+- mapa przystanków na OpenStreetMap,
+- rejestracja i logowanie z tokenem JWT,
+- wspólny header i footer HTML oraz własna strona 404.
 
-Otworz PowerShell w katalogu projektu i wykonaj:
+## Wymagania
+
+- Python 3.10 lub nowszy,
+- przeglądarka z dostępem do sieci, potrzebnym do kafelków OpenStreetMap.
+
+## Uruchomienie
+
+W PowerShell, z katalogu głównego projektu:
 
 ```powershell
 cd backend
-python -m venv .venv
+py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r requirements.txt
 python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Jeżeli PowerShell blokuje aktywacje środowiska, jednorazowo wykonaj:
+Otwórz stronę główną pod adresem:
+
+- http://127.0.0.1:8000/ - przekierowanie do strony startowej,
+- http://127.0.0.1:8000/pages/home.html - strona startowa,
+- http://127.0.0.1:8000/docs - dokumentacja i testowanie API,
+- http://127.0.0.1:8000/health - kontrola działania backendu.
+
+Przy pierwszym uruchomieniu aplikacja utworzy `backend/data/twojautobus.sqlite3`
+i zaimportuje dane źródłowe oraz istniejące konta z `users.json`.
+
+Jeśli PowerShell blokuje aktywowanie środowiska wirtualnego, wykonaj jednorazowo:
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 
-Po uruchomieniu otworz:
-
-- API: http://127.0.0.1:8000
-- dokumentacje interaktywna: http://127.0.0.1:8000/docs
-- kontrola dzialania: http://127.0.0.1:8000/health
-
 ## Konfiguracja
 
-Ustawienia sa odczytywane ze zmiennych srodowiskowych. Przy uruchamianiu z PowerShell ustaw je tak:
+Ustaw sekret JWT przed uruchomieniem backendu. Wartość poniżej jest przykładowa;
+do wdrożenia użyj własnego, losowego sekretu:
 
 ```powershell
-$env:JWT_SECRET = "local-development-secret"
-$env:PORT = "8000"
-$env:CORS_ORIGINS = "http://localhost:3000,http://localhost:5173"
+$env:JWT_SECRET = "replace-with-a-long-random-secret"
+$env:DATABASE_PATH = "C:\data\twojautobus.sqlite3"
+python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Plik `.env` nie jest ladowany automatycznie. Przyklady zmiennych znajduja sie w `backend/.env.example`.
+Domyślna baza znajduje się w `backend/data/twojautobus.sqlite3`. Domyślne strony
+są serwowane przez FastAPI z tego samego adresu co API, więc osobna konfiguracja
+CORS nie jest wymagana przy zwykłym uruchomieniu.
 
-## Baza danych SQLite
+## Przykład wyszukiwania
 
-Przy pierwszym uruchomieniu backend tworzy `backend/data/twojautobus.sqlite3`.
-Importuje do niej dane trzech przewoznikow oraz konta i historie z dawnego
-`backend/data/users.json`. Kolejne starty korzystaja z SQLite i nie importuja
-ponownie juz zaladowanych przewoznikow.
-
-Aby jawnie ponownie wczytac rozklady ze zrodlowych plikow JSON, zatrzymaj backend
-i uruchom z katalogu `backend`:
-
-```powershell
-python -m app.database --reimport-transit
-```
-
-Ponowny import rozkladow nie usuwa kont uzytkownikow. Mozesz zmienic lokalizacje
-bazy przez zmienna `DATABASE_PATH`.
-
-## Sprawdzanie wyszukiwarki tras
-
-Po uruchomieniu backendu wejdz na http://127.0.0.1:8000/docs.
-
-1. Wywolaj `GET /transit/providers`, aby zobaczyc dostepnych przewoznikow:
-   `mzdik_radom`, `mzk_kielce` i `ztm_lublin`.
-2. Wywolaj `GET /transit/{provider_id}/stops?query=...`, aby znalezc id przystanku.
-3. W `POST /transit/search` wyslij na przyklad:
+`POST /transit/search`:
 
 ```json
 {
@@ -82,56 +74,15 @@ Po uruchomieniu backendu wejdz na http://127.0.0.1:8000/docs.
 }
 ```
 
-Odpowiedz zawiera przewoznika, numer linii, kierunek, godzine odjazdu,
-godzine przyjazdu, czas przejazdu, przystanek przesiadkowy i czas oczekiwania.
-`max_transfers` moze przyjmowac `0` albo `1`.
+Najpierw można pobrać przewoźników przez `GET /transit/providers`, a przystanki
+przewoźnika przez `GET /transit/{provider_id}/stops?query=...`.
 
-### Wazne ograniczenie danych
+## Ważne ograniczenie danych
 
-Obecne pliki `rozkłady/*.json` zawieraja odjazdy przypisane do pojedynczego
-przystanku, ale nie zawieraja kolejnosci wszystkich przystankow na trasie ani
-czasow przyjazdu do kolejnych przystankow. Dlatego odpowiedz oznacza
-`stops_complete: false` i pokazuje punkty poczatkowe/przesiadkowe/koncowe.
+Źródłowe rozkłady zawierają odjazdy na przystankach, ale nie pełną kolejność
+przystanków i czasy pośrednie. Wyszukiwarka zwraca dostępne warianty i przesiadki,
+ale wynik może mieć `stops_complete: false`. Pełny przebieg wymaga dokładniejszych
+danych tras, na przykład GTFS.
 
-Silnik jest przygotowany na pelne dane trasy. Po dodaniu do kierunku pola
-`przebieg` z lista przystankow i czasow, adapter przewoznika moze zwrocic
-pelna liste bez zmiany kontraktu API.
-
-## Przykladowe dane auth
-
-Rejestracja w `/docs`:
-
-```json
-{
-  "email": "nowy@example.com",
-  "name": "Jan Kowalski",
-  "password": "minimum-8-znakow",
-  "birthdate": "2000-01-01"
-}
-```
-
-Logowanie zwraca `access_token`, ktory pozniej wysyla sie jako naglowek:
-
-```text
-Authorization: Bearer <access_token>
-```
-
-## Struktura backendu
-
-```text
-backend/
-|-- index.py                 # punkt wejscia aplikacji
-|-- requirements.txt         # zaleznosci Pythona
-|-- data/twojautobus.sqlite3 # lokalna baza uzywana podczas pracy aplikacji
-`-- app/auth/
-    |-- login.py             # logowanie i JWT
-    |-- register.py          # rejestracja
-    |-- models.py            # odczyt i zapis uzytkownikow
-    |-- password.py          # bcrypt
-    `-- schemas.py            # walidacja danych API
-```
-
-  Pliki przewoznikow `mapa_komunikacja.json` i `rozkłady/*.json` pozostaja zrodlowymi
-  plikami importu. Aplikacja odczytuje rozklady z SQLite. Plik `users.json` jest
-  uzywany tylko do jednorazowego przeniesienia istniejacych kont. Przed wdrozeniem
-  ustaw silny sekret JWT poza repozytorium.
+Szczegóły architektury, routingu stron i pracy nad kodem znajdują się w
+[write.md](write.md).

@@ -1,5 +1,6 @@
 const layoutScript = document.currentScript;
-const rootPath = layoutScript.dataset.root || "";
+const componentRoot = layoutScript.dataset.assetRoot || "";
+const linkRoot = layoutScript.dataset.linkRoot || "";
 const pageName = layoutScript.dataset.page || "";
 
 async function insertComponent(selector, fileName) {
@@ -7,9 +8,9 @@ async function insertComponent(selector, fileName) {
     if (!placeholder) return;
 
     try {
-        const response = await fetch(`${rootPath}components/${fileName}`);
+        const response = await fetch(`${componentRoot}components/${fileName}`);
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const markup = (await response.text()).replaceAll("{{ROOT}}", rootPath);
+        const markup = (await response.text()).replaceAll("{{LINK_ROOT}}", linkRoot);
         placeholder.innerHTML = markup;
 
         if (selector === "[data-site-header]") {

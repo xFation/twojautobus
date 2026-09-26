@@ -1,8 +1,11 @@
 import os
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from app.database import initialize_database
 from app.auth.login import router as login_router
@@ -12,6 +15,8 @@ from app.transit.routes import router as transit_router
 
 DEFAULT_CORS_ORIGINS = "http://localhost:3000,http://localhost:5173,http://localhost:5500,http://127.0.0.1:5500"
 DEFAULT_PORT = 8000
+FRONTEND_DIR = Path(__file__).resolve().parents[1] / "frontend"
+PAGES_DIR = FRONTEND_DIR / "pages"
 
 
 @asynccontextmanager
@@ -45,17 +50,42 @@ app.include_router(login_router)
 app.include_router(register_router)
 app.include_router(transit_router)
 
+app.mount("/assets", StaticFiles(directory=FRONTEND_DIR / "assets"), name="frontend-assets")
+app.mount("/components", StaticFiles(directory=FRONTEND_DIR / "components"), name="frontend-components")
+
 
 @app.get("/", tags=["system"])
-async def read_root() -> dict[str, str]:
-	"""Return basic information about the API."""
-	return {"name": "Twoj Autobus API", "docs": "/docs"}
+async def read_root() -> RedirectResponse:
+	"""Send the site root to the home page."""
+	return RedirectResponse(url="/pages/home.html", status_code=307)
+
+
+@app.get("/home.html", include_in_schema=False)
+async def redirect_legacy_home() -> RedirectResponse:
+	return RedirectResponse(url="/pages/home.html", status_code=307)
 
 
 @app.get("/health", tags=["system"])
 async def health_check() -> dict[str, str]:
 	"""Return the current API health status."""
 	return {"status": "ok"}
+
+
+@app.get("/{requested_path:path}", include_in_schema=False)
+async def serve_page_or_not_found(requested_path: str):
+	"""Serve a page from frontend/pages or the site's HTML 404 page."""
+	requested = Path(requested_path)
+	if requested.suffix.lower() == ".html" and requested.parent in (Path("pages"), Path(".")):
+		page_name = requested.name
+		if page_name not in {"index.html", "404.html"}:
+			page_path = PAGES_DIR / page_name
+			if page_path.is_file():
+				return FileResponse(page_path)
+
+	if requested.parts and requested.parts[0] in {"auth", "transit", "health"}:
+		return JSONResponse(status_code=404, content={"detail": "Not Found"})
+
+	return FileResponse(PAGES_DIR / "404.html", status_code=404)
 
 
 if __name__ == "__main__":

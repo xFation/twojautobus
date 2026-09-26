@@ -1,13 +1,42 @@
-# Jak zacząć frontend i połączyć go z backendem
+# Dokumentacja developerska
 
-Backend jest API w FastAPI, a nie gotową stroną. Frontend można napisać osobno i
-wysyłać do API żądania HTTP. W repozytorium są już katalogi `frontend/pages`,
-`frontend/components` i `frontend/assets`; na początek wystarczy zwykły HTML, CSS
-i JavaScript, bez dodatkowych bibliotek.
+## Struktura repozytorium
 
-## 1. Uruchom backend
+```text
+backend/
+|-- index.py                   # FastAPI, serwowanie stron i własny fallback 404
+|-- requirements.txt
+|-- app/
+|   |-- database.py            # SQLite, migracja i import danych
+|   |-- auth/                  # rejestracja i logowanie JWT
+|   `-- transit/               # API przewoźników, przystanków i tras
+`-- data/
+    |-- twojautobus.sqlite3    # lokalna baza tworzona automatycznie
+    |-- users.json             # źródło jednorazowego importu kont
+    `-- <provider>/            # źródłowe mapy i rozkłady JSON
 
-Otwórz pierwszy terminal w VS Code, w katalogu projektu:
+frontend/
+|-- components/
+|   |-- header.html            # wspólna nawigacja
+|   `-- footer.html            # wspólna stopka
+|-- pages/
+|   |-- home.html              # strona startowa
+|   |-- wyniki.html            # wyniki planowania
+|   |-- map.html               # przystanki na OpenStreetMap
+|   |-- login.html
+|   |-- register.html
+|   `-- 404.html               # strona nieznanego adresu
+`-- assets/
+    |-- css/                   # wspólne i lokalne style
+    `-- javascript/            # api.js, layout.js i logika stron
+```
+
+Nie ma `index.html`. FastAPI przekierowuje `/` bezpośrednio do
+`/pages/home.html`. Alias `/home.html` również prowadzi do tej strony.
+
+## Uruchamianie developerskie
+
+Z katalogu projektu:
 
 ```powershell
 cd backend
@@ -15,284 +44,121 @@ cd backend
 python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Jeśli środowisko wirtualne jest w `backend\.venv`, zamiast ścieżki aktywacji wyżej użyj:
+Jeśli środowisko jest w `backend\.venv`, aktywuj je poleceniem
+`\.venv\Scripts\Activate.ps1` po wejściu do `backend`.
 
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
+Backend serwuje HTML, assets i components, więc testuj routing 404 przez
+`http://127.0.0.1:8000`, nie przez `python -m http.server`. Do automatycznego
+odświeżania edytowanego HTML/CSS/JS można użyć rozszerzenia VS Code Live Server na
+porcie 5500. W takim trybie API nadal działa na 8000, a adres 5500 jest dozwolony
+w domyślnym CORS.
 
-Przy pierwszym starcie backend utworzy `backend/data/twojautobus.sqlite3` i
-zaimportuje rozkłady oraz dotychczasowych użytkowników. Baza SQLite jest lokalna
-i nie wymaga osobnego serwera.
+## Routing frontend/backend
 
-Sprawdź API w przeglądarce:
+W `backend/index.py` obowiązuje następująca kolejność:
 
-- `http://127.0.0.1:8000/health` - status API
-- `http://127.0.0.1:8000/docs` - dokumentacja i ręczne testy endpointów
+1. routery API `/auth` i `/transit`,
+2. montowanie `/assets` oraz `/components`,
+3. przekierowania `/` i `/home.html`,
+4. endpoint `/health`,
+5. catch-all `/{requested_path:path}` na końcu.
 
-## 2. Przygotuj pliki strony
+Catch-all szuka dozwolonego pliku HTML w `frontend/pages`. Jeśli go nie ma,
+zwraca `frontend/pages/404.html` ze statusem HTTP 404. Nie przenoś tej trasy
+przed routery API ani mounty statycznych katalogów. Nieznane ścieżki API `/auth`,
+`/transit` i `/health` dostają JSON 404, a nieznane ścieżki strony dostają HTML.
 
-Utwórz pliki:
+Nową stronę dodaje się do `frontend/pages`, np. `kontakt.html`. Jej URL to
+`/pages/kontakt.html`. Warto dodać odnośnik w `frontend/components/header.html`.
+Wpisanie nieistniejącego `/pages/nazwa.html` pokaże stronę 404.
 
-```text
-frontend/
-|-- index.html
-|-- home.html
-|-- assets/
-|   |-- css/simple.css
-|   `-- javascript/
-|       |-- api.js
-|       `-- home.js
-|-- components/
-`-- pages/
-  |-- wyniki.html
-  |-- map.html
-  |-- login.html
-  `-- register.html
-```
+## Wspólny header i footer
 
-Strona startowa ma już formularz planowania podróży z:
-
-1. Wybór przewoźnika.
-2. Pole przystanku początkowego i końcowego z podpowiedziami.
-3. Godzinę odjazdu oraz przycisk wyszukiwania.
-4. Wyniki pokazujące linię, kierunek, przystanki odcinka, odjazd, przyjazd,
-   przesiadki i czas oczekiwania.
-
-Do formularza używaj identyfikatorów przystanków otrzymanych z API, nie samych
-nazw. W obrębie jednego miasta nazwy mogą się powtarzać.
-
-## 3. Uruchom frontend
-
-Otwórz drugi terminal w VS Code i uruchom prosty lokalny serwer plików:
-
-```powershell
-cd frontend
-python -m http.server 5500
-|-- 404.html                   # wejściowa strona błędu dla hostingu statycznego
-```
-|-- components/
-|   |-- header.html            # wspólna nawigacja
-|   `-- footer.html            # wspólna stopka
-
-Wejdź na `http://localhost:5500`. Ten adres jest dozwolony przez domyślny CORS
-backendu. Jeśli zmienisz port lub host frontendu, dodaj jego origin do
-`CORS_ORIGINS` przed uruchomieniem backendu, na przykład:
-|   |-- register.html          # rejestracja
-|   `-- 404.html               # właściwa treść błędu 404
-```powershell
-  |-- css/base.css           # globalne kolory, reset i typografia
-  |-- css/simple.css         # proste style układu stron
-  |-- css/home.css           # style strony startowej
-  |-- css/404.css            # style strony błędu
-```
-
-    |-- layout.js          # wczytywanie header.html i footer.html
-Origin to protokół, host i port strony. Nie dopisuj do niego ścieżki `/docs` ani
-ukośnika z trasą API.
-
-## 4. Kontrakty API dla planera
-
-### Lista przewoźników
-
-`GET http://127.0.0.1:8000/transit/providers`
-
-Odpowiedź zawiera `id` i `name`. Przekazuj `id` wybranego przewoźnika w kolejnych
-żądaniach. Aktualnie są to `mzdik_radom`, `mzk_kielce` i `ztm_lublin`.
-
-### Podpowiedzi przystanków
-
-`GET /transit/{provider_id}/stops?query=ogród`
-
-Wynik zawiera `id`, `name`, `latitude` i `longitude`. Wybierz element z listy i
-zachowaj jego `id` do żądania planowania.
-
-### Wyszukanie przejazdu
-
-`POST /transit/search` z nagłówkiem `Content-Type: application/json`:
-
-```json
-{
-  "provider_id": "mzk_kielce",
-  "from_stop": "1",
-  "to_stop": "4",
-  "departure_time": "05:00",
-  "max_transfers": 1
-}
-```
-
-`departure_time` ma format `HH:MM`; pominięcie go oznacza bieżącą godzinę.
-`max_transfers` może być `0` albo `1`. Odpowiedź ma `routes`, a każdy wariant
-zawiera listę `legs` (odcinków), `transfers`, `departure_time`, `arrival_time`
-i `travel_minutes`. Na przesiadce pokazany jest przystanek i `wait_minutes`.
-
-## 5. Wspólny kod komunikacji
-
-Wspólna funkcja żądań znajduje się w `frontend/assets/javascript/api.js`. Logika
-poszczególnych stron jest w ich własnych plikach JavaScript, na przykład
-`home.js`, `results.js`, `map.js`, `login.js` i `register.js`.
-
-Przykładowa funkcja komunikacji:
-
-```javascript
-const API_URL = "http://127.0.0.1:8000";
-
-async function apiRequest(path, options = {}) {
-  const response = await fetch(`${API_URL}${path}`, {
-    headers: { "Content-Type": "application/json", ...options.headers },
-    ...options,
-  });
-
-  if (!response.ok) {
-    const error = await response.json().catch(() => ({}));
-    throw new Error(error.detail ?? `Błąd API: ${response.status}`);
-  }
-
-  return response.json();
-}
-
-async function loadProviders() {
-  return apiRequest("/transit/providers");
-}
-
-async function searchStops(providerId, query) {
-  const params = new URLSearchParams({ query });
-  return apiRequest(`/transit/${encodeURIComponent(providerId)}/stops?${params}`);
-}
-
-async function searchRoutes(request) {
-  return apiRequest("/transit/search", {
-    method: "POST",
-    body: JSON.stringify(request),
-  });
-}
-```
-
-Przykładowe użycie po wybraniu dwóch przystanków:
-
-```javascript
-const result = await searchRoutes({
-  provider_id: "mzk_kielce",
-  from_stop: "1",
-  to_stop: "4",
-  departure_time: "05:00",
-  max_transfers: 1,
-});
-
-console.log(result.routes);
-```
-
-Pokazuj użytkownikowi stan ładowania oraz błędy z `error.message`. Gdy `routes`
-jest puste, wyświetl informację, że dla wybranych przystanków i godziny nie
-znaleziono połączenia.
-
-## 6. Rejestracja i logowanie
-
-- Rejestracja: `POST /auth/register` z `email`, `name`, `password` i opcjonalnym
-  `birthdate` w formacie `YYYY-MM-DD`.
-- Logowanie: `POST /auth/login` z `email` i `password`.
-- Logowanie zwraca `access_token`. Dla chronionych endpointów wysyłaj go jako
-  `Authorization: Bearer <access_token>`.
-
-Nie zapisuj hasła w przeglądarce ani nie umieszczaj sekretu JWT w kodzie
-frontendu. Token można trzymać w pamięci aplikacji; trwałe przechowywanie tokenu
-w `localStorage` zwiększa skutki ataku XSS.
-
-## 7. Wskazówki i aktualne ograniczenia
-
-- Wywołuj `/transit/providers` przy starcie widoku i buduj wybór na podstawie
-  odpowiedzi, zamiast na stałe wpisywać listę przewoźników.
-- Przystanki pobieraj dla aktualnie wybranego przewoźnika.
-- Nazwy przystanków mogą się powtarzać; pokazuj nazwę i, gdy to pomocne,
-  lokalizację, ale wysyłaj ich `id`.
-- Baza SQLite jest zasilana początkowo ze źródłowych plików JSON. Po zmianie
-  tych plików zatrzymaj API i z katalogu `backend` uruchom
-  `python -m app.database --reimport-transit`.
-- Aktualne źródłowe rozkłady nie zawierają pełnej listy przystanków na przebiegu
-  linii ani czasów pośrednich. API zwraca więc `stops_complete: false` i pokazuje
-  znane punkty odcinka; pełna lista wymaga uzupełnienia źródła rozkładów.
-
-## Aktualne strony frontendu
-
-Frontend korzysta ze zwykłego HTML, CSS i JavaScriptu. Nie używa frameworka.
-
-```text
-frontend/
-|-- index.html                 # przekierowanie do strony startowej
-|-- home.html                  # wybór przewoźnika i przystanków
-|-- pages/
-|   |-- wyniki.html            # wyniki wyszukiwania
-|   |-- map.html               # OpenStreetMap i przystanki przewoźnika
-|   |-- login.html             # logowanie
-|   `-- register.html          # rejestracja
-`-- assets/
-    |-- css/simple.css         # podstawowe style do własnej rozbudowy
-    `-- javascript/
-        |-- api.js             # wspólne żądania HTTP do backendu
-        |-- home.js            # logika strony startowej
-        |-- results.js         # pobranie i wyświetlanie wyników
-        |-- map.js             # markery przystanków na mapie
-        |-- login.js           # formularz logowania
-        `-- register.js        # formularz rejestracji
-```
-
-Każda podstrona ma swój plik JavaScript. Wspólne `api.js` tylko udostępnia
-funkcję `window.apiRequest`. Jeśli backend działa na innym porcie, zmień
-`API_BASE_URL` w tym pliku.
-
-## Wspólny header i footer bez PHP
-
-`include` w PHP działa po stronie serwera. Zwykłe pliki `.html` nie wykonują PHP,
-więc zapis `<?php include ... ?>` w HTML zostanie pokazany jako tekst albo
-zignorowany. Tutaj te same fragmenty są wczytywane przez JavaScript:
+Statyczne HTML nie wykonuje PHP `include`. W każdej stronie umieszczamy:
 
 ```html
 <div data-site-header></div>
-<!-- treść strony -->
+<main><!-- zawartość strony --></main>
 <div data-site-footer></div>
-
-<script src="../assets/javascript/layout.js" data-root="../" data-page="map" defer></script>
+<script src="../assets/javascript/layout.js"
+        data-asset-root="../"
+        data-link-root=""
+        data-page="map"
+        defer></script>
 ```
 
-Na stronie `home.html` ustaw `data-root=""` albo `data-root="./"`, bo leży w
-katalogu głównym. Na stronach w `pages/` ustaw `data-root="../"`. Atrybut
-`data-page` wskazuje aktywny link menu. `layout.js` pobiera `components/header.html`
-i `components/footer.html`, wstawia je w placeholdery i dopasowuje ścieżki.
+`layout.js` pobiera fragmenty z `/components/header.html` i
+`/components/footer.html`. Wszystkie strony są w tym samym katalogu, więc
+`data-asset-root="../"` wskazuje katalog `frontend`, a `data-link-root=""`
+oznacza, że odnośniki w komponencie są względem bieżącego katalogu `pages`.
+`data-page` zaznacza aktywną pozycję nawigacji.
 
-Edytuj `frontend/components/header.html`, aby zmienić wspólne menu, albo
-`frontend/components/footer.html`, aby zmienić wspólną stopkę. Zmiana pojawi się
-na wszystkich stronach po ich odświeżeniu. Ponieważ fragmenty są ładowane przez
-`fetch`, stronę otwieraj przez Live Server, a nie jako plik `file://`.
+Edytuj `components/header.html` lub `components/footer.html`, aby zmienić je na
+wszystkich stronach. Loader korzysta z `fetch`, dlatego nie otwieraj stron przez
+`file://`.
 
-Strona 404 jest w `frontend/pages/404.html`, a `frontend/404.html` jest plikiem
-wejściowym rozpoznawanym przez popularne statyczne hostingi. W panelu hostingu
-ustaw `pages/404.html` jako własną stronę 404, jeśli hosting pozwala wskazać
-ścieżkę. Dla produkcyjnego serwera można też ustawić jego konfigurację błędu 404.
+## API
 
-Mapa korzysta z biblioteki Leaflet przez CDN i kafelków OpenStreetMap. Sam
-formularz, nawigacja i pozostałe skrypty są zwykłym JavaScriptem.
+- `GET /transit/providers` - dostępni przewoźnicy,
+- `GET /transit/{provider_id}/stops?query=...` - wyszukiwanie przystanków,
+- `POST /transit/search` - plan podróży z 0 lub 1 przesiadką,
+- `POST /auth/register` - rejestracja,
+- `POST /auth/login` - logowanie i JWT,
+- `GET /health` - status aplikacji,
+- `GET /docs` - Swagger UI.
 
-## Automatyczne odświeżanie podczas pracy
+Wspólny wrapper `window.apiRequest` znajduje się w
+`frontend/assets/javascript/api.js`. Logika stron jest rozdzielona na
+`home.js`, `results.js`, `map.js`, `login.js`, `register.js` oraz `404.js`.
 
-Najprostszy sposób w VS Code:
+## SQLite i import danych
 
-1. Otwórz Extensions przez `Ctrl+Shift+X` i zainstaluj **Live Server**.
-2. Otwórz `frontend/home.html`, kliknij prawym przyciskiem i wybierz **Open with Live Server**. Możesz też kliknąć **Go Live** na pasku stanu.
-3. Przeciągnij otwartą kartę przeglądarki na drugi monitor.
-4. Zapisuj plik przez `Ctrl+S`; Live Server sam odświeży stronę po zapisaniu.
+`app/database.py` jest jedyną warstwą dostępu do SQLite. Baza inicjalizuje się
+przy starcie FastAPI. Import przewoźnika następuje raz, gdy jego ID nie istnieje
+w tabeli `providers`. Istniejące konta i historię z `data/users.json` importer
+przenosi do tabel `users` i `recent_routes`.
 
-Jeśli chcesz, aby VS Code zapisywał zmiany automatycznie, w ustawieniach
-wyszukaj `Auto Save` i wybierz `afterDelay`. Możesz też dodać do ustawień VS Code:
+Po aktualizacji źródłowych JSON-ów zatrzymaj serwer, a w katalogu `backend`
+wykonaj:
 
-```json
-{
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000
-}
+```powershell
+python -m app.database --reimport-transit
 ```
 
-Live Server i backend muszą działać równocześnie w dwóch terminalach. Wcześniej
-uruchomiony `python -m http.server` nie odświeża automatycznie strony po każdej
-zmianie; do pracy na żywo użyj Live Server.
+To polecenie ponownie importuje dane przewoźników, ale nie usuwa kont. Ścieżkę
+bazy można ustawić zmienną `DATABASE_PATH`.
 
-Dokumentacja operacyjna backendu i baza SQLite są opisane również w `README.md`.
+## Dodawanie przewoźnika
+
+Dodaj katalog w `backend/data/<id>/` zawierający `mapa_komunikacja.json` oraz
+`rozkłady/`. Importer automatycznie odkrywa taki katalog. Nazwy trzech aktualnych
+przewoźników są jawnie określone w `KNOWN_PROVIDER_NAMES` w `app/database.py`;
+dla nowego operatora dodaj tam czytelną nazwę, a następnie uruchom import.
+
+## Testy i sprawdzenia
+
+Kompilacja składni backendu z katalogu repozytorium:
+
+```powershell
+python -m compileall -q backend
+```
+
+Po uruchomieniu backendu sprawdź:
+
+- `/` przekierowuje do `/pages/home.html`,
+- `/pages/home.html` zwraca 200,
+- `/pages/nie-ma-takiej-strony.html` zwraca HTML 404 i status 404,
+- `/assets/css/base.css` oraz `/components/header.html` zwracają 200,
+- `/transit/providers` zwraca trzech przewoźników,
+- `/docs` zawiera endpointy auth i transit.
+
+Do przeglądarkowego smoke testu można skorzystać z formularzy w `/docs` albo
+otworzyć frontend na backendzie i wykonać plan trasy z wyborem przystanków.
+
+## Ograniczenia danych
+
+Rozkłady zawierają odjazdy na poszczególnych przystankach, ale nie kompletny
+przebieg każdej linii. API może więc zwracać `stops_complete: false`. Nie należy
+prezentować krótkiej listy punktów odcinka jako pełnej listy przystanków. Pełne
+trasy wymagają źródła zawierającego kolejność przystanków i czasy pośrednie, np.
+GTFS.
