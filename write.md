@@ -1,164 +1,167 @@
 # Dokumentacja developerska
 
-## Struktura repozytorium
+## Układ projektu
 
 ```text
 backend/
-|-- index.py                   # FastAPI, serwowanie stron i własny fallback 404
+|-- index.py                    # FastAPI: API i przekierowanie root do Next
 |-- requirements.txt
 |-- app/
-|   |-- database.py            # SQLite, migracja i import danych
-|   |-- auth/                  # rejestracja i logowanie JWT
-|   `-- transit/               # API przewoźników, przystanków i tras
+|   |-- database.py             # SQLite, schemat i import danych
+|   |-- auth/                   # rejestracja i logowanie JWT
+|   `-- transit/                # przewoźnicy, przystanki, planner
 `-- data/
-    |-- twojautobus.sqlite3    # lokalna baza tworzona automatycznie
-    |-- users.json             # źródło jednorazowego importu kont
-    `-- <provider>/            # źródłowe mapy i rozkłady JSON
+    |-- twojautobus.sqlite3     # lokalna baza (generowana)
+    |-- users.json              # źródło jednorazowego importu starych kont
+    `-- <provider>/             # źródłowe mapy i rozkłady JSON
 
 frontend/
-|-- components/
-|   |-- header.html            # wspólna nawigacja
-|   `-- footer.html            # wspólna stopka
-|-- pages/
-|   |-- home.html              # strona startowa
-|   |-- wyniki.html            # wyniki planowania
-|   |-- map.html               # przystanki na OpenStreetMap
-|   |-- login.html
-|   |-- register.html
-|   `-- 404.html               # strona nieznanego adresu
-`-- assets/
-    |-- css/                   # wspólne i lokalne style
-    `-- javascript/            # api.js, layout.js i logika stron
+|-- pages/                      # Next.js Pages Router; pliki routingu są TSX
+|   |-- _app.tsx                # wspólny Header, Footer i globalne CSS
+|   |-- _document.tsx           # lang="pl"
+|   |-- index.tsx               # /, planer podróży
+|   |-- home.tsx                # /home, alias strony startowej
+|   |-- wyniki.tsx              # /wyniki
+|   |-- map.tsx                 # /map
+|   |-- login.tsx               # /login
+|   |-- register.tsx            # /register
+|   `-- 404.tsx                 # własna strona nieznanych adresów
+|-- components/                 # współdzielone komponenty React/TSX
+|-- lib/api.ts                  # typowany klient FastAPI
+|-- types.ts                    # typy kontraktów API
+|-- assets/css/                 # globalne i specyficzne arkusze CSS
+|-- package.json
+|-- tsconfig.json
+`-- next.config.ts
 ```
 
-Nie ma `index.html`. FastAPI przekierowuje `/` bezpośrednio do
-`/pages/home.html`. Alias `/home.html` również prowadzi do tej strony.
+Strony i komponenty widoku zapisujemy jako `.tsx`. Pliki bez JSX używają
+rozszerzenia `.ts`, style pozostają w `.css`, a konfiguracja i zależności w
+standardowych plikach Next/npm.
 
 ## Uruchamianie developerskie
 
-Z katalogu projektu:
+Backend, terminal 1:
 
 ```powershell
 cd backend
-..\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Jeśli środowisko jest w `backend\.venv`, aktywuj je poleceniem
-`\.venv\Scripts\Activate.ps1` po wejściu do `backend`.
+Frontend, terminal 2:
 
-Backend serwuje HTML, assets i components, więc testuj routing 404 przez
-`http://127.0.0.1:8000`, nie przez `python -m http.server`. Do automatycznego
-odświeżania edytowanego HTML/CSS/JS można użyć rozszerzenia VS Code Live Server na
-porcie 5500. W takim trybie API nadal działa na 8000, a adres 5500 jest dozwolony
-w domyślnym CORS.
-
-## Routing frontend/backend
-
-W `backend/index.py` obowiązuje następująca kolejność:
-
-1. routery API `/auth` i `/transit`,
-2. montowanie `/assets` oraz `/components`,
-3. przekierowania `/` i `/home.html`,
-4. endpoint `/health`,
-5. catch-all `/{requested_path:path}` na końcu.
-
-Catch-all szuka dozwolonego pliku HTML w `frontend/pages`. Jeśli go nie ma,
-zwraca `frontend/pages/404.html` ze statusem HTTP 404. Nie przenoś tej trasy
-przed routery API ani mounty statycznych katalogów. Nieznane ścieżki API `/auth`,
-`/transit` i `/health` dostają JSON 404, a nieznane ścieżki strony dostają HTML.
-
-Nową stronę dodaje się do `frontend/pages`, np. `kontakt.html`. Jej URL to
-`/pages/kontakt.html`. Warto dodać odnośnik w `frontend/components/header.html`.
-Wpisanie nieistniejącego `/pages/nazwa.html` pokaże stronę 404.
-
-## Wspólny header i footer
-
-Statyczne HTML nie wykonuje PHP `include`. W każdej stronie umieszczamy:
-
-```html
-<div data-site-header></div>
-<main><!-- zawartość strony --></main>
-<div data-site-footer></div>
-<script src="../assets/javascript/layout.js"
-        data-asset-root="../"
-        data-link-root=""
-        data-page="map"
-        defer></script>
+```powershell
+cd frontend
+npm install
+npm run dev
 ```
 
-`layout.js` pobiera fragmenty z `/components/header.html` i
-`/components/footer.html`. Wszystkie strony są w tym samym katalogu, więc
-`data-asset-root="../"` wskazuje katalog `frontend`, a `data-link-root=""`
-oznacza, że odnośniki w komponencie są względem bieżącego katalogu `pages`.
-`data-page` zaznacza aktywną pozycję nawigacji.
+Next działa pod http://localhost:3000, FastAPI pod http://localhost:8000. API
+domyślnie dopuszcza origin `http://localhost:3000`. `NEXT_PUBLIC_API_URL` może
+nadpisać URL API; lokalny przykład znajduje się w `.env.local.example`.
 
-Edytuj `components/header.html` lub `components/footer.html`, aby zmienić je na
-wszystkich stronach. Loader korzysta z `fetch`, dlatego nie otwieraj stron przez
-`file://`.
+Zmienne backendu ustaw w środowisku procesu (FastAPI nie ładuje automatycznie
+pliku `.env`):
 
-## API
+- `JWT_SECRET` - wymagany poza lokalnym prototypem, losowy sekret o długości co
+    najmniej 32 znaków,
+- `DATABASE_PATH` - opcjonalna ścieżka SQLite; domyślnie
+    `backend/data/twojautobus.sqlite3`,
+- `PORT` - port FastAPI, domyślnie `8000`,
+- `FRONTEND_URL` - adres przekierowania backendowego `/`, domyślnie
+    `http://localhost:3000`,
+- `CORS_ORIGINS` - lista originów rozdzielona przecinkami; domyślna konfiguracja
+    dopuszcza localhost i 127.0.0.1 na portach developerskich.
 
-- `GET /transit/providers` - dostępni przewoźnicy,
-- `GET /transit/{provider_id}/stops?query=...` - wyszukiwanie przystanków,
-- `POST /transit/search` - plan podróży z 0 lub 1 przesiadką,
-- `POST /auth/register` - rejestracja,
-- `POST /auth/login` - logowanie i JWT,
-- `GET /health` - status aplikacji,
-- `GET /docs` - Swagger UI.
+## Routing Next.js i 404
 
-Wspólny wrapper `window.apiRequest` znajduje się w
-`frontend/assets/javascript/api.js`. Logika stron jest rozdzielona na
-`home.js`, `results.js`, `map.js`, `login.js`, `register.js` oraz `404.js`.
+To projekt Pages Router. Folder `pages/` definiuje trasy URL, ale nie jest
+częścią URL: `pages/map.tsx` obsługuje `/map`, a `pages/index.tsx` obsługuje `/`.
+Nie dodawaj `index.html` ani ręcznego catch-all HTML do FastAPI.
 
-## SQLite i import danych
+Nieznane ścieżki Next obsługuje `pages/404.tsx`. FastAPI jest osobną usługą API;
+nieznana trasa API zwraca JSON 404. `/` na porcie backendu przekierowuje do
+`FRONTEND_URL` (domyślnie `http://localhost:3000`), a `/docs` pozostaje Swagger UI.
 
-`app/database.py` jest jedyną warstwą dostępu do SQLite. Baza inicjalizuje się
-przy starcie FastAPI. Import przewoźnika następuje raz, gdy jego ID nie istnieje
-w tabeli `providers`. Istniejące konta i historię z `data/users.json` importer
-przenosi do tabel `users` i `recent_routes`.
+Dodawanie strony:
 
-Po aktualizacji źródłowych JSON-ów zatrzymaj serwer, a w katalogu `backend`
-wykonaj:
+1. Utwórz `frontend/pages/nazwa.tsx` i wyeksportuj komponent React jako default.
+2. Dodaj link do `components/Header.tsx`, jeśli strona ma być w menu.
+3. Dodaj style do istniejącego arkusza albo do osobnego CSS importowanego przez
+   `pages/_app.tsx`.
+
+Wspólny nagłówek i stopka są komponentami `components/Header.tsx` i
+`components/Footer.tsx`, renderowanymi przez `_app.tsx`.
+
+## Integracja z API
+
+Wszystkie żądania idą przez `lib/api.ts`. Funkcje dostępne dla UI:
+
+- `getProviders()` - wybór przewoźnika,
+- `searchStops(providerId, query)` - podpowiedzi przystanków,
+- `getProviderStops(providerId)` - wszystkie przystanki do mapy,
+- `searchRoutes(request)` - planer,
+- `login(email, password)` i `registerUser(user)` - auth.
+
+Typy odpowiedzi i żądań są w `types.ts`. Nie duplikuj kształtu JSON w komponentach.
+Logikę stanową i `fetch` wykonuj w komponentach client-side (`useEffect`, obsługa
+formularza); komponenty prezentacyjne przyjmują typowane props.
+
+Token JWT jest przechowywany w `sessionStorage` w tej implementacji logowania.
+Nie umieszczaj sekretu JWT backendu w zmiennych `NEXT_PUBLIC_*`.
+
+## Mapa
+
+Mapa korzysta z Leaflet i kafelków OpenStreetMap. Leaflet jest importowany
+dynamicznie wewnątrz `useEffect` komponentu `components/StopsMap.tsx`, ponieważ
+próba importu obiektu mapy podczas SSR odwołałaby się do `window`. Arkusz
+`leaflet/dist/leaflet.css` jest załadowany globalnie w `pages/_app.tsx`.
+
+Przypisanie innego przewoźnika pobiera jego listę przystanków z API, czyści starą
+warstwę markerów i dopasowuje mapę do nowych współrzędnych.
+
+## SQLite i import przewoźników
+
+`backend/app/database.py` jest jedyną warstwą dostępu do SQLite. Baza tworzy się
+automatycznie przy starcie backendu. Istniejące konta i historię z `users.json`
+importuje do tabel użytkowników, a dane przewoźników do tabel providers/stops/
+lines/departures.
+
+Po zmianie źródłowych JSON-ów zatrzymaj backend i w katalogu `backend` wykonaj:
 
 ```powershell
 python -m app.database --reimport-transit
 ```
 
-To polecenie ponownie importuje dane przewoźników, ale nie usuwa kont. Ścieżkę
-bazy można ustawić zmienną `DATABASE_PATH`.
+Nowy operator: dodaj katalog `backend/data/<id>/` z `mapa_komunikacja.json` i
+`rozkłady/`. Importer wykryje katalog. Dla czytelnej nazwy dodaj wpis do
+`KNOWN_PROVIDER_NAMES` w `app/database.py`, po czym uruchom reimport.
 
-## Dodawanie przewoźnika
+Lokalną ścieżkę bazy można ustawić zmienną `DATABASE_PATH`. Nie commituj pliku
+SQLite, sekretów ani `.env.local`.
 
-Dodaj katalog w `backend/data/<id>/` zawierający `mapa_komunikacja.json` oraz
-`rozkłady/`. Importer automatycznie odkrywa taki katalog. Nazwy trzech aktualnych
-przewoźników są jawnie określone w `KNOWN_PROVIDER_NAMES` w `app/database.py`;
-dla nowego operatora dodaj tam czytelną nazwę, a następnie uruchom import.
+## Sprawdzenia
 
-## Testy i sprawdzenia
-
-Kompilacja składni backendu z katalogu repozytorium:
+Po instalacji Node dependencies uruchom w `frontend`:
 
 ```powershell
-python -m compileall -q backend
+npm run typecheck
+npm run build
 ```
 
-Po uruchomieniu backendu sprawdź:
+W `backend`:
 
-- `/` przekierowuje do `/pages/home.html`,
-- `/pages/home.html` zwraca 200,
-- `/pages/nie-ma-takiej-strony.html` zwraca HTML 404 i status 404,
-- `/assets/css/base.css` oraz `/components/header.html` zwracają 200,
-- `/transit/providers` zwraca trzech przewoźników,
-- `/docs` zawiera endpointy auth i transit.
+```powershell
+python -m compileall -q .
+```
 
-Do przeglądarkowego smoke testu można skorzystać z formularzy w `/docs` albo
-otworzyć frontend na backendzie i wykonać plan trasy z wyborem przystanków.
+Smoke test w przeglądarce: planer pobiera przewoźników, wybiera przystanki i
+przechodzi do `/wyniki`; mapa ładuje markery po zmianie przewoźnika; login i
+register pokazują odpowiedzi API; błędna ścieżka Next pokazuje custom 404.
 
-## Ograniczenia danych
+## Znane ograniczenia
 
-Rozkłady zawierają odjazdy na poszczególnych przystankach, ale nie kompletny
-przebieg każdej linii. API może więc zwracać `stops_complete: false`. Nie należy
-prezentować krótkiej listy punktów odcinka jako pełnej listy przystanków. Pełne
-trasy wymagają źródła zawierającego kolejność przystanków i czasy pośrednie, np.
-GTFS.
+Źródłowe rozkłady nie mają kompletnego przebiegu każdej linii ani czasów
+pośrednich. Planner może zwrócić `stops_complete: false`; nie przedstawiaj listy
+punktów start/przesiadka/koniec jako pełnego przebiegu.

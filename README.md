@@ -1,25 +1,26 @@
 # Twój Autobus
 
-Aplikacja do wyszukiwania połączeń komunikacji miejskiej. Frontend jest napisany
-w zwykłym HTML, CSS i JavaScripcie, a backend udostępnia API w FastAPI. Dane
-użytkowników, przystanków, linii i odjazdów są przechowywane w SQLite.
+Aplikacja do wyszukiwania połączeń komunikacji miejskiej. Frontend działa na
+Next.js z TypeScriptem, a backend udostępnia API w FastAPI. Konta użytkowników,
+przystanki, linie i odjazdy przechowywane są w SQLite.
 
 ## Funkcje
 
-- wybór jednego z przewoźników: MZDiK Radom, MZK Kielce i ZTM Lublin,
-- podpowiedzi przystanków i wyszukiwanie połączeń z maksymalnie jedną przesiadką,
+- wyszukiwanie połączeń dla MZDiK Radom, MZK Kielce i ZTM Lublin,
+- podpowiedzi przystanków oraz wyniki z maksymalnie jedną przesiadką,
 - mapa przystanków na OpenStreetMap,
 - rejestracja i logowanie z tokenem JWT,
-- wspólny header i footer HTML oraz własna strona 404.
+- strony Next.js dla planera, wyników, mapy, auth i własnego 404.
 
 ## Wymagania
 
+- Node.js 20 lub nowszy i npm,
 - Python 3.10 lub nowszy,
-- przeglądarka z dostępem do sieci, potrzebnym do kafelków OpenStreetMap.
+- dostęp do internetu dla kafelków mapy OpenStreetMap.
 
-## Uruchomienie
+## Uruchomienie lokalne
 
-W PowerShell, z katalogu głównego projektu:
+Uruchom backend w pierwszym terminalu:
 
 ```powershell
 cd backend
@@ -29,17 +30,21 @@ python -m pip install -r requirements.txt
 python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Otwórz stronę główną pod adresem:
+Uruchom Next.js w drugim terminalu:
 
-- http://127.0.0.1:8000/ - przekierowanie do strony startowej,
-- http://127.0.0.1:8000/pages/home.html - strona startowa,
-- http://127.0.0.1:8000/docs - dokumentacja i testowanie API,
-- http://127.0.0.1:8000/health - kontrola działania backendu.
+```powershell
+cd frontend
+npm install
+npm run dev
+```
 
-Przy pierwszym uruchomieniu aplikacja utworzy `backend/data/twojautobus.sqlite3`
-i zaimportuje dane źródłowe oraz istniejące konta z `users.json`.
+Otwórz http://localhost:3000. Backend API i Swagger są dostępne pod
+http://localhost:8000 oraz http://localhost:8000/docs.
 
-Jeśli PowerShell blokuje aktywowanie środowiska wirtualnego, wykonaj jednorazowo:
+Przy pierwszym uruchomieniu backend tworzy `backend/data/twojautobus.sqlite3`
+i importuje do niej rozkłady oraz istniejące konta z `backend/data/users.json`.
+
+Jeśli PowerShell blokuje aktywację środowiska wirtualnego, jednorazowo wykonaj:
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
@@ -47,22 +52,27 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 ## Konfiguracja
 
-Ustaw sekret JWT przed uruchomieniem backendu. Wartość poniżej jest przykładowa;
-do wdrożenia użyj własnego, losowego sekretu:
+Opcjonalnie skopiuj `frontend/.env.local.example` jako `frontend/.env.local`.
+Możesz tam ustawić adres API:
 
-```powershell
-$env:JWT_SECRET = "replace-with-a-long-random-secret"
-$env:DATABASE_PATH = "C:\data\twojautobus.sqlite3"
-python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
+```env
+NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
-Domyślna baza znajduje się w `backend/data/twojautobus.sqlite3`. Domyślne strony
-są serwowane przez FastAPI z tego samego adresu co API, więc osobna konfiguracja
-CORS nie jest wymagana przy zwykłym uruchomieniu.
+Przed wdrożeniem ustaw silny sekret JWT w środowisku backendu. Zmienne
+`DATABASE_PATH`, `JWT_SECRET`, `PORT` i `CORS_ORIGINS` opisane są w
+[write.md](write.md).
 
-## Przykład wyszukiwania
+## API
 
-`POST /transit/search`:
+- `GET /transit/providers` - lista przewoźników,
+- `GET /transit/{provider_id}/stops?query=...` - wyszukiwanie przystanków,
+- `POST /transit/search` - wyszukanie połączenia,
+- `POST /auth/register` - rejestracja,
+- `POST /auth/login` - logowanie,
+- `GET /health` - status backendu.
+
+Przykładowe żądanie `POST /transit/search`:
 
 ```json
 {
@@ -74,15 +84,11 @@ CORS nie jest wymagana przy zwykłym uruchomieniu.
 }
 ```
 
-Najpierw można pobrać przewoźników przez `GET /transit/providers`, a przystanki
-przewoźnika przez `GET /transit/{provider_id}/stops?query=...`.
+## Ograniczenie danych
 
-## Ważne ograniczenie danych
+Źródłowe rozkłady nie zawierają pełnej kolejności przystanków na trasie ani
+czasów pośrednich. Warianty mogą zatem zawierać `stops_complete: false`. Pełny
+przebieg wymaga dokładniejszych danych, np. GTFS.
 
-Źródłowe rozkłady zawierają odjazdy na przystankach, ale nie pełną kolejność
-przystanków i czasy pośrednie. Wyszukiwarka zwraca dostępne warianty i przesiadki,
-ale wynik może mieć `stops_complete: false`. Pełny przebieg wymaga dokładniejszych
-danych tras, na przykład GTFS.
-
-Szczegóły architektury, routingu stron i pracy nad kodem znajdują się w
+Informacje o architekturze i pracy developerskiej znajdują się w
 [write.md](write.md).
