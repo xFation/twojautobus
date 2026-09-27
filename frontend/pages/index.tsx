@@ -68,6 +68,8 @@ export default function HomePage() {
             provider_id: providerId,
             from_stop: fromStop.id,
             to_stop: toStop.id,
+            from_stop_aliases: fromStop.aliases ?? [fromStop.id],
+            to_stop_aliases: toStop.aliases ?? [toStop.id],
             departure_time: departureTime || null,
             max_transfers: maxTransfers,
         };

@@ -10,6 +10,7 @@ export interface Stop {
     name: string;
     latitude: number;
     longitude: number;
+    aliases?: string[];
 }
 
 export interface StopTime {
@@ -48,6 +49,8 @@ export interface RouteSearchRequest {
     provider_id: string;
     from_stop: string;
     to_stop: string;
+    from_stop_aliases?: string[];
+    to_stop_aliases?: string[];
     departure_time: string | null;
     max_transfers: 0 | 1;
 }

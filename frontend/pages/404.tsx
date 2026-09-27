@@ -18,7 +18,7 @@ export default function NotFoundPage() {
                             <div className="notfound-brand"><span className="brand-dot" />Twój Autobus</div>
                             <div className="error-code" aria-label="Błąd 404"><span>4</span><span>0</span><span>4</span></div>
                             <div className="notfound-label">Błąd 404</div>
-                            <h1>Podstrona <span>nie istnieje.</span></h1>
+                            <h1 font-family="Aliar">Podstrona <span>nie istnieje.</span></h1>
                             <p className="notfound-description">
                                 Strona, której szukasz, mogła zostać przeniesiona albo adres jest nieprawidłowy.
                             </p>

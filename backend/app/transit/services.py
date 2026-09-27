@@ -2,7 +2,14 @@ from dataclasses import dataclass
 from datetime import datetime
 from typing import Any
 
-from app.database import get_departures, get_line_stops, get_provider, get_providers, get_stops
+from app.database import (
+    get_departures,
+    get_line_stops,
+    get_provider,
+    get_providers,
+    get_stops,
+    get_stop_suggestions,
+)
 
 
 @dataclass(frozen=True)
@@ -11,6 +18,7 @@ class Stop:
     name: str
     latitude: float
     longitude: float
+    aliases: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True)
@@ -35,6 +43,7 @@ def _stop_from_row(item: dict[str, Any]) -> Stop:
         name=item["name"],
         latitude=float(item["latitude"]),
         longitude=float(item["longitude"]),
+        aliases=tuple(item.get("aliases", [])),
     )
 
 
@@ -59,6 +68,17 @@ class TransitProvider:
         if not matches:
             raise LookupError(f"Nie znaleziono przystanku: {query}")
         return matches[0]
+
+    def find_stop_candidates(self, query: str, aliases: list[str] | None = None) -> list[Stop]:
+        selected_stop = self.find_stop(query)
+        selected_name = selected_stop.name.strip().casefold()
+        candidate_ids = dict.fromkeys([selected_stop.id, *(aliases or [])])
+        candidates = [
+            self.stops[stop_id]
+            for stop_id in candidate_ids
+            if stop_id in self.stops and self.stops[stop_id].name.strip().casefold() == selected_name
+        ]
+        return candidates or [selected_stop]
 
     def departures_for(self, stop_id: str, line: str | None = None) -> list[Departure]:
         if stop_id not in self._departures_cache:
@@ -95,7 +115,8 @@ def provider_list() -> list[dict[str, Any]]:
 def provider_stops(provider_id: str, query: str | None = None) -> list[Stop]:
     if get_provider(provider_id) is None:
         raise ValueError(f"Nieznany przewoźnik: {provider_id}")
-    return [_stop_from_row(row) for row in get_stops(provider_id, query)]
+    rows = get_stop_suggestions(provider_id, query) if query else get_stops(provider_id)
+    return [_stop_from_row(row) for row in rows]
 
 
 def _direct_route(provider: TransitProvider, origin: Stop, destination: Stop, requested: int) -> dict[str, Any] | None:
@@ -182,18 +203,55 @@ def _route_option(provider: TransitProvider, origin: Stop, destination: Stop, le
     }
 
 
-def search_routes(provider_id: str, from_stop: str, to_stop: str, departure_time: str | None, max_transfers: int) -> tuple[Stop, Stop, str, list[dict[str, Any]]]:
+def search_routes(
+    provider_id: str,
+    from_stop: str,
+    to_stop: str,
+    departure_time: str | None,
+    max_transfers: int,
+    from_stop_aliases: list[str] | None = None,
+    to_stop_aliases: list[str] | None = None,
+) -> tuple[Stop, Stop, str, list[dict[str, Any]]]:
     provider = TransitProvider(provider_id)
-    origin = provider.find_stop(from_stop)
-    destination = provider.find_stop(to_stop)
+    origin_candidates = provider.find_stop_candidates(from_stop, from_stop_aliases)
+    destination_candidates = provider.find_stop_candidates(to_stop, to_stop_aliases)
+    origin = origin_candidates[0]
+    destination = destination_candidates[0]
     requested = _minutes(departure_time) if departure_time else datetime.now().hour * 60 + datetime.now().minute
+
     routes = []
-    direct = _direct_route(provider, origin, destination, requested)
-    if direct:
-        routes.append(direct)
-    if max_transfers:
-        transfer = _one_transfer_route(provider, origin, destination, requested)
-        if transfer:
-            routes.append(transfer)
+    seen_routes: set[tuple[Any, ...]] = set()
+    for candidate_origin in origin_candidates:
+        for candidate_destination in destination_candidates:
+            if candidate_origin.id == candidate_destination.id:
+                continue
+
+            candidates = [_direct_route(provider, candidate_origin, candidate_destination, requested)]
+            if max_transfers:
+                candidates.append(_one_transfer_route(provider, candidate_origin, candidate_destination, requested))
+
+            for route in candidates:
+                if route is None:
+                    continue
+                signature = (
+                    route["departure_time"],
+                    route["arrival_time"],
+                    tuple(
+                        (
+                            leg["line"],
+                            leg["departure_stop"]["time"],
+                            leg["arrival_stop"]["time"],
+                            leg["arrival_stop"]["stop_name"],
+                        )
+                        for leg in route["legs"]
+                    ),
+                )
+                if signature not in seen_routes:
+                    seen_routes.add(signature)
+                    routes.append(route)
+
     routes.sort(key=lambda route: (_minutes(route["arrival_time"]), route["transfers_count"]))
+    if routes:
+        origin = provider.stops[routes[0]["legs"][0]["departure_stop"]["stop_id"]]
+        destination = provider.stops[routes[0]["legs"][-1]["arrival_stop"]["stop_id"]]
     return origin, destination, _time(requested), routes[:5]

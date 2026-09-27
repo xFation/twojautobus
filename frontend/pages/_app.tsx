@@ -6,6 +6,8 @@ import "../assets/css/base.css";
 import "../assets/css/simple.css";
 import "../assets/css/home.css";
 import "../assets/css/404.css";
+import "../assets/css/register.css";
+
 
 export default function App({ Component, pageProps }: AppProps) {
     return (

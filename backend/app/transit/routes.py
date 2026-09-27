@@ -21,6 +21,7 @@ async def get_stops(provider_id: str, query: str | None = Query(default=None, mi
 				"name": stop.name,
 				"latitude": stop.latitude,
 				"longitude": stop.longitude,
+				"aliases": list(stop.aliases),
 			}
 			for stop in provider_stops(provider_id, query)
 		]
@@ -37,6 +38,8 @@ async def search(payload: RouteSearchRequest) -> dict:
 			payload.to_stop,
 			payload.departure_time,
 			payload.max_transfers,
+			payload.from_stop_aliases,
+			payload.to_stop_aliases,
 		)
 	except (LookupError, ValueError) as error:
 		raise HTTPException(status_code=404, detail=str(error)) from error

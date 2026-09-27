@@ -13,12 +13,15 @@ class StopResponse(BaseModel):
 	name: str
 	latitude: float
 	longitude: float
+	aliases: list[str] = Field(default_factory=list)
 
 
 class RouteSearchRequest(BaseModel):
 	provider_id: str = Field(description="Id przewoźnika mzk_kielce mzdik_radom ztm_lublin")
 	from_stop: str = Field(min_length=1, description="Id / nazwa przystanku początkowego")
 	to_stop: str = Field(min_length=1, description="Id / nazwa przystanku końcowego")
+	from_stop_aliases: list[str] = Field(default_factory=list, max_length=12)
+	to_stop_aliases: list[str] = Field(default_factory=list, max_length=12)
 	departure_time: str | None = Field(
 		default=None,
 		pattern=r"^([01]\d|2[0-3]):[0-5]\d$",

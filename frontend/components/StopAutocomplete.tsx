@@ -96,7 +96,9 @@ export default function StopAutocomplete({
                             type="button"
                         >
                             <span className="suggestion-name">{stop.name}</span>
-                            <span className="suggestion-id">ID {stop.id}</span>
+                            <span className="suggestion-id">
+                                {stop.aliases && stop.aliases.length > 1 ? "system dobierze ID" : "1 przystanek"}
+                            </span>
                         </button>
                     ))}
                 </div>

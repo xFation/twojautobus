@@ -284,6 +284,50 @@ def get_stops(provider_id: str, query: str | None = None) -> list[dict[str, Any]
 		return [dict(row) for row in connection.execute(sql, parameters).fetchall()]
 
 
+def get_stop_suggestions(provider_id: str, query: str) -> list[dict[str, Any]]:
+	"""Return one suggestion per stop name, keeping every matching stop ID."""
+	with get_connection() as connection:
+		rows = connection.execute(
+			"""
+			SELECT stops.id, stops.name, stops.latitude, stops.longitude,
+			       COUNT(DISTINCT departures.line_id) AS line_count,
+			       COUNT(departures.id) AS departure_count
+			FROM stops
+			LEFT JOIN departures
+			  ON departures.provider_id = stops.provider_id
+			 AND departures.stop_id = stops.id
+			WHERE stops.provider_id = ?
+			  AND (stops.id = ? OR stops.name LIKE ? COLLATE NOCASE)
+			GROUP BY stops.provider_id, stops.id, stops.name, stops.latitude, stops.longitude
+			ORDER BY stops.name COLLATE NOCASE, stops.id
+			""",
+			(provider_id, query.strip(), f"%{query.strip()}%"),
+		).fetchall()
+
+	groups: dict[str, list[dict[str, Any]]] = {}
+	for row in rows:
+		stop = dict(row)
+		groups.setdefault(stop["name"].strip().casefold(), []).append(stop)
+
+	suggestions = []
+	for matching_stops in groups.values():
+		preferred_stop = max(
+			matching_stops,
+			key=lambda stop: (stop["line_count"], stop["departure_count"], stop["id"]),
+		)
+		suggestions.append(
+			{
+				"id": preferred_stop["id"],
+				"name": preferred_stop["name"],
+				"latitude": preferred_stop["latitude"],
+				"longitude": preferred_stop["longitude"],
+				"aliases": [stop["id"] for stop in matching_stops],
+			}
+		)
+
+	return sorted(suggestions, key=lambda stop: (stop["name"].casefold(), stop["id"]))
+
+
 def get_departures(provider_id: str, stop_id: str, line_id: str | None = None) -> list[dict[str, Any]]:
 	sql = """
 		SELECT line_id, direction, departure_minutes
