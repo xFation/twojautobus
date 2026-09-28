@@ -23,7 +23,6 @@ async def lifespan(_: FastAPI):
 
 
 def get_allowed_origins() -> list[str]:
-	"""Read allowed frontend origins from CORS_ORIGINS."""
 	configured_origins = os.getenv("CORS_ORIGINS", DEFAULT_CORS_ORIGINS)
 	return [origin.strip() for origin in configured_origins.split(",") if origin.strip()]
 
@@ -50,13 +49,11 @@ app.include_router(transit_router)
 
 @app.get("/", tags=["system"])
 async def read_root() -> RedirectResponse:
-	"""Send visitors from the API root to the Next.js application."""
 	return RedirectResponse(url=FRONTEND_URL, status_code=307)
 
 
 @app.get("/health", tags=["system"])
 async def health_check() -> dict[str, str]:
-	"""Return the current API health status."""
 	return {"status": "ok"}
 
 
