@@ -479,6 +479,20 @@ main.container h1 {
     border: 1px solid var(--blue-100);
     animation: reveal 200ms var(--ease-out) both;
 }
+.message:empty {
+    display: none;
+}
+
+.login {
+    place-self: center;
+    margin-top: 16px;
+}
+
+.login-link {
+    color: var(--blue-600);
+    font-weight: 600;
+    transition: color 150ms ease;
+}
 
 main.container > p:last-child {
     font-size: 14px;

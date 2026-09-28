@@ -4,17 +4,22 @@ import { useState, type FormEvent } from "react";
 import { login } from "@/lib/api";
 
 export default function LoginPage() {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
     const [message, setMessage] = useState("");
     const [busy, setBusy] = useState(false);
 
+    const isFormValid = email.trim() !== "" && password.trim() !== "";
+
     async function handleSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault();
+        if (!isFormValid) return;
+
         setBusy(true);
         setMessage("Logowanie...");
-        const form = new FormData(event.currentTarget);
 
         try {
-            const result = await login(String(form.get("email")), String(form.get("password")));
+            const result = await login(email, password);
             window.sessionStorage.setItem("accessToken", result.access_token);
             setMessage(`Zalogowano jako ${result.user.name}.`);
         } catch (error) {
@@ -28,16 +33,38 @@ export default function LoginPage() {
         <>
             <Head><title>Logowanie | Twój Autobus</title></Head>
             <main className="container">
-                <h1>Logowanie</h1>
+                <p className="label">twojautobus.pl</p>
+                <h1>Zaloguj się</h1>
                 <form className="basic-form" onSubmit={handleSubmit}>
                     <label htmlFor="email">Adres e-mail</label>
-                    <input autoComplete="email" id="email" name="email" required type="email" />
+                    <input 
+                        autoComplete="email" 
+                        id="email" 
+                        name="email" 
+                        required 
+                        type="email" 
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    
                     <label htmlFor="password">Hasło</label>
-                    <input autoComplete="current-password" id="password" name="password" required type="password" />
-                    <button disabled={busy} type="submit">{busy ? "Logowanie..." : "Zaloguj"}</button>
+                    <input 
+                        autoComplete="current-password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        type="password" 
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                    
+                    <button disabled={busy || !isFormValid} type="submit">
+                        {busy ? "Logowanie..." : "Zaloguj"}
+                    </button>
+                    
                     <p className="message" role="status">{message}</p>
+                    <p className="register">Nie masz konta? <Link className="register-link" href="/register">Zarejestruj się</Link>.</p>
                 </form>
-                <p>Nie masz konta? <Link href="/register">Zarejestruj się</Link>.</p>
             </main>
         </>
     );

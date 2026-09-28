@@ -103,7 +103,7 @@ export default function RegisterPage() {
                     </button>
                     
                     <p className="message" role="status">{message}</p>
-                    <p>Masz już konto? <Link href="/login">Zaloguj się</Link>.</p>
+                    <p className="login">Masz już konto? <Link className="login-link" href="/login">Zaloguj się</Link>.</p>
                 </form>
             </main>
         </>
