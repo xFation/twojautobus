@@ -1,26 +1,32 @@
 # Twój Autobus
 
-Aplikacja do wyszukiwania połączeń komunikacji miejskiej. Frontend działa na
-Next.js z TypeScriptem, a backend udostępnia API w FastAPI. Konta użytkowników,
-przystanki, linie i odjazdy przechowywane są w SQLite.
+Twój Autobus to planer połączeń komunikacji miejskiej dla Radomia, Kielc i
+Lublina. Aplikacja łączy frontend Next.js z API FastAPI, a dane użytkowników i
+rozkładów przechowuje w lokalnej bazie SQLite.
 
 ## Funkcje
 
-- wyszukiwanie połączeń dla MZDiK Radom, MZK Kielce i ZTM Lublin,
-- podpowiedzi przystanków oraz wyniki z maksymalnie jedną przesiadką,
-- mapa przystanków na OpenStreetMap,
-- rejestracja i logowanie z tokenem JWT,
-- strony Next.js dla planera, wyników, mapy, auth i własnego 404.
+- wyszukiwanie połączeń z maksymalnie jedną przesiadką,
+- podpowiadanie przystanków podczas wpisywania,
+- mapa przystanków oparta na Leaflet i OpenStreetMap,
+- rejestracja i logowanie użytkowników,
+- obsługa danych MZDiK Radom, MZK Kielce i ZTM Lublin.
+
+## Technologie
+
+- Frontend: Next.js 15, React 19 i TypeScript.
+- Backend: Python, FastAPI i SQLite.
+- Mapa: Leaflet i kafelki OpenStreetMap.
 
 ## Wymagania
 
-- Node.js 20 lub nowszy i npm,
+- Node.js 20.9 lub nowszy oraz npm,
 - Python 3.10 lub nowszy,
-- dostęp do internetu dla kafelków mapy OpenStreetMap.
+- połączenie z internetem do pobierania kafelków mapy.
 
 ## Uruchomienie lokalne
 
-Uruchom backend w pierwszym terminalu:
+W pierwszym terminalu przygotuj i uruchom backend:
 
 ```powershell
 cd backend
@@ -30,7 +36,7 @@ python -m pip install -r requirements.txt
 python -m uvicorn index:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Uruchom Next.js w drugim terminalu:
+W drugim terminalu uruchom frontend:
 
 ```powershell
 cd frontend
@@ -38,13 +44,11 @@ npm install
 npm run dev
 ```
 
-Otwórz http://localhost:3000. Backend API i Swagger są dostępne pod
-http://localhost:8000 oraz http://localhost:8000/docs.
+Aplikacja działa pod adresem http://localhost:3000. API jest dostępne pod
+http://localhost:8000, a dokumentacja Swagger pod http://localhost:8000/docs.
+Przy pierwszym uruchomieniu backend inicjalizuje bazę i importuje dane źródłowe.
 
-Przy pierwszym uruchomieniu backend tworzy `backend/data/twojautobus.sqlite3`
-i importuje do niej rozkłady oraz istniejące konta z `backend/data/users.json`.
-
-Jeśli PowerShell blokuje aktywację środowiska wirtualnego, jednorazowo wykonaj:
+Jeśli PowerShell blokuje aktywację środowiska wirtualnego, wykonaj jednorazowo:
 
 ```powershell
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
@@ -52,43 +56,74 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 
 ## Konfiguracja
 
-Opcjonalnie skopiuj `frontend/.env.local.example` jako `frontend/.env.local`.
-Możesz tam ustawić adres API:
+Skopiuj `frontend/.env.local.example` do `frontend/.env.local`, aby ustawić adres
+API używany przez frontend:
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:8000
 ```
 
-Przed wdrożeniem ustaw silny sekret JWT w środowisku backendu. Zmienne
-`DATABASE_PATH`, `JWT_SECRET`, `PORT` i `CORS_ORIGINS` opisane są w
-[write.md](write.md).
+Backend odczytuje konfigurację ze zmiennych środowiskowych:
+
+| Zmienna | Znaczenie | Wartość domyślna |
+| --- | --- | --- |
+| `JWT_SECRET` | Sekret używany do podpisywania tokenów. Ustaw własny przed wdrożeniem. | wartość developerska |
+| `DATABASE_PATH` | Ścieżka do pliku bazy SQLite. | `backend/data/twojautobus.sqlite3` |
+| `PORT` | Port serwera API. | `8000` |
+| `FRONTEND_URL` | Adres frontendu używany przy przekierowaniu z `/`. | `http://localhost:3000` |
+| `CORS_ORIGINS` | Dozwolone originy, oddzielone przecinkami. | adresy localhost |
+
+FastAPI nie wczytuje automatycznie pliku `.env`. Nie umieszczaj sekretu JWT w
+zmiennych `NEXT_PUBLIC_*` ani w repozytorium.
 
 ## API
 
-- `GET /transit/providers` - lista przewoźników,
-- `GET /transit/{provider_id}/stops?query=...` - wyszukiwanie przystanków,
-- `POST /transit/search` - wyszukanie połączenia,
-- `POST /auth/register` - rejestracja,
-- `POST /auth/login` - logowanie,
-- `GET /health` - status backendu.
+| Metoda | Endpoint | Opis |
+| --- | --- | --- |
+| `GET` | `/health` | Status API |
+| `GET` | `/transit/providers` | Lista przewoźników |
+| `GET` | `/transit/{provider_id}/stops?query=...` | Wyszukiwanie przystanków |
+| `POST` | `/transit/search` | Wyszukiwanie połączeń |
+| `POST` | `/auth/register` | Rejestracja |
+| `POST` | `/auth/login` | Logowanie |
 
-Przykładowe żądanie `POST /transit/search`:
+## Dane rozkładowe
 
-```json
-{
-  "provider_id": "mzk_kielce",
-  "from_stop": "1",
-  "to_stop": "4",
-  "departure_time": "05:00",
-  "max_transfers": 1
-}
+Pliki źródłowe znajdują się w `backend/data/`. Po ich zmianie zatrzymaj backend,
+a następnie uruchom w katalogu `backend`:
+
+```powershell
+python -m app.database --reimport-transit
 ```
 
-## Ograniczenie danych
+Dostępne dane nie zawsze zawierają pełną kolejność przystanków i czasy
+pośrednie. W takich przypadkach API może zwrócić `stops_complete: false`.
 
-Źródłowe rozkłady nie zawierają pełnej kolejności przystanków na trasie ani
-czasów pośrednich. Warianty mogą zatem zawierać `stops_complete: false`. Pełny
-przebieg wymaga dokładniejszych danych, np. GTFS.
+## Struktura projektu
 
-Informacje o architekturze i pracy developerskiej znajdują się w
-[write.md](write.md).
+```text
+backend/
+  app/                 Logika API, autoryzacja, SQLite i transport
+  data/                Źródłowe mapy i rozkłady
+  index.py              Aplikacja FastAPI
+frontend/
+  pages/                Strony Next.js i routing
+  components/           Współdzielone komponenty
+  lib/                  Klient API
+  public/css/           Arkusze stylów serwowane przez frontend
+```
+
+## Sprawdzenia
+
+W katalogu `frontend`:
+
+```powershell
+npm run typecheck
+npm run build
+```
+
+W katalogu `backend`:
+
+```powershell
+python -m compileall -q .
+```

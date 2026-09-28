@@ -59,7 +59,7 @@ export default function LoginPage() {
                     />
                     
                     <button disabled={busy || !isFormValid} type="submit">
-                        {busy ? "Logowanie..." : "Zaloguj"}
+                        {busy ? "Logowanie..." : "Zaloguj się"}
                     </button>
                     
                     <p className="message" role="status">{message}</p>

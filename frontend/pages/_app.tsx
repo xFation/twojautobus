@@ -13,6 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         "/login": "/css/login.css",
         "/register": "/css/register.css",
         "/404": "/css/404.css",
+        "/kontakt": "/css/kontakt.css",
     };
 
     return (
